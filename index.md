@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+## Bem-vindo à Documentação GlobalCad
 
-You can use the [editor on GitHub](https://github.com/francisco-macedo/globalcad.docs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Bem-vindo! Essa é a documentação da plataforma [GlobalCad](https://www.globalcad.com.br).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A GlobalCad é uma plataforma de desenvolvimento que viabiliza o rápido desenvolvimento de aplicativos Mobile e Web. Trata-se de uma low-code development platform ([LCDP](https://en.wikipedia.org/wiki/Low-code_development_platform)) que acelera a implementação de sistemas complexos por um fator 10x ou superior.
 
-### Markdown
+### Multi-plataforma
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Os sistemas desenvolvidos na plataforma GlobalCad operam em:
 
-```markdown
-Syntax highlighted code block
+- Web
+- Celulares e tablets Android
 
-# Header 1
-## Header 2
-### Header 3
+Para acessar a plataforma GlobalCad Web, basta clicar [neste link](https://app.globalcad.com.br). Para acessar a plataforma GlobalCad em um celular ou tablet Android, basta baixar o [aplicativo GlobalCad](https://play.google.com/store/apps/details?id=globalcad.services) na loja de aplicativos Google Play.
 
-- Bulleted
-- List
+### Pré-requisitos
 
-1. Numbered
-2. List
+Para criar sistemas na plataforma GlobalCad, é necessário o domínio das seguintes linguagens:
 
-**Bold** and _Italic_ and `Code` text
+- C#
+- SQL (ansi)
 
-[Link](url) and ![Image](src)
-```
+É também necessário instalar os seguintes programas em seu computador:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+- Visual Studio 2019 ou superior
+- Software para conectar-se a um banco de dados SQL Server (Recomendado: [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15))
+- Microsoft Excel
+- Software para efetuar chamadas à API via POST/GET (Recomendado: [Postman](https://www.postman.com/))
 
-### Jekyll Themes
+### Contato
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/francisco-macedo/globalcad.docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Para entrar em contato com a GlobalCad, acesse [este link](https://www.globalcad.com.br/contato)
