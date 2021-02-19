@@ -36,6 +36,7 @@ A tabela abaixo lista todas as propriedades de interação.
 
 ### `activationparentvalue`
 
+
 A propriedade `activationparentvalue` contém o valor que o item cujo ID é `activationparentid` deve conter para que o presente item seja ativado. Utilize os caracteres especiais abaixo ou insira texto literal para especificar um valor para `activationparentvalue`.
 
 - `@`: Qualquer valor não-vazio.
@@ -89,6 +90,7 @@ Note o trecho abaixo. É nele que especificamos a regra de ativação da `textbo
 ---
 
 ### `visibilityparentvalue`
+
 
 A propriedade `visibilityparentvalue` contém o valor que o item cujo ID é `visibilityparentid` deve conter para que o presente item se torne visível. Utilize os caracteres especiais abaixo ou insira texto literal para especificar um valor para `visibilityparentvalue`.
 
