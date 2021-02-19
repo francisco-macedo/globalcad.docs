@@ -312,3 +312,5 @@ namespace CustomCode
 }
 ```
 
+Note que a função recebe, como parâmetro, uma variável chamada `query`. Essa variável vem preenchida com a consulta SQL montada pela plataforma GlobalCad para listar todos os itens do dicionário em questão. O que fizemos no código foi esvaziar essa variável através do comando `query.Clear()` e, na sequência, preencher novamente a variável com uma nova consulta SQL.
+
