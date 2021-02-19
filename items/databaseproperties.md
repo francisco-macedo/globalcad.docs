@@ -61,6 +61,8 @@ As propriedades de banco de dados estão divididas em 3 seções:
 
 ---
 
+## Propriedades de Banco de Dados - Detalhamento
+
 ### `parentDICTownerID`
 
 A propriedade `parentDICTownerID` é aplicável somente a itens que apontam para dicionários. São eles: `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Ela representa o ID do item que contém o dicionário pai do presente item. No exemplo abaixo, um item-dicionário do tipo `autofilltextbox` que representa `Estado` é configurado como filho de um item `dropdown` que representa `País`.
