@@ -36,7 +36,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 ### `mask`
 
-A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais abaixo com outros caracteres para criar uma máscara:
+A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
 
 - `#`: Número
 - `_`: Qualquer caractere
