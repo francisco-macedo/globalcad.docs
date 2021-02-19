@@ -14,7 +14,7 @@ Itens do tipo textbox representam uma caixa na qual os usuários podem inserir t
 
 <div class="code-example" markdown="1">
 
-Título: <input value="Valor" />
+Exemplo: <input disabled value="Valor Exemplo" />
 
 </div>
 
