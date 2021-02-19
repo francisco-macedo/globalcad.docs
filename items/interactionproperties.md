@@ -43,11 +43,11 @@ Se tivermos um formulário com uma `dropdown` e uma `textbox` e quisermos que a 
 
 <div class="code-example" markdown="1">
 
-<table>
+<table cellspacing="0" cellpadding="0" style="border: none;">
   <tr>
     <td>Fruta</td>
     <td> 
-      <select disabled">
+      <select disabled>
         <option value="Abacaxi">Abacaxi</option>
         <option value="Laranja">Laranja</option>
         <option value="Mamão">Mamão</option>
