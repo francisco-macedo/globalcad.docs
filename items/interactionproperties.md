@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Textbox
+title: Propriedades de Interação
 parent: Itens
 nav_order: 200
 has_children: false
@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Propriedades de interação controlam como um item interfere no comportamento de outro. Essas propriedades são aceitas por diversos itens.
+Propriedades de interação controlam como um item interfere na visibilidade e na ativação de outro. Propriedades de interação são aceitas por diversos itens. Consulte a documentação individual de cada item para saber quais as aceitam.
 {: .fs-6 .fw-300 }
 
 ## Índice
