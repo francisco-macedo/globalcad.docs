@@ -53,10 +53,10 @@ A seguir, siga os passos mostrados:
 
 Um sistema criado na plataforma GlobalCad é composto por 1 ou mais módulos. Um módulo consiste, essencialmente, em um conjunto de telas e suas lógicas adjacentes. Por definição, um módulo pode conter apenas 1 (uma) tela Web, 1 (uma) tela Mobile e alguns outros itens, como telas de configuração e relatórios.
 
-Se o seu sistema for composto por 2 telas de operação na Web, você pode trabalhar com uma das seguintes alternativas:
+Se o seu sistema for composto por 2 ou mais telas de operação na Web, você pode trabalhar com uma das seguintes alternativas:
 
 - Criar 1 (uma) tela que, dependendo da lógica adjacente, revela somente uns ou outros itens de forma a aparentar tratar-se de 2 ou mais telas distintas para o usuário final.
-- Criar 2 (dois) módulos, cada um com sua própria tela Web.
+- Criar 2 (dois) ou mais módulos, cada um com sua própria tela Web.
 
 ---
 
