@@ -16,10 +16,6 @@ Bem-vindo à documentação da plataforma de desenvolvimento [GlobalCad](https:/
 
 ## Características
 
-### Desenvolvimento Ágil
-
-A plataforma GlobalCad acelera a implementação de sistemas complexos por um fator 10x ou superior. Em termos simples, um sistema complexo que requeira 10 meses para ser implementado nas plataformas Web e Mobile por 2 (dois) programadores usando tecnologia convencional pode ser facilmente implementado por apenas 1 (um) programador em menos de 1 mês utilizando a tecnologia GlobalCad.
-
 ### Multi-plataforma
 
 Os sistemas desenvolvidos na plataforma GlobalCad podem ser acessados através de:
@@ -27,12 +23,18 @@ Os sistemas desenvolvidos na plataforma GlobalCad podem ser acessados através d
 - Browsers ([Clique aqui](https://app.globalcad.com.br))
 - Celulares e tablets Android (Baixe o [app GlobalCad](https://play.google.com/store/apps/details?id=globalcad.services) na Google Play)
 
+### Desenvolvimento Ágil
+
+A plataforma GlobalCad acelera a implementação de sistemas complexos por um fator 10x ou superior. Em termos simples, um sistema complexo que requeira 10 meses para ser implementado nas plataformas Web e Mobile por 2 (dois) programadores usando tecnologia convencional pode ser facilmente implementado por apenas 1 (um) programador em menos de 1 mês utilizando a tecnologia GlobalCad.
+
 ---
 
-## Requisitos
+## Funcionamento da Plataforma
 
-Para criar sistemas na plataforma GlobalCad, é necessário o domínio das seguintes linguagens:
+A plataforma GlobalCad funciona da seguinte maneira:
 
-- C#
-- SQL (ansi)
+1. O seu projeto é empacotado e enviado ao servidor no qual a plataforma GlobalCad está instalada.
 
+2. Usando um navegador de Internet qualquer, os usuários acessam o endereço do servidor onde a plataforma GlobalCad se encontra. Em resposta, o servidor renderiza o seu projeto, transformando-o em páginas Web interativas. Os usuários também podem baixar o aplicativo GlobalCad para Android para acessar o seu projeto. O aplicativo se comunica com o servidor para receber instruções sobre como renderizar o seu projeto, e o executa em modo offline no dispositivo.
+
+A plataforma GlobalCad precisa ser instalada em um servidor Windows e precisa ter acesso de leitura e escrita a um banco de dados SQL Server para que seja capaz de operar. Se você não possuir um servidor Windows e/ou um banco de dados SQL Server, não há problema: A GlobalCad mantém servidores e bancos de dados na Microsoft Azure disponíveis para acomodar os seus projetos.
