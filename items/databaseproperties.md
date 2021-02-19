@@ -380,7 +380,7 @@ Note o trecho abaixo. É nele que especificamos que o item `IDH` é um membro do
 
 O que esse trecho nos diz é que o valor do item `IDH` deve ser armazenado no campo `FLOAT1` da tabela dicionários, no mesmo registro onde se encontra o valor do `País` selecionado.
 
-Antes de executar a tela apresentada, suponhamos que temos os seguintes dados na tabela de dicionários:
+Antes de executar a tela apresentada, suponhamos a existência dos seguintes dados na tabela de dicionários:
 
 <table>
   <tr>
