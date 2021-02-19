@@ -30,3 +30,6 @@ A tabela abaixo lista todas as propriedades básicas de itens.
 | `ID`                  | `int`     | Número que identifica unicamente o item. Em um mesmo módulo, não são permitidos 2 itens com o mesmo ID. 
 | `level`               | `int`     | Nível de exibição do item. Inicia em 1.
 | `datatype`            | `enum`    | <mark>Aplicável somente à versão Mobile do seu módulo.</mark> Indica o tipo de teclado a exibir quando o item for selecionado. Valores possíveis: `number` (Teclado numérico) e `usedefault` (Teclado padrão).
+| `initialvalue`        | `string`  | Valor inicial que a plataforma GlobalCad deve atribuir ao item.
+| `initialvalueonmobile`| `string`  | Valor inicial que a plataforma GlobalCad deve atribuir ao item quando o módulo estiver rodando no Mobile.
+| `ismandatory`         | `bool`    | Indica se o preenchimento do item é obrigatório. Default = `false`. Se `ismandatory` = `true`, o sistema impedirá o usuário de salvar o registro se o item contiver um valor vazio, e emitirá um alerta informando-o que há um campo obrigatório a ser preenchido.
