@@ -418,7 +418,7 @@ IDH: <input disabled value="0,765" />
 
 </div>
 
-Ao salvar o registro, o registro do país `Brasil` na tabela de dicionários terá o seu `IDH` atualizado. Isso significa que o campo `FLOAT1` será atualizado, já que o valor de `IDH` é armazenado no campo `FLOAT1` da tabela de dicionários. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
+Ao salvar a tela, o registro do país `Brasil` na tabela de dicionários terá o seu `IDH` atualizado. Isso significa que o campo `FLOAT1` será atualizado, já que o valor de `IDH` é armazenado no campo `FLOAT1` da tabela de dicionários. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
 
 <table>
   <tr>
