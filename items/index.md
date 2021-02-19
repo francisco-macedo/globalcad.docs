@@ -21,4 +21,4 @@ has_children: true
 
 ## Sobre Itens
 
-As telas que compõem o seu projeto são compostas por itens que representam, por exemplo, caixas de texto, dropdowns, radiobuttons, dentre outros controles com os quais os usuários podem ou não interagir. Itens são também chamados de componentes.
+As telas que compõem o seu projeto são compostas por itens, também chamados de componentes. Itens representam controles como, por exemplo, caixas de texto, dropdowns, radiobuttons, dentre outros com os quais os usuários podem ou não interagir.
