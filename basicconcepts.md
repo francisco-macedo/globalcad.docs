@@ -158,10 +158,10 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web e visa coletar alguns dados de uma pessoa, como demonstrado abaixo.
 
+<div class="code-example">
+
 Form Designer.xlsx
 {: .label .label-green }
-
-<div class="code-example">
 
 Nome: <input disabled value="" /> ## Configurado para salvar o valor na `VALUES.STR1`
 <br/>
