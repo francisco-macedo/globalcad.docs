@@ -36,10 +36,10 @@ Antes de criar o seu primeiro projeto na plataforma GlobalCad, siga os passos ab
 
 1. Instale os programas:
 
-- Visual Studio 2019 ou superior
-- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
-- Microsoft Excel
-- [Postman](https://www.postman.com/)
+-- Visual Studio 2019 ou superior
+-- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+-- Microsoft Excel
+-- [Postman](https://www.postman.com/)
 
 2. Obtenha uma conta na plataforma GlobalCad. Para tal, [entre em contato](https://www.globalcad.com.br/contato) com a equipe GlobalCad.
 
