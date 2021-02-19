@@ -21,7 +21,9 @@ Itens do tipo textbox representam uma caixa na qual os usuários podem inserir t
 ---
 
 
-## Propriedades
+## Propriedades Específicas
+
+A tabela abaixo lista todas as propriedades **específicas** a itens do tipo `textbox`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
@@ -57,6 +59,12 @@ Para construir uma máscara que formata o texto como um número com 2 casas deci
 ```
 {decimal:2}
 ```
+
+---
+
+## Propriedades de Interação
+
+Itens `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
