@@ -22,9 +22,3 @@ Para criar sistemas na plataforma GlobalCad, é necessário o domínio das segui
 - C#
 - SQL (ansi)
 
-É também necessário instalar os seguintes programas em seu computador:
-
-- Visual Studio 2019 ou superior
-- Software para conectar-se a um banco de dados SQL Server (Recomendado: [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15))
-- Microsoft Excel
-- Software para efetuar chamadas à API via POST/GET (Recomendado: [Postman](https://www.postman.com/))
