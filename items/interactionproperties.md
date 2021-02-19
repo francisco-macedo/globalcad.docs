@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Propriedades de Interação
+title: Interaction Properties
 parent: Itens
 nav_order: 200
 has_children: false
