@@ -77,7 +77,7 @@ Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input />
 
 Note o trecho abaixo. É nele que especificamos a regra de ativação da `textbox`.
 
-```
+```js
     "activationparentid": 10,
     "activationparentvalue": "Abacaxi|Laranja"
 ```
