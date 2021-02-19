@@ -10,7 +10,7 @@ has_children: false
 
 <details open markdown="block">
   <summary>
-    Table of contents
+    Índice
   </summary>
   {: .text-delta }
 1. TOC
