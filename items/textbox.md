@@ -52,6 +52,8 @@ Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqu
 
 ---
 
+## Propriedades Específicas - Detalhamento
+
 ### `mask`
 
 A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
