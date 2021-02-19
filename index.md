@@ -52,6 +52,6 @@ Se desejar aprender ou aprimorar os seus conhecimentos sobre C#, recomendamos [e
 
 ---
 
-## Onde A Plataforma É Instalada?
+## Instalação da Plataforma
 
 A plataforma GlobalCad deve ser instalada em um servidor Windows e precisa ter acesso de leitura e escrita a um banco de dados SQL Server. Se você não possuir um servidor Windows e/ou um banco de dados SQL Server, não há problema: A GlobalCad mantém servidores e bancos de dados na Microsoft Azure disponíveis para acomodar os seus projetos.
