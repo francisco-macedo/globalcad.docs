@@ -34,7 +34,7 @@ A tabela abaixo lista todas as propriedades **específicas** a itens do tipo `te
 
 ---
 
-## `mask`
+### `mask`
 
 A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais abaixo com outros caracteres para criar uma máscara:
 
