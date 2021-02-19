@@ -7,13 +7,14 @@ has_children: false
 ---
 # Textbox
 
-O textbox...
+Itens do tipo textbox representam uma caixa de texto na qual os usuários podem inserir conteúdo.
 
 ---
 
+## Propriedades
 
-View this site's [_config.yml](https://github.com/pmarsceill/just-the-docs/tree/master/_config.yml) file as an example.
+### showtitle
 
+Informa se o título da textbox deve ou não ser exibido.
 
-## Site logo
 
