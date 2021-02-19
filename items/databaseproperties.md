@@ -43,7 +43,7 @@ A tabela abaixo lista todas as propriedades de banco de dados.
 
 ### `parentDICTownerID`
 
-A propriedade `parentDICTownerID` é aplicável somente a itens que apontam para dicionários. São eles: `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o ID do item que contém o dicionário pai do presente item. No exemplo abaixo, um item-dicionário do tipo `autofilltextbox` que representa `Estado` é configurado como filho de um item `dropdown` que representa `País`.
+A propriedade `parentDICTownerID` é aplicável somente a itens que apontam para dicionários. São eles: `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Ela representa o ID do item que contém o dicionário pai do presente item. No exemplo abaixo, um item-dicionário do tipo `autofilltextbox` que representa `Estado` é configurado como filho de um item `dropdown` que representa `País`.
 
 <div class="code-example" markdown="1">
 
