@@ -49,6 +49,24 @@ Antes de criar o seu primeiro projeto na plataforma GlobalCad, siga os passos ab
 
 ---
 
+## Módulos
+
+Um sistema criado na plataforma GlobalCad é composto por 1 ou mais módulos. Um módulo consiste, essencialmente, em um conjunto de telas e suas lógicas adjacentes. Por definição, um módulo pode conter apenas 1 (uma) tela Web, 1 (uma) tela Mobile e alguns outros itens, como telas de configuração e relatórios.
+
+Se o seu sistema for composto por 2 telas de operação na Web, você pode trabalhar com uma das seguintes alternativas:
+
+- Criar 1 (uma) tela que, dependendo da lógica adjacente, revela somente uns ou outros itens de forma a aparentar tratar-se de 2 ou mais telas distintas para o usuário final.
+- Criar 2 (dois) módulos, cada um com sua própria tela Web.
+
+---
+
 ## Form Designer
 
-...
+O Form Designer é uma planilha utilitária na qual você configura um módulo de sua solução, desenhando as telas do módulo e associando códigos ao mesmo. O Form Designer junta os elementos abaixo em um só pacote e o publica no servidor onde a plataforma GlobalCad está instalada:
+
+- Configurações do módulo, incluindo layout das telas e estruturação dos dados no banco de dados
+- Arquivos de programação em linguagem C# e SQL (extensão .cs e .sql)
+
+Futuramente, o Form Designer será substituído por uma IDE gráfica que realiza a mesma função: Juntar os 2 elementos mencionados anteriormente em um pacote e publicá-lo no servidor GlobalCad. Enquanto a IDE não é desenvolvida, o Form Designer é o ponto de partida para o desenvolvimento de módulos.
+
+O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx` do Google Drive, como mencionado no tópico Instalação Inicial.
