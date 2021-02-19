@@ -11,9 +11,20 @@ Nessa seção, veremos como instalar os pré-requisitos para criar o seu primeir
 
 ---
 
-## Instalações e Licenças
+## Pré-requisitos
 
-Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo:
+Para criar sistemas na plataforma GlobalCad, é necessário o domínio das seguintes linguagens:
+
+- C#
+- SQL (ansi)
+
+Se você não conhece C#, recomendamos [este guia introdutório](https://www.codecademy.com/learn/learn-c-sharp).
+
+---
+
+## Instalação Inicial
+
+Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo.
 
 1. Instale os programas:
 
