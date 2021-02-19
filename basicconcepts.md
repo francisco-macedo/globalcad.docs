@@ -88,7 +88,7 @@ A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de o
   </tr>
 </table>
 
-Cada linha da tabela representa um `container` de um `registro` produzido a partir do preenchimento de campos em uma tela (Um `registro` pode ser composto por 1 ou mais `containers`). As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad, enquanto as demais colunas são colunas de projeto.
+Cada linha da tabela representa um `container` de um `registro` produzido a partir do preenchimento de campos em uma tela (Um `registro` é composto por 1 ou mais `containers`). As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
@@ -98,7 +98,56 @@ Cada linha da tabela representa um `container` de um `registro` produzido a part
 | `ID`                  | `long`    | Identificador único do `container` representado pela linha no contexto do `registro`. Um mesmo valor de `ID` nunca se repetirá para um mesmo `CODCADASTRO`. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
 | `PARENT_ID`           | `long`    | Identificador único do `container-pai` do `container` representado pela linha.
 | `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `registro` (`CODCADASTRO`) em questão.
-| `Demais Colunas`      | `variado` | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo.
+| `Demais Colunas`      | `variado` | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
+
+---
+
+### `DICTIONARIES`
+
+A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua representação textual. Sua chave primária é `KEY_VALUE`.
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
+    <th style="text-align:left">DISPLAY_ORDER</th>
+    <th style="text-align:left">KEY1 .. KEY*</th>
+    <th style="text-align:left">STR1 .. STR*</th>
+    <th style="text-align:left">INT1 .. INT*</th>
+    <th style="text-align:left">BIGINT1 .. BIGINT*</th>
+    <th style="text-align:left">FLOAT1 .. FLOAT*</th>
+    <th style="text-align:left">DATETIME1 .. DATETIME*</th>
+    <th style="text-align:left">LATLON1 .. LATLON*</th>
+  </tr>
+  <tr>
+    <td>int</td>
+    <td>int</td>
+    <td>long</td>
+    <td>varchar</td>
+    <td>long</td>
+    <td>int</td>
+    <td>long</td>
+    <td>string</td>
+    <td>long</td>
+    <td>float</td>
+    <td>DateTime</td>
+    <td>double</td>
+  </tr>
+</table>
+
+Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses itens são apresentados como alternativas em componentes do tipo `dropdown`, `autofilltextbox`, dentre outros, mas também são usados para outras finalidades. As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
+
+---
+
+### Exemplo
+
+Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web, como mostrado abaixo.
+
+
+
 
 Uma tela que registre, por exemplo, somente o Nome e CPF de uma pessoa, produzirá apenas 1 linha na tabela `VALUES`, e seu campo `PARENT_CONTAINER_ITEMID` conterá `-1`, indicando que os itens Nome e CPF estão localizados na raíz da tela.<br/><br/>Já uma tela que, além de registrar Nome e CPF de uma pessoa, também registre o Nome e CPF de seus filhos, produzirá mais de uma linha na tabela `VALUES`: Uma para representar a pessoa em si e outras para representar cada um dos filhos.
 
