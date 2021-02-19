@@ -54,7 +54,7 @@ As telas que compõem os módulos extraem e gravam dados em um banco de dados. C
 
 ### Tabela `VALUES`
 
-A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de operação do módulo ao qual está associada. Seu formato é:
+A tabela `VALUES` persiste no banco de dados os valores preenchidos pelos usuários nas telas do módulo ao qual está associada. Seu formato é:
 
 <table>
   <tr>
