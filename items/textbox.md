@@ -77,7 +77,7 @@ Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqu
 
 ---
 
-## Exemplo 1
+## Textbox - Exemplo 1
 
 A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
 
