@@ -45,7 +45,7 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 ## Persistência de Dados
 
-As telas que compõem os módulos extraem e gravam dados de/em um banco de dados. Cada módulo referencia sempre 7 (sete) tabelas do banco, das quais 5 (cinco) são tabelas de sistema - possuem o mesmo formato para todos os módulos -, e 2 (duas) são tabelas de projeto. As 2 (duas) tabelas de projeto são:
+As telas que compõem os módulos extraem e gravam dados de/em um banco de dados. Cada módulo utiliza sempre 7 (sete) tabelas do banco, das quais 5 (cinco) são tabelas de sistema - possuem o mesmo formato para todos os módulos -, e 2 (duas) são tabelas de projeto. As 2 (duas) tabelas de projeto são:
 
 - `VALUES`: <mark>Tabela de valores.</mark> Armazena os valores preenchidos pelos usuários.
 - `DICTIONARIES`: <mark>Tabela de dicionários.</mark> Armazena dicionários que traduzem um número em sua representação textual.
