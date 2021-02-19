@@ -32,20 +32,20 @@ Se desejar aprender ou aprimorar os seus conhecimentos sobre C#, recomendamos [e
 
 ## Instalação Inicial
 
-Antes de criar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo.
-
-1. Instale os programas:
+Antes de criar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo em seu computador:
 
 -- Visual Studio 2019 ou superior
 -- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 -- Microsoft Excel
 -- [Postman](https://www.postman.com/)
 
-2. Obtenha uma conta na plataforma GlobalCad. Para tal, [entre em contato](https://www.globalcad.com.br/contato) com a equipe GlobalCad.
+A seguir, siga os passos mostrados:
 
-3. Acesse a pasta Google Drive compartilhada pela GlobalCad logo após a liberação da sua conta na plataforma GlobalCad, e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`
+1. Obtenha uma conta na plataforma GlobalCad. Para tal, [entre em contato](https://www.globalcad.com.br/contato) com a equipe GlobalCad.
 
-4. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e visual para conectar-se ao GitHub, clonar repositórios, dentre outras operações.
+2. Acesse a pasta Google Drive compartilhada pela GlobalCad logo após a liberação da sua conta na plataforma GlobalCad, e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`
+
+3. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e visual para conectar-se ao GitHub, clonar repositórios, dentre outras operações.
 
 ---
 
