@@ -44,3 +44,5 @@ Em linhas gerais, a plataforma GlobalCad funciona da seguinte maneira:
 ## Instalação da Plataforma
 
 A plataforma GlobalCad deve ser instalada em um servidor Windows e precisa ter acesso de leitura e escrita a um banco de dados SQL Server. Se você não possuir um servidor Windows e/ou um banco de dados SQL Server, não há problema: A GlobalCad mantém servidores e bancos de dados na Microsoft Azure disponíveis para acomodar os seus projetos.
+
+[Próximo: Primeiros Passos](nextsteps.md){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
