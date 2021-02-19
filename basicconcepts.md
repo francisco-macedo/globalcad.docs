@@ -43,7 +43,7 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 ---
 
-## Gravação dos Dados
+## Persistência de Dados
 
 As telas que compõem os módulos extraem e gravam dados em um banco de dados. Cada módulo referencia sempre 7 (sete) tabelas do banco, das quais 5 (cinco) são tabelas de sistema - possuem o mesmo formato para todos os módulos -, e 2 (duas) são tabelas de projeto. As 2 (duas) tabelas de projeto são:
 
@@ -64,20 +64,20 @@ A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de o
     <th style="text-align:left">ID</th>
     <th style="text-align:left">PARENT_ID</th>
     <th style="text-align:left">REGISTRY_ORDER</th>
-    <th style="text-align:left">KEY1 .. KEYN</th>
-    <th style="text-align:left">STR1 .. STRN</th>
-    <th style="text-align:left">INT1 .. INTN</th>
-    <th style="text-align:left">BIGINT1 .. BIGINTN</th>
-    <th style="text-align:left">FLOAT1 .. FLOATN</th>
-    <th style="text-align:left">DATETIME1 .. DATETIMEN</th>
-    <th style="text-align:left">LATLON1 .. LATLONN</th>
+    <th style="text-align:left">KEY1 .. KEY*</th>
+    <th style="text-align:left">STR1 .. STR*</th>
+    <th style="text-align:left">INT1 .. INT*</th>
+    <th style="text-align:left">BIGINT1 .. BIGINT*</th>
+    <th style="text-align:left">FLOAT1 .. FLOAT*</th>
+    <th style="text-align:left">DATETIME1 .. DATETIME*</th>
+    <th style="text-align:left">LATLON1 .. LATLON*</th>
   </tr>
   <tr>
     <td>int</td>
     <td>int</td>
     <td>int</td>
-    <td>bigint</td>
-    <td>bigint</td>
+    <td>long</td>
+    <td>long</td>
     <td>int</td>
     <td>long</td>
     <td>string</td>
@@ -88,14 +88,17 @@ A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de o
   </tr>
 </table>
 
-Cada linha da tabela representa um registro ou parte de um registro produzido a partir do preenchimento de campos em uma tela. As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad, enquanto as demais colunas são colunas de projeto.
+Cada linha da tabela representa um `container` de um `registro` produzido a partir do preenchimento de campos em uma tela (Um `registro` pode ser composto por 1 ou mais `containers`). As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad, enquanto as demais colunas são colunas de projeto.
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | Identificador numérico do módulo, também chamado de `Slot do módulo`. Em uma mesma infraestrutura, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
-| `CODCADASTRO`         | `int`     | Identificador numérico de um registro produzido tipicamente a partir de uma das telas do módulo. Um registro pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de uma linha para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` às vezes se repete mais de uma vez na tabela `VALUES`.
-| `PARENT_CONTAINER_ITEMID`| `int`  | ID do item de tela considerado o pai do registro. `-1` = Item raíz. 
-| `ID`                  | `long`    | Identificador único da linha da tabela no contexto de um registro (`CODCADASTRO`). Um mesmo `ID` não se repete para um mesmo `CODCADASTRO`.
+| `CODCONTRATO`         | `int`     | Identificador numérico do módulo, também chamado de `Slot do módulo`. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
+| `CODCADASTRO`         | `int`     | Identificador numérico de um `registro` produzido tipicamente a partir de uma das telas do módulo. Um `registro` pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de um `container` para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` às vezes se repete mais de uma vez na tabela `VALUES`.
+| `PARENT_CONTAINER_ITEMID`| `int`  | ID do item de tela considerado o pai do `container` representado pela linha. Indica, basicamente, o nível do `container`. `-1` = Nível raíz. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
+| `ID`                  | `long`    | Identificador único do `container` representado pela linha no contexto do `registro`. Um mesmo valor de `ID` nunca se repetirá para um mesmo `CODCADASTRO`. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
+| `PARENT_ID`           | `long`    | Identificador único do `container-pai` do `container` representado pela linha.
+| `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `registro` (`CODCADASTRO`) em questão.
+| `Demais Colunas`      | `variado` | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo.
 
 Uma tela que registre, por exemplo, somente o Nome e CPF de uma pessoa, produzirá apenas 1 linha na tabela `VALUES`, e seu campo `PARENT_CONTAINER_ITEMID` conterá `-1`, indicando que os itens Nome e CPF estão localizados na raíz da tela.<br/><br/>Já uma tela que, além de registrar Nome e CPF de uma pessoa, também registre o Nome e CPF de seus filhos, produzirá mais de uma linha na tabela `VALUES`: Uma para representar a pessoa em si e outras para representar cada um dos filhos.
 
