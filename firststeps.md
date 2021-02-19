@@ -21,7 +21,7 @@ has_children: false
 
 ## Pré-requisitos
 
-Para criar sistemas na plataforma GlobalCad, é necessário o conhecimento em nível intermediário a avançado das seguintes linguagens de programação:
+Para criar sistemas na plataforma GlobalCad, é necessário possuir conhecimento de nível intermediário a avançado das seguintes linguagens de programação:
 
 - C#
 - SQL (ansi)
