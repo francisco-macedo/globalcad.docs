@@ -23,14 +23,14 @@ Propriedades de banco de dados determinam como e em que circunstâncias um item 
 
 ## Propriedades de Banco de Dados
 
-As propriedades de banco de dados estão divididas em 3 seções: Propriedades Gerais, Propriedades de Dicionários e Propriedades de Membros de Dicionários.
+As propriedades de banco de dados estão divididas em 3 seções: [Propriedades Gerais](#propriedades-gerais), [Propriedades de Dicionários](#propriedades-de-dicionários) e [Propriedades de Membros de Dicionários](#propriedades-de-membros-de-dicionários).
 
 ### Propriedades Gerais
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `VALUECol`            | `string`  | Tabela e coluna na qual o valor do item deve ser armazenado. Exemplo: `V.STR1` indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `V`. 
-| `VALUECols`           | `string`  | <mark>Aplicável somente a itens do tipo:</mark> `gps`. Indica a tabela e as colunas onde os valores da coordenada geográfica devem ser armazenados. Exemplo: `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1` indica que os campos `LATLON1`, ..., `INT1` devem armazenar os componentes da coordenada.<br/><br/>Você pode omitir campos da esquerda para a direita caso não precise dos mesmos. Por exemplo: `V.LATLON1,LATLON2,DATETIME1` é válido e indica ao sistema que apenas os componentes `Latitude`, `Longitude` e `Data/Hora de Coleta` da coordenada devem ser armazenados no banco.
+| `VALUECol`            | `string`  | Campo da tabela de valores na qual o valor do item deve ser armazenado. Exemplo: `V.STR1` indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `V`. 
+| `VALUECols`           | `string`  | <mark>Aplicável somente a itens do tipo:</mark> `gps`. Indica os campos da tabela de valores onde os valores da coordenada geográfica devem ser armazenados. Exemplo: `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1` indica que os campos `LATLON1`, ..., `INT1` devem armazenar os componentes da coordenada.<br/><br/>Você pode omitir campos da esquerda para a direita caso não precise dos mesmos. Por exemplo: `V.LATLON1,LATLON2,DATETIME1` é válido e indica ao sistema que apenas os componentes `Latitude`, `Longitude` e `Data/Hora de Coleta` da coordenada devem ser armazenados no banco.
 | `saveifinvisible`     | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está invisível. Default = `false`.
 | `saveifdisabled`      | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está inativo (Disabled). Default = `false`.
 | `saveifitemisnullorempty`| `bool` | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o valor do item é vazio. Default = `false`, <mark>o que significa que, por padrão, se o usuário atribuir um valor vazio a um item, o valor do item no banco de dados não será modificado.</mark>
@@ -47,6 +47,13 @@ As propriedades de banco de dados estão divididas em 3 seções: Propriedades G
 | `ownedDICTcontractalias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o slot da tabela de dicionários que será utilizado pelo item. Corresponde à coluna `CODCONTRATO` da tabela de dicionários.
 | `getDICTquery_CSharpCommand`| `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o código C# que fornece as opções de múltipla-escolha a serem apresentadas pelo item-dicionário. Default = `null`, o que indica à plataforma GlobalCad que ela deve responsabilizar-se por fornecer as opções a serem apresentadas pelo item-dicionário. [Clique aqui](#getdictquery_csharpcommand) para mais informações e para visualizar um código C# de exemplo.
 | `dsaddemptyitemchoice`| `bool`   | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Informa se o item-dicionário deve incluir em sua lista de múltipla escolha o valor `-` (Vazio). Default = `true`.<br/><br/>Suponhamos a existência de uma `dropdown` chamada País que fornece as seguintes escolhas: `Brasil`, `Colômbia`. Se `dsaddemptyitemchoice` = `false`, então, ao abrir a tela, a `dropdown` País nascerá com a opção `Brasil` selecionada. Caso contrário, se `dsaddemptyitemchoice` = `true`, a `dropdown` País nascerá com a opção `-` (Vazio) selecionada.
+
+### Propriedades de Membros de Dicionários
+
+| Propriedade           | Tipo      | Descrição                                                        |
+|:----------------------|:----------|:-----------------------------------------------------------------|
+| `memberDICTCol`       | `string`  | Campo da tabela de dicionários na qual o valor do item deve ser armazenado. Exemplo: D.STR1 indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `D`.
+| `memberDICTownerID`   | `int`     | ID do item-dicionário do qual o presente item é membro. [Clique aqui](#memberdictownerid) para mais informações.
 
 ---
 
