@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Instalação DevTools
+title: Instalação dos DevTools
 nav_order: 10
 has_children: false
 ---
