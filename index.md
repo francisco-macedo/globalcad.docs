@@ -41,6 +41,17 @@ Em linhas gerais, a plataforma GlobalCad funciona da seguinte maneira:
 
 ---
 
-## Instalação da Plataforma
+## Pré-requisitos
+
+Para criar sistemas na plataforma GlobalCad, é necessário possuir conhecimento de nível intermediário a avançado nas linguagens de programação a seguir:
+
+- C#
+- SQL (ansi)
+
+Se desejar aprender ou aprimorar os seus conhecimentos sobre C#, recomendamos [este guia introdutório](https://www.codecademy.com/learn/learn-c-sharp).
+
+---
+
+## Onde A Plataforma É Instalada?
 
 A plataforma GlobalCad deve ser instalada em um servidor Windows e precisa ter acesso de leitura e escrita a um banco de dados SQL Server. Se você não possuir um servidor Windows e/ou um banco de dados SQL Server, não há problema: A GlobalCad mantém servidores e bancos de dados na Microsoft Azure disponíveis para acomodar os seus projetos.
