@@ -47,4 +47,4 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 Os módulos desenvolvidos na plataforma GlobalCad lêem e armazenam dados de/em algumas tabelas do banco de dados. Cada módulo utiliza sempre 7 (sete) tabelas do banco, das quais 5 (cinco) são tabelas de sistema - possuem o mesmo formato para todos os módulos -, e 2 (duas) são tabelas de projeto. 
 
-[Clique aqui](#datapersistency.md) para saber detalhes sobre como os dados são persistidos no banco.
+[Clique aqui](datapersistency.md) para saber detalhes sobre como os dados são persistidos no banco.
