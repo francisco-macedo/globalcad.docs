@@ -23,7 +23,11 @@ Propriedades de banco de dados determinam como e em que circunstâncias um item 
 
 ## Propriedades de Banco de Dados
 
-As propriedades de banco de dados estão divididas em 3 seções: [Propriedades Gerais](#propriedades-gerais), [Propriedades de Dicionários](#propriedades-de-dicionários) e [Propriedades de Membros de Dicionários](#propriedades-de-membros-de-dicionários).
+As propriedades de banco de dados estão divididas em 3 seções:
+
+- [Propriedades Gerais](#propriedades-gerais)
+- [Propriedades de Dicionários](#propriedades-de-dicionários)
+- [Propriedades de Membros de Dicionários](#propriedades-de-membros-de-dicionários).
 
 ### Propriedades Gerais
 
