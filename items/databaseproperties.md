@@ -87,15 +87,13 @@ Note o trecho abaixo. É nele que especificamos que o dicionário `Estado` é fi
 
 Antes da execução do módulo anterior, é necessário popular o banco de dados com alguns países. Estados não são obrigatório, uma vez que estão representados por um campo do tipo `autofilltextbox`, permitindo a inserção de novos estados pelo próprio usuário. Vamos assumir que temos os seguintes valores em nossa tabela de dicionários:
 
-<div class="code-example">
-
 <table>
   <tr>
-    <th>CODCONTRATO</th>
-    <th>DICTID</th>
-    <th>KEY_VALUE</th>
-    <th>KEY_TEXT</th>
-    <th>PARENT_KEY</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
   </tr>
   <tr>
     <td>1000</td>
@@ -112,8 +110,6 @@ Antes da execução do módulo anterior, é necessário popular o banco de dados
     <td>null</td>
   </tr>
 </table>
-        
-</div>
 
 Na sequência, imaginemos que o usuário selecione o país `Brasil` e digite `Minas Gerais` na `autofilltextbox` de estado.
 
@@ -130,15 +126,13 @@ Estado: <input disabled>Minas Gerais</input>
 
 Ao salvar o registro, será criado um novo item na tabela de dicionários: O item `Minas Gerais`. Note que a coluna `PARENT_KEY` do item apontará para `Brasil`, pois configuramos essa relação de parentesco em nosso módulo. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
 
-<div class="code-example">
-
 <table>
   <tr>
-    <th>CODCONTRATO</th>
-    <th>DICTID</th>
-    <th>KEY_VALUE</th>
-    <th>KEY_TEXT</th>
-    <th>PARENT_KEY</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
   </tr>
   <tr>
     <td>1000</td>
@@ -162,34 +156,24 @@ Ao salvar o registro, será criado um novo item na tabela de dicionários: O ite
     <td><b>36</b></td>
   </tr>
 </table>
-        
-</div>
 
 Além de produzir um registro na tabela de dicionários, o salvamento do usuário também resultará na criação de um registro na tabela de valores:
 
-<div class="code-example">
-
 <table>
   <tr>
-    <th>CODCONTRATO</th>
-    <th>CODCADASTRO</th>
-    <th>PARENT_CONTAINER_ITEMID</th>
-    <th>ID</th>
-    <th>PARENT_ID</th>
-    <th>KEY1</th>
-    <th>KEY2</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">CODCADASTRO</th>
+    <th style="text-align:left">PARENT_CONTAINER_ITEMID</th>
+    <th style="text-align:left">KEY1</th>
+    <th style="text-align:left">KEY2</th>
   </tr>
   <tr>
     <td>1000</td>
     <td>459</td>
     <td>-1</td>
-    <td>202102171819509710</td>
-    <td>-1</td>
     <td><b>36</b></td>
     <td><b>38</b></td>
   </tr>
 </table>
-        
-</div>
 
 Os campos `KEY1` e `KEY2` da tabela de valores apontam, respectivamente, para o país `Brasil` (`KEY_VALUE = 36` na tabela de dicionários) e para o estado `Minas Gerais` (`KEY_VALUE = 38` na tabela de dicionários).
