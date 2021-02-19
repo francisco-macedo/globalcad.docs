@@ -6,7 +6,9 @@ has_children: false
 ---
 ## Bem-vindo
 
-Bem-vindo à documentação da plataforma de desenvolvimento [GlobalCad](https://www.globalcad.com.br). A plataforma GlobalCad viabiliza o rápido desenvolvimento de sistemas Mobile e Web. Trata-se de uma low-code development platform ([LCDP](https://en.wikipedia.org/wiki/Low-code_development_platform)) que acelera a implementação de sistemas complexos por um fator 10x ou superior.
+Bem-vindo à documentação da plataforma de desenvolvimento [GlobalCad](https://www.globalcad.com.br). A plataforma GlobalCad é uma low-code development platform ([LCDP](https://en.wikipedia.org/wiki/Low-code_development_platform)) que viabiliza o desenvolvimento ágil de sistemas Mobile e Web. 
+
+De fato, a plataforma GlobalCad acelera a implementação de sistemas complexos por um fator 10x ou superior. Em termos simples, um sistema complexo que requeira 10 meses para ser implementado nas plataformas Web e Mobile por 2 (dois) programadores usando tecnologia convencional pode ser facilmente implementado por apenas 1 (um) programador em menos de 1 mês utilizando a tecnologia GlobalCad.
 
 ### Multi-plataforma
 
