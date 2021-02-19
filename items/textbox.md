@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo textbox representam uma caixa de texto na qual os usuários podem inserir conteúdo.
+Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
 {: .fs-6 .fw-300 }
 
 ## Índice
@@ -23,8 +23,9 @@ Itens do tipo textbox representam uma caixa de texto na qual os usuários podem 
 
 ## Propriedades
 
-### showtitle
-
-Informa se o título da textbox deve ou não ser exibido.
-
+| Propriedade           | Descrição                                                        |
+|:----------------------|:-----------------------------------------------------------------|
+| `mask`                | Máscara a ser aplicada ao texto inserido. Combine os caracteres especiais abaixo com outros caracteres para criar uma máscara:
+-`#`: Número 
+| `hint`                | Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto o usuário não inserir o primeiro caractere.
 
