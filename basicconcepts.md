@@ -81,6 +81,7 @@ A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usu√
     <td>int</td>
     <td>long</td>
     <td>string</td>
+    <td>int</td>
     <td>long</td>
     <td>float</td>
     <td>DateTime</td>
