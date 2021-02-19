@@ -28,9 +28,63 @@ A tabela abaixo lista todas as propriedades de banco de dados.
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
 | `VALUECol`            | `string`  | Tabela e coluna na qual o valor do item deve ser armazenado. Exemplo: `V.STR1` indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `V`. 
-| `VALUECols`           | `string`  | <mark>Aplicável somente a itens do tipo `gps`.</mark> Indica a tabela e as colunas onde os valores da coordenada geográfica devem ser armazenados. Exemplo: `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1` indica que os campos `LATLON1`, ..., `INT1` devem armazenar os componentes da coordenada.<br/><br/>Você pode omitir campos da esquerda para a direita caso não precise dos mesmos. Por exemplo: `V.LATLON1,LATLON2,DATETIME1` é válido e indica ao sistema que apenas os componentes `Latitude`, `Longitude` e `Data/Hora de Coleta` da coordenada devem ser armazenados no banco.
+| `VALUECols`           | `string`  | <mark>Aplicável somente a itens do tipo:</mark> `gps`. Indica a tabela e as colunas onde os valores da coordenada geográfica devem ser armazenados. Exemplo: `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1` indica que os campos `LATLON1`, ..., `INT1` devem armazenar os componentes da coordenada.<br/><br/>Você pode omitir campos da esquerda para a direita caso não precise dos mesmos. Por exemplo: `V.LATLON1,LATLON2,DATETIME1` é válido e indica ao sistema que apenas os componentes `Latitude`, `Longitude` e `Data/Hora de Coleta` da coordenada devem ser armazenados no banco.
 | `saveifinvisible`     | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está invisível. Default = `false`.
 | `saveifdisabled`      | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está inativo (Disabled). Default = `false`.
 | `saveifitemisnullorempty`| `bool` | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o valor do item é vazio. Default = `false`, <mark>o que significa que, por padrão, se o usuário atribuir um valor vazio a um item, o valor do item no banco de dados não será modificado.</mark>
-| `cansavetoDICT`       | `bool`    | <mark>Aplicável somente a itens do tipo `autofilltextbox`</mark>. Indica se o valor inserido pelo usuário na `autofilltextbox` deve ser inserido na tabela de dicionários caso não exista na mesma. Default = `true`.
-| `savetodatabase`      | `bool`    | Indica se o item deve ser persistido no banco de dados. 
+| `cansavetoDICT`       | `bool`    | <mark>Aplicável somente a itens do tipo:</mark> `autofilltextbox`. Determina se o valor inserido pelo usuário na `autofilltextbox` deve ser inserido na tabela de dicionários caso não exista na mesma. Default = `true`.
+| `savetodatabase`      | `bool`    | Indica se o item deve ter o seu valor persistido no banco de dados. Se `false`, então mesmo que o item aponte para um campo no banco de dados, seu valor não será persistido. Default = `true`.<br/><br/>No caso específico de itens do tipo `autofilltextbox`, essa propriedade também determina se o valor do item deve ser inserido na tabela de dicionários. Existem cenários no qual uma `autofilltextbox` é inserida na tela sem apontar para um campo na tabela de valores. Nesse caso, se a propriedade `savetodatabase` não for modificada para `false`, serão inseridos novos itens na tabela de dicionários ainda que a `autofilltextbox` não aponte para um campo da tabela de valores.
+| `ownedDICTID`         | `int`     | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Indica o ID do dicionário do/no qual o item deve ler/gravar valores. Corresponde à coluna `DICTID` da tabela de dicionários.
+| `ownedDICTtablealias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o alias da tabela da/na qual o item deve ler/gravar valores. Tipicamente, usa-se o alias `D` para representar a tabela de dicionários associada ao módulo.
+| `parentDICTownerID`   | `int`     | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o ID do item que contém o dicionário pai do presente item. Por exemplo: Uma dropdown que representa `Estado` possivelmente será filha de outra `dropdown` que representa `País`.<br/><br/>Naturalmente, o `parentDICTownerID` deve representar um item que aponta para um dicionário, do contrário não poderia ser pai de outro dicionário. A única exceção diz respeito a itens do tipo `checkboxlist`: Esses não podem ser referenciados como `parentDICTownerID` de outros itens. [Clique aqui](#parentDICTownerID) para saber como a relação de pai-filho é materializada na tabela de dicionários.
+| `ownedDICTcontractalias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o slot da tabela de dicionários que será utilizado pelo item. Corresponde à coluna `CODCONTRATO` da tabela de dicionários.
+
+---
+
+### `parentDICTownerID`
+
+A propriedade `parentDICTownerID` é aplicável somente a itens que apontam para dicionários - Ou seja: `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o ID do item que contém o dicionário pai do presente item. Por exemplo: Uma dropdown que representa `Estado` possivelmente será filha de outra `dropdown` que representa `País`.
+
+<div class="code-example" markdown="1">
+
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+      </select>
+<br/>
+Estado: <select disabled>
+        <option value="Minas Gerais">Minas Gerais</option>
+      </select>
+<br/>
+
+</div>
+```markdown
+[
+  {
+    "id": 10,
+    "type": "dropdown",
+    "text": "País",
+    "VALUECol": "V.KEY1",
+    "ownedDICTID": 1,
+    "ownedDICTtablealias": "D",
+    "ownedDICTcontractalias": "SHARED"
+  },
+  {
+    "id": 20,
+    "type": "dropdown",
+    "text": "Estado",
+    "VALUECol": "V.KEY2",
+    "ownedDICTID": 2,
+    "ownedDICTtablealias": "D",
+    "ownedDICTcontractalias": "SHARED",
+    "parentDICTownerID": 10
+  }
+]
+```
+
+Note o trecho abaixo. É nele que especificamos que o dicionário `Estado` é filho do dicionário `País`.
+
+```
+    "parentDICTownerID": 10
+```
+
+
