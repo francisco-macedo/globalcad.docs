@@ -43,14 +43,14 @@ Se tivermos um formulário com uma `dropdown` e uma `textbox` e quisermos que a 
 
 <div class="code-example" markdown="1">
 
-Fruta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select disabled>
+Fruta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select disabled>
         <option value="Abacaxi">Abacaxi</option>
         <option value="Laranja">Laranja</option>
         <option value="Mamão">Mamão</option>
         <option value="Banana">Banana</option>
       </select>
 <br/>
-Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input disabled />
+Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input />
 
 </div>
 ```markdown
