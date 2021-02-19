@@ -47,8 +47,8 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 As telas que compõem os módulos extraem e gravam dados em um banco de dados. Cada módulo referencia sempre 7 (sete) tabelas do banco, das quais 5 (cinco) são tabelas de sistema - possuem o mesmo formato para todos os módulos -, e 2 (duas) são tabelas de projeto. As 2 (duas) tabelas de projeto são:
 
-- `VALUES`: Armazena os valores preenchidos pelos usuários.
-- `DICTIONARIES`: Armazena dicionários que traduzem um número em sua representação textual.
+- `VALUES`: <mark>Tabela de valores.</mark> Armazena os valores preenchidos pelos usuários.
+- `DICTIONARIES`: <mark>Tabela de dicionários.</mark> Armazena dicionários que traduzem um número em sua representação textual.
 
 ---
 
@@ -99,6 +99,8 @@ Cada linha da tabela representa um `container` de um `registro` produzido a part
 | `PARENT_ID`           | `long`    | Identificador único do `container-pai` do `container` representado pela linha.
 | `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `registro` (`CODCADASTRO`) em questão.
 | `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
+
+A <mark>chave-primária</mark> da tabela `VALUES` é `CODCONTRATO`, `CODCADASTRO`, `ID`.
 
 ---
 
@@ -161,13 +163,13 @@ Form Designer.xlsx
 
 <div class="code-example">
 
-Nome: <input disabled value="" />
+Nome: <input disabled value="" /> ## Configurado para salvar o valor na `VALUES.STR1`
 <br/>
-Idade: <input disabled value="" />
+Idade: <input disabled value="" /> ## Configurado para salvar o valor na `VALUES.INT1`
 <br/>
 País: <select disabled>
         <option value="Brasil">Brasil</option>
-      </select>
+      </select> ## Configurado para salvar o valor na `VALUES.KEY1`
 
 </div>
 
@@ -185,4 +187,48 @@ País: <select disabled>
 
 </div>
 
+Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários, caso ainda não exista: O item `Brasil`. Note que a coluna `PARENT_KEY` do item apontará para `null`, pois o item em questão não é filho de nenhum outro `item de dicionário`. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários. Portanto, pode-se dizer que o país `Brasil` é unicamente identificado pelo numeral `415`. 
 
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1</td>
+    <td><b>415</b></td>
+    <td>Brasil</td>
+    <td>null</td>
+  </tr>
+</table>
+
+Além de produzir um registro na tabela de dicionários, a operação de salvamento também criará um novo registro na tabela de valores:
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">CODCADASTRO</th>
+    <th style="text-align:left">PARENT_CONTAINER_ITEMID</th>
+    <th style="text-align:left">ID</th>
+    <th style="text-align:left">PARENT_ID</th>
+    <th style="text-align:left">STR1</th>
+    <th style="text-align:left">INT1</th>
+    <th style="text-align:left">KEY1</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>459</td>
+    <td>-1</td>
+    <td>202102171819509710</td>
+    <td>-1</td>
+    <td>Juliana Souza</td>
+    <td>32</td>
+    <td><b>415</b></td>
+  </tr>
+</table>
+
+O campo `KEY1` da tabela de valores (`VALUES`) aponta para o país `Brasil` (`KEY_VALUE = 415` na tabela de dicionários - `DICTIONARIES`).
