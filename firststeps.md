@@ -21,7 +21,7 @@ has_children: false
 
 ## Pré-requisitos
 
-Para criar sistemas na plataforma GlobalCad, é necessário o domínio das seguintes linguagens:
+Para criar sistemas na plataforma GlobalCad, é necessário o conhecimento em nível intermediário a avançado das seguintes linguagens de programação:
 
 - C#
 - SQL (ansi)
@@ -32,7 +32,7 @@ Se você não conhece C#, recomendamos [este guia introdutório](https://www.cod
 
 ## Instalação Inicial
 
-Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo.
+Antes de criar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo.
 
 1. Instale os programas:
 
@@ -46,3 +46,9 @@ Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos 
 3. Acesse a pasta Google Drive compartilhada pela GlobalCad logo após a liberação da sua conta na plataforma GlobalCad, e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`
 
 4. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e visual para conectar-se ao GitHub, clonar repositórios, dentre outras operações.
+
+---
+
+## O Form Designer
+
+...
