@@ -17,14 +17,16 @@ De fato, a plataforma GlobalCad acelera a implementação de sistemas complexos 
 
 ---
 
-## Multi-plataforma
+## Características e Requisitos
+
+### Multi-plataforma
 
 Os sistemas desenvolvidos na plataforma GlobalCad podem ser acessados através de:
 
 - Browsers ([Clique aqui](https://app.globalcad.com.br))
 - Celulares e tablets Android (Baixe o [app GlobalCad](https://play.google.com/store/apps/details?id=globalcad.services) na Google Play)
 
-## Pré-requisitos
+### Pré-requisitos
 
 Para criar sistemas na plataforma GlobalCad, é necessário o domínio das seguintes linguagens:
 
