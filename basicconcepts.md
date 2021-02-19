@@ -154,13 +154,24 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 ### Exemplo
 
-Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web, como mostrado abaixo.
+Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web e visa coletar alguns dados de uma pessoa, como demonstrado abaixo.
 
+<div class="code-example" markdown="1">
 
+Nome: <input disabled value="" />
+Idade: <input disabled value="" />
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+        <option value="Brasil">Brasil</option>
+      </select>
 
+</div>
+```markdown
 
-Uma tela que registre, por exemplo, somente o Nome e CPF de uma pessoa, produzirá apenas 1 linha na tabela `VALUES`, e seu campo `PARENT_CONTAINER_ITEMID` conterá `-1`, indicando que os itens Nome e CPF estão localizados na raíz da tela.<br/><br/>Já uma tela que, além de registrar Nome e CPF de uma pessoa, também registre o Nome e CPF de seus filhos, produzirá mais de uma linha na tabela `VALUES`: Uma para representar a pessoa em si e outras para representar cada um dos filhos.
+Form Designer.xlsx
+{: .label .label-green }
 
-As colunas `KEY*`, `STR*`, `INT*`, `BIGINT*`, `FLOAT*`, `DATETIME*` e `LATLON*`
+```
+
 
 
