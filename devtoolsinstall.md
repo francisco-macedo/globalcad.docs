@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Primeiros Passos
+title: Instalação DevTools
 nav_order: 10
 has_children: false
 ---
 
-# Primeiros Passos
+# Instalação das Ferramentas de Desenvolvimento
 {: .no_toc }
 
 <details open markdown="block">
