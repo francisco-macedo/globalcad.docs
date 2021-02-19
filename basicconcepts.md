@@ -52,7 +52,7 @@ As telas que compõem os módulos extraem e gravam dados em um banco de dados. C
 
 ---
 
-### `VALUES`
+### Tabela `VALUES`
 
 A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de operação do módulo ao qual está associada. Seu formato é:
 
@@ -104,7 +104,7 @@ A <mark>chave-primária</mark> da tabela `VALUES` é `CODCONTRATO`, `CODCADASTRO
 
 ---
 
-### `DICTIONARIES`
+### Tabela `DICTIONARIES`
 
 A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua representação textual. Sua chave primária é `KEY_VALUE`.
 
