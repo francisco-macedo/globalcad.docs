@@ -188,6 +188,9 @@ A propriedade `getDICTquery_CSharpCommand` é aplicável somente a itens que apo
 
 Para associar um arquivo C# à propriedade `getDICTquery_CSharpCommand`, insira o valor `'@import SEU_ARQUIVO.cs` na célula `getDICTquery_CSharpCommand` do Form Designer, onde `SEU_ARQUIVO.cs` corresponde ao nome do arquivo C#. O arquivo deve estar na mesma pasta onde se encontra o Form Designer.
 
+Form Designer.xlsx
+{: .label .label-green }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
@@ -205,5 +208,107 @@ Para associar um arquivo C# à propriedade `getDICTquery_CSharpCommand`, insira 
   </tr>
 </table>
 
-O código C# abaixo mostra como trazer apenas alguns países do dicionário País
+Para exemplificar como escrever um código C# que traz apenas alguns registros, assumiremos a existência de um dicionário País armazenado no slot `SHARED`, configurado com `DICTID = 12`. Eis o conteúdo da tabela de dicionários:
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>12</td>
+    <td>36</td>
+    <td>Brasil</td>
+    <td>null</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>12</td>
+    <td>37</td>
+    <td>Colômbia</td>
+    <td>null</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>12</td>
+    <td>38</td>
+    <td>Estados Unidos</td>
+    <td>null</td>
+  </tr>
+</table>
+
+O código C# listado abaixo pode ser vinculado à propriedade `getDICTquery_CSharpCommand` e revela como entregar, ao item associado, apenas as alternativas `Brasil` e `Colômbia`, ao invés de todos os países do dicionário.
+
+```csharp
+using System;
+using System.Text;
+using System.Linq;
+using System.Collections.Generic;
+using Project.WebHost.Db;
+using Project.WebHost.Cad;
+using Project.WebHost.Common;
+using Project.WebHost_Providers.Common;
+using Project.WebHost_Providers.GenericProvider.Utils;
+using Project.WebHost_Providers.GenericProvider.Model;
+using Project.WebHost_Providers.GenericProvider.Model.Items;
+using Project.WebHost_Providers.GenericProvider.Model.Database;
+namespace CustomCode
+{
+    public class CustomCode
+    {
+        static public void Main(object[] parms)
+        {
+            // Get parameters.
+            DbConnection Cn = (DbConnection)parms[0];
+            DbTransaction Tr = (DbTransaction)parms[1];
+            CallerData callerData = (CallerData)parms[2];
+            ProviderProject providerProject = (ProviderProject)parms[3];
+            Form form = (Form)parms[4];
+            decimal defaultContract = (decimal)parms[5];
+            FormItem item = (FormItem)parms[6];
+            StringBuilder query = (StringBuilder)parms[7];
+            int idxForNewFilters = (int)parms[8];
+            bool getFullDICT = (bool)parms[9];
+            string getPartialDICT_Prefix = (string)parms[10];
+            string getPartialDICT_ParentKey = (string)parms[11];
+            IsvCadProvider svCadProvider = (IsvCadProvider)parms[12];
+            GetSetCadInputData getSetCadInputData = (GetSetCadInputData)parms[13];
+            
+            #region Get_Tables_Names
+            string VALUETableAlias, DICTTableAlias, VALUESTableName, DICTTableName;
+            form.GetVALUESAndDICTIONARIESTablesAliasesAndNames(out VALUETableAlias, out DICTTableAlias, out VALUESTableName, out DICTTableName);
+            string HEADERSTableName = form.GetHEADERSTableNameOrThrowIfNotFound();
+            string USERSTableName = form.GetUSERSTableName();  // Get USERS table.
+            #endregion
+            
+            // Get shared contract.
+            decimal sharedContract = form.GetContractFromAliasOrThrowIfNotFound("SHARED");
+            
+            // Run query that brings dictionary excluding certain registries.
+            // If getFullDICT = false, bring only partial data (top 10 registries that begin with 'getPartialDICT_Prefix').
+            query.Clear();
+            query.Append(string.Format(@"
+            	select {0} d.CODCONTRATO, d.KEY_VALUE, d.KEY_TEXT, d.DISPLAY_ORDER, d.PARENT_KEY
+            	from   {1} d
+            	where  d.CODCONTRATO = {2}
+            	and    d.DICTID = 12
+            	and    d.KEY_TEXT in ('Brasil', 'Colômbia')
+            	{3}
+            	{4}
+            	order by d.DISPLAY_ORDER asc
+            	"
+            	, getFullDICT ? "" : "top 10"
+            	, DICTTableName
+            	, sharedContract
+            	, getFullDICT ? "" : string.Format("and    d.KEY_TEXT COLLATE SQL_Latin1_General_CP1_CI_AI like '{0}%'", getPartialDICT_Prefix)
+            	, GetDICTQueryUtils.GetRemoteFilterExpression(parms, "d.KEY_VALUE", "d.KEY_TEXT")  // Remote filter. Mandatory when operating in 'remote' mode.
+            	));
+        }
+    }
+}
+```
 
