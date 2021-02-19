@@ -64,13 +64,13 @@ A tabela `VALUES` armazena os valores preenchidos pelos usuários nas telas de o
     <th style="text-align:left">ID</th>
     <th style="text-align:left">PARENT_ID</th>
     <th style="text-align:left">REGISTRY_ORDER</th>
-    <th style="text-align:left">KEY1 .. KEY*</th>
-    <th style="text-align:left">STR1 .. STR*</th>
-    <th style="text-align:left">INT1 .. INT*</th>
-    <th style="text-align:left">BIGINT1 .. BIGINT*</th>
-    <th style="text-align:left">FLOAT1 .. FLOAT*</th>
-    <th style="text-align:left">DATETIME1 .. DATETIME*</th>
-    <th style="text-align:left">LATLON1 .. LATLON*</th>
+    <th style="text-align:left">KEY1..KEY*</th>
+    <th style="text-align:left">STR1..STR*</th>
+    <th style="text-align:left">INT1..INT*</th>
+    <th style="text-align:left">BIGINT1..BIGINT*</th>
+    <th style="text-align:left">FLOAT1..FLOAT*</th>
+    <th style="text-align:left">DATETIME1..DATETIME*</th>
+    <th style="text-align:left">LATLON1..LATLON*</th>
   </tr>
   <tr>
     <td>int</td>
@@ -114,13 +114,13 @@ A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua repre
     <th style="text-align:left">KEY_TEXT</th>
     <th style="text-align:left">PARENT_KEY</th>
     <th style="text-align:left">DISPLAY_ORDER</th>
-    <th style="text-align:left">KEY1 .. KEY*</th>
-    <th style="text-align:left">STR1 .. STR*</th>
-    <th style="text-align:left">INT1 .. INT*</th>
-    <th style="text-align:left">BIGINT1 .. BIGINT*</th>
-    <th style="text-align:left">FLOAT1 .. FLOAT*</th>
-    <th style="text-align:left">DATETIME1 .. DATETIME*</th>
-    <th style="text-align:left">LATLON1 .. LATLON*</th>
+    <th style="text-align:left">KEY1..KEY*</th>
+    <th style="text-align:left">STR1..STR*</th>
+    <th style="text-align:left">INT1..INT*</th>
+    <th style="text-align:left">BIGINT1..BIGINT*</th>
+    <th style="text-align:left">FLOAT1..FLOAT*</th>
+    <th style="text-align:left">DATETIME1..DATETIME*</th>
+    <th style="text-align:left">LATLON1..LATLON*</th>
   </tr>
   <tr>
     <td>int</td>
