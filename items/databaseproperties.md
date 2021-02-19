@@ -157,7 +157,7 @@ Ao salvar o registro, será criado um novo item na tabela de dicionários: O ite
   </tr>
 </table>
 
-Além de produzir um registro na tabela de dicionários, o salvamento do usuário também resultará na criação de um registro na tabela de valores:
+Além de produzir um registro na tabela de dicionários, a operação de salvamento também criará um novo registro na tabela de valores:
 
 <table>
   <tr>
