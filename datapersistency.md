@@ -85,7 +85,7 @@ A <mark>chave-primária</mark> da tabela `VALUES` é `CODCONTRATO`, `CODCADASTRO
 
 ---
 
-### Tabela `DICTIONARIES`
+## Tabela `DICTIONARIES`
 
 A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua representação textual. Sua chave primária é `KEY_VALUE`.
 
@@ -135,24 +135,24 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 ---
 
-### Exemplo de Persistência
+## Exemplo de Persistência
 
-Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web e visa coletar alguns dados de uma pessoa, como demonstrado abaixo.
+Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que visa coletar dados de pessoas entrevistadas, como demonstrado abaixo.
 
 Form Designer.xlsx
 {: .label .label-green }
 
 <div class="code-example">
 
-<span style="white-space: nowrap">Nome: <input disabled value="" />&nbsp;&nbsp;--> Configurado para salvar o valor na VALUES.STR1</span>
+<span style="white-space: nowrap">Nome: <input disabled value="" />&nbsp;&nbsp;>> Configurado para salvar o valor na VALUES.STR1</span>
 <br/>
-<span style="white-space: nowrap">Idade: <input disabled value="" />&nbsp;&nbsp;--> Configurado para salvar o valor na VALUES.INT1</span>
+<span style="white-space: nowrap">Idade: <input disabled value="" />&nbsp;&nbsp;>> Configurado para salvar o valor na VALUES.INT1</span>
 <br/>
-<span style="white-space: nowrap">País: <select disabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp;--> Configurado para salvar o valor na VALUES.KEY1</span>
+<span style="white-space: nowrap">País: <select disabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp;>> Configurado para salvar o valor na VALUES.KEY1</span>
 
 </div>
 
-Na sequência, um usuário do sistema cria um novo registro e o preenche com as seguintes informações:
+Imaginemos que, após o lançamento do módulo, um usuário crie um novo registro e o preencha com as seguintes informações:
 
 <div class="code-example">
 
