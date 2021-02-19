@@ -1,52 +1,34 @@
 ---
 layout: default
 title: Primeiros Passos
-nav_order: 1
+nav_order: 2
 has_children: false
 ---
 ## Primeiros Passos
 
-1. Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo:
+Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo:
+
+1. Instale os programas a seguir:
 
 - Visual Studio 2019 ou superior
 - [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
 - Microsoft Excel
 - [Postman](https://www.postman.com/)
 
-### Autenticação
+2. Obtenha uma conta na plataforma GlobalCad. Para tal, [entre em contato](https://www.globalcad.com.br/contato) com a equipe GlobalCad.
 
-Siga os passos abaixo
+3. Acesse a pasta Google Drive compartilhada pela GlobalCad logo após a liberação da sua conta na plataforma GlobalCad, e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`
 
-A seguir, baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx` localizado no Google Drive 
+4. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e visual para conectar-se ao GitHub, clonar repositórios, etc.
 
-### Markdown
+### Funcionamento da Plataforma
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+O GlobalCad funciona da seguinte maneira:
 
-```markdown
-Syntax highlighted code block
+1. O seu projeto é empacotado e enviado ao servidor no qual a plataforma GlobalCad está instalada.
 
-# Header 1
-## Header 2
-### Header 3
+2. Usando um navegador de Internet qualquer, os usuários acessam o endereço do servidor onde a plataforma GlobalCad reside. Em resposta, a plataforma renderiza o seu projeto para os chamadores. Os usuários também podem baixar o aplicativo GlobalCad para Android para acessar o seu projeto. O aplicativo se comunicará com o servidor para receber instruções sobre como renderizar o seu projeto, e o executará em modo offline para os operadores. 
 
-- Bulleted
-- List
+### Local da Plataforma
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/francisco-macedo/globalcad.docs/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+A plataforma GlobalCad precisa ser instalada em um servidor Windows e precisa ter acesso de leitura e escrita em um banco de dados SQL Server para que seja capaz de receber e renderizar projetos. Se você não possuir um servidor Windows e/ou um banco de dados SQL Server, não há problema: A GlobalCad mantém servidores e bancos de dados na Microsoft Azure disponíveis para receber e renderizar os seus projetos.
