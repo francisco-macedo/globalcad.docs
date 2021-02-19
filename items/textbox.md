@@ -65,6 +65,12 @@ Para construir uma máscara que formata o texto como um número com 2 casas deci
 
 ---
 
+## Propriedades Básicas
+
+Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+
+---
+
 ## Propriedades de Banco de Dados
 
 Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
