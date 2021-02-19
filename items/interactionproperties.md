@@ -69,8 +69,8 @@ Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input />
     "type": "textbox",
     "text": "Observações",
     "VALUECol": "V.STR1",
-    ##"activationparentid": 10,
-    ##"activationparentvalue": "Abacaxi|Laranja"
+    **"activationparentid": 10,**
+    **"activationparentvalue": "Abacaxi|Laranja"**
   }
 ]
 ```
