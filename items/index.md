@@ -17,12 +17,36 @@ As telas que compõem os seus módulos são compostas por itens. Itens represent
 
 ---
 
-## Propriedades Elementares
+## Onde Inserir Itens
 
-Todos os itens, sem exceção, possuem 2 propriedades elementares:
+Os itens são inseridos e suas propriedades são configuradas nas seguintes abas do Form Designer.xlsx:
 
-| Propriedade           | Descrição                                                        |
-|:----------------------|:-----------------------------------------------------------------|
-| `ID`                  | Número que identifica unicamente o item. Em um mesmo módulo, não são permitidos 2 itens com o mesmo ID.
-| `level`               | Nível de exibição do item. Inicia em 1.
+- items
+- items (setup)
+- items (print)
+- items (web)
+
+Ao inserir um item no Form Designer, é necessário, no mínimo, informar o seu nível de exibição (`level`), seu `id` numérico único, seu tipo (`type`) e representação textual (`text`).
+
+Form Designer.xlsx
+{: .label .label-green }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">id</th>
+    <th style="text-align:left">type</th>
+    <th style="text-align:left">text</th>
+    <th style="text-align:left">...</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>10</td>
+    <td>textbox</td>
+    <td>País</td>
+    <td>...</td>
+  </tr>
+</table>
+
+
 
