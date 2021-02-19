@@ -1,8 +1,14 @@
-## Welcome to GitHub Pages
+---
+layout: default
+title: Primeiros Passos
+nav_order: 1
+has_children: false
+---
+## Primeiros Passos
 
-You can use the [editor on GitHub](https://github.com/francisco-macedo/globalcad.docs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo em seu computador:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+
 
 ### Markdown
 
