@@ -210,4 +210,4 @@ Além de produzir um registro na tabela de dicionários, a operação de salvame
   </tr>
 </table>
 
-O campo `KEY1` da tabela de valores (`VALUES`) aponta para o país `Brasil` (`KEY_VALUE = 415` na tabela de dicionários - `DICTIONARIES`).
+O campo `KEY1` da tabela de valores (`VALUES`) aponta para o país `Brasil` (`KEY_VALUE = 415` na tabela `DICTIONARIES`).
