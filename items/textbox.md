@@ -34,6 +34,24 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 ---
 
+## Propriedades Básicas
+
+Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+
+---
+
+## Propriedades de Banco de Dados
+
+Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+
+---
+
+## Propriedades de Interação
+
+Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
+
+---
+
 ### `mask`
 
 A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
@@ -62,24 +80,6 @@ Para construir uma máscara que formata o texto como um número com 2 casas deci
 ```
 {decimal:2}
 ```
-
----
-
-## Propriedades Básicas
-
-Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
-
----
-
-## Propriedades de Banco de Dados
-
-Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
-
----
-
-## Propriedades de Interação
-
-Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
