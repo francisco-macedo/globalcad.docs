@@ -34,10 +34,10 @@ Se desejar aprender ou aprimorar os seus conhecimentos sobre C#, recomendamos [e
 
 Antes de criar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo em seu computador:
 
--- Visual Studio 2019 ou superior
--- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
--- Microsoft Excel
--- [Postman](https://www.postman.com/)
+- Visual Studio 2019 ou superior
+- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+- Microsoft Excel
+- [Postman](https://www.postman.com/)
 
 A seguir, siga os passos mostrados:
 
