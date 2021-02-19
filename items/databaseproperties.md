@@ -38,6 +38,8 @@ A tabela abaixo lista todas as propriedades de banco de dados.
 | `ownedDICTtablealias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o alias da tabela da/na qual o item deve ler/gravar valores. Tipicamente, usa-se o alias `D` para representar a tabela de dicionários associada ao módulo.
 | `parentDICTownerID`   | `int`     | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o ID do item que contém o dicionário pai do presente item. Por exemplo: Um item-dicionário que representa `Estado` possivelmente será filho de outro que representa `País`.<br/><br/>Naturalmente, o `parentDICTownerID` deve representar um item que aponta para um dicionário, do contrário não poderia ser pai de outro dicionário. A única exceção diz respeito a itens do tipo `checkboxlist`: Esses não podem ser referenciados como `parentDICTownerID` de outros itens. [Clique aqui](#parentdictownerid) para saber como a relação de pai-filho é materializada na tabela de dicionários.
 | `ownedDICTcontractalias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o slot da tabela de dicionários que será utilizado pelo item. Corresponde à coluna `CODCONTRATO` da tabela de dicionários.
+| `getDICTquery_CSharpCommand`| `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o código C# que fornece as opções de múltipla-escolha a serem apresentadas pelo item-dicionário. Default = `null`, o que indica à plataforma GlobalCad que ela deve responsabilizar-se por fornecer as opções a serem apresentadas pelo item-dicionário. [Clique aqui](#getdictquery_csharpcommand) para mais informações e para visualizar um código C# de exemplo.
+| `dsaddemptyitemchoice`| `bool`   | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Informa se o item-dicionário deve incluir em sua lista de múltipla escolha o valor `-` (Vazio). Default = `true`.<br/><br/>Suponhamos a existência de uma `dropdown` chamada País que fornece as seguintes escolhas: `Brasil`, `Colômbia`. Se `dsaddemptyitemchoice` = `false`, então, ao abrir a tela, a `dropdown` País nascerá com a opção `Brasil` selecionada. Caso contrário, se `dsaddemptyitemchoice` = `true`, a `dropdown` País nascerá com a opção `-` (Vazio) selecionada.
 
 ---
 
@@ -177,3 +179,31 @@ Além de produzir um registro na tabela de dicionários, a operação de salvame
 </table>
 
 Os campos `KEY1` e `KEY2` da tabela de valores apontam, respectivamente, para o país `Brasil` (`KEY_VALUE = 36` na tabela de dicionários) e para o estado `Minas Gerais` (`KEY_VALUE = 38` na tabela de dicionários).
+
+---
+
+### `getDICTquery_CSharpCommand`
+
+A propriedade `getDICTquery_CSharpCommand` é aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Ela representa o código C# que fornece as opções de múltipla-escolha a serem apresentadas pelo item-dicionário. O seu valor padrão é `null`, o que indica à plataforma GlobalCad que ela deve responsabilizar-se por fornecer as opções a serem apresentadas pelo item-dicionário.
+
+Para associar um arquivo C# à propriedade `getDICTquery_CSharpCommand`, insira o valor `'@import SEU_ARQUIVO.cs` na célula `getDICTquery_CSharpCommand` do Form Designer, onde `SEU_ARQUIVO.cs` corresponde ao nome do arquivo C#. O arquivo deve estar na mesma pasta onde se encontra o Form Designer.
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">id</th>
+    <th style="text-align:left">text</th>
+    <th style="text-align:left">...</th>
+    <th style="text-align:left">getDICTquery_CSharpCommand</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>10</td>
+    <td>País</td>
+    <td>...</td>
+    <td>'@import SEU_ARQUIVO.cs</td>
+  </tr>
+</table>
+
+O código C# abaixo mostra como trazer apenas alguns países do dicionário País
+
