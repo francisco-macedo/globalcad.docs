@@ -66,10 +66,10 @@ A tela abaixo revela uma caixa de texto configurada para formatar o texto inseri
 
 <div class="code-example" markdown="1">
 
-CPF: <input placeholder="Insira aqui o CPF" />
+CPF: <input disabled placeholder="Insira aqui o CPF" />
 
 </div>
-```markdown
+```markdown json
 [
   {
     "id": 10,
