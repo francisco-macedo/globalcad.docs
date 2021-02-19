@@ -388,7 +388,6 @@ Antes de executar a tela apresentada, suponhamos que temos os seguintes dados na
     <th style="text-align:left">DICTID</th>
     <th style="text-align:left">KEY_VALUE</th>
     <th style="text-align:left">KEY_TEXT</th>
-    <th style="text-align:left">PARENT_KEY</th>
     <th style="text-align:left">FLOAT1</th>
   </tr>
   <tr>
@@ -397,14 +396,12 @@ Antes de executar a tela apresentada, suponhamos que temos os seguintes dados na
     <td>36</td>
     <td>Brasil</td>
     <td>null</td>
-    <td>null</td>
   </tr>
   <tr>
     <td>1000</td>
     <td>1</td>
     <td>37</td>
     <td>Colômbia</td>
-    <td>null</td>
     <td>null</td>
   </tr>
 </table>
@@ -429,7 +426,6 @@ Ao salvar o registro, o registro do país `Brasil` na tabela de dicionários ter
     <th style="text-align:left">DICTID</th>
     <th style="text-align:left">KEY_VALUE</th>
     <th style="text-align:left">KEY_TEXT</th>
-    <th style="text-align:left">PARENT_KEY</th>
     <th style="text-align:left">FLOAT1</th>
   </tr>
   <tr>
@@ -437,7 +433,6 @@ Ao salvar o registro, o registro do país `Brasil` na tabela de dicionários ter
     <td>1</td>
     <td>36</td>
     <td>Brasil</td>
-    <td>null</td>
     <td><b>0,765</b></td>
   </tr>
   <tr>
@@ -445,7 +440,6 @@ Ao salvar o registro, o registro do país `Brasil` na tabela de dicionários ter
     <td>1</td>
     <td>37</td>
     <td>Colômbia</td>
-    <td>null</td>
     <td>null</td>
   </tr>
 </table>
