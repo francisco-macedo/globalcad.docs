@@ -131,7 +131,7 @@ Antes de executar a tela apresentada, é necessário popular o banco de dados co
   </tr>
 </table>
 
-Na sequência, imaginemos que o usuário selecione o país `Brasil` e digite `Minas Gerais` na `autofilltextbox` de estado.
+Na sequência, imaginemos que o usuário inicie o preenchimento de um novo registro, selecione o país `Brasil` e digite `Minas Gerais` na `autofilltextbox` de estado.
 
 <div class="code-example">
 
@@ -346,7 +346,7 @@ País: <select disabled>
         <option value="Brasil">Brasil</option>
       </select>
 <br/>
-IDH: <input disabled value="0,765" />
+IDH: <input disabled />
 
 </div>
 ```markdown
@@ -380,7 +380,7 @@ Note o trecho abaixo. É nele que especificamos que o item `IDH` é um membro do
 
 O que esse trecho nos diz é que o valor do item `IDH` deve ser armazenado no campo `FLOAT1` da tabela dicionários, no mesmo registro onde se encontra o valor do `País` selecionado.
 
-Suponhamos que, antes de abrir a tela, tenhamos os seguintes dados na tabela de dicionários:
+Antes de executar a tela apresentada, suponhamos que temos os seguintes dados na tabela de dicionários:
 
 <table>
   <tr>
@@ -409,3 +409,62 @@ Suponhamos que, antes de abrir a tela, tenhamos os seguintes dados na tabela de 
   </tr>
 </table>
 
+Na sequência, imaginemos que o usuário inicie o preenchimento de um novo registro, selecione o país `Brasil` e digite `0,765` no campo `IDH`.
+
+<div class="code-example">
+
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+      </select>
+<br/>
+IDH: <input disabled value="0,765" />
+
+</div>
+
+Ao salvar o registro, o registro do país `Brasil` na tabela de dicionários terá o seu `IDH` atualizado. Isso significa que o campo `FLOAT1` será atualizado, já que o valor de `IDH` é armazenado no campo `FLOAT1` da tabela de dicionários. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
+    <th style="text-align:left">FLOAT1</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1</td>
+    <td>36</td>
+    <td>Brasil</td>
+    <td>null</td>
+    <td><b>0,765</b></td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1</td>
+    <td>37</td>
+    <td>Colômbia</td>
+    <td>null</td>
+    <td>null</td>
+  </tr>
+</table>
+
+Além de atualizar um registro na tabela de dicionários, a operação de salvamento criará um novo registro na tabela de valores:
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">CODCADASTRO</th>
+    <th style="text-align:left">PARENT_CONTAINER_ITEMID</th>
+    <th style="text-align:left">KEY1</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>459</td>
+    <td>-1</td>
+    <td><b>36</b></td>
+  </tr>
+</table>
+
+O campo `KEY1` da tabela de valores aponta para o país `Brasil` (`KEY_VALUE = 36` na tabela de dicionários).
