@@ -53,7 +53,7 @@ Fruta:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n
 Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input />
 
 </div>
-```js
+```markdown
 [
   {
     "id": 10,
@@ -77,7 +77,7 @@ Observações:&nbsp;&nbsp;&nbsp;&nbsp;<input />
 
 Note o trecho abaixo. É nele que especificamos a regra de ativação da `textbox`.
 
-```js
+```
     "activationparentid": 10,
     "activationparentvalue": "Abacaxi|Laranja"
 ```
