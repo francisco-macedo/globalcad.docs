@@ -92,13 +92,13 @@ Cada linha da tabela representa um `container` de um `registro` produzido a part
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | Identificador numérico do módulo, também chamado de `Slot do módulo`. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
+| `CODCONTRATO`         | `int`     | Identificador numérico do módulo ao qual a tabela está associada, também chamado de `Slot`. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
 | `CODCADASTRO`         | `int`     | Identificador numérico de um `registro` produzido tipicamente a partir de uma das telas do módulo. Um `registro` pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de um `container` para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` às vezes se repete mais de uma vez na tabela `VALUES`.
 | `PARENT_CONTAINER_ITEMID`| `int`  | ID do item de tela considerado o pai do `container` representado pela linha. Indica, basicamente, o nível do `container`. `-1` = Nível raíz. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
 | `ID`                  | `long`    | Identificador único do `container` representado pela linha no contexto do `registro`. Um mesmo valor de `ID` nunca se repetirá para um mesmo `CODCADASTRO`. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
 | `PARENT_ID`           | `long`    | Identificador único do `container-pai` do `container` representado pela linha.
 | `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `registro` (`CODCADASTRO`) em questão.
-| `Demais Colunas`      | `variado` | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
+| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
 
 ---
 
@@ -126,7 +126,7 @@ A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua repre
     <td>int</td>
     <td>int</td>
     <td>long</td>
-    <td>varchar</td>
+    <td>string</td>
     <td>long</td>
     <td>int</td>
     <td>long</td>
@@ -139,6 +139,16 @@ A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua repre
 </table>
 
 Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses itens são apresentados como alternativas em componentes do tipo `dropdown`, `autofilltextbox`, dentre outros, mas também são usados para outras finalidades. As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
+
+| Coluna                | Tipo      | Descrição                                                        |
+|:----------------------|:----------|:-----------------------------------------------------------------|
+| `CODCONTRATO`         | `int`     | Identificador numérico do módulo ao qual o dicionário está associado, também chamado de `Slot`. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
+| `DICTID`             | `int`     | Identificador numérico do dicionário dentro do contexto de um `CODCONTRATO`.
+| `KEY_VALUE`          | `long`    | <mark>Chave-primária.</mark> ID único do registro.
+| `KEY_TEXT`           | `string`  | Representação textual do registro. Um mesmo `KEY_TEXT` não se repete para um mesmo `ID` e `PARENT_ID`.
+| `PARENT_KEY`         | `long`    | ID único do registro-pai do registro. Por exemplo: Suponhando a existência de 2 dicionários, um para o registro de países e outro para o registro de estados, podemos ter, na `DICTIONARIES`, um registro do estado `Minas Gerais` cujo pai é um registro do país `Brasil`.
+| `DISPLAY_ORDER`      | `int`     | Ordem de exibição do `item de dicionário`. O primeiro registro a ser exibido é o que contém menor número, enquanto o último é o que contém maior número. Quando o campo contém `null`, os `itens de dicionário` são ordenados alfabeticamente.
+| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas serão armazenadas propriedades de cada `item de dicionário`. Por exemplo: Um item de dicionário que represente o país `Brasil` pode ter propriedades diversas como, por exemplo, IDH, População, Produto Interno Bruto, etc.
 
 ---
 
