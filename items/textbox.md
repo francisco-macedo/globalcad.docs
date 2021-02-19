@@ -23,7 +23,7 @@ Itens do tipo textbox representam uma caixa na qual os usuários podem inserir t
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades **específicas** a itens do tipo `textbox`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
