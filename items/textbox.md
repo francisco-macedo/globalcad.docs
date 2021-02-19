@@ -65,9 +65,15 @@ Para construir uma máscara que formata o texto como um número com 2 casas deci
 
 ---
 
+## Propriedades de Banco de Dados
+
+Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+
+---
+
 ## Propriedades de Interação
 
-Itens `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
+Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
