@@ -51,7 +51,7 @@ País: <select disabled>
         <option value="Brasil">Brasil</option>
       </select>
 <br/>
-Estado: <input disabled>Minas Gerais</input>
+Estado: <input disabled value="Minas Gerais" />
 <br/>
 
 </div>
