@@ -32,6 +32,8 @@ A tabela abaixo lista todas as propriedades **específicas** a itens do tipo `te
 | `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
 | `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
 
+---
+
 ### `mask`
 A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais abaixo com outros caracteres para criar uma máscara:
 
