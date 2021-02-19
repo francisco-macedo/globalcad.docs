@@ -4,6 +4,13 @@ title: Primeiros Passos
 nav_order: 2
 has_children: false
 ---
+
+# Primeiros Passos
+
+Nessa seção, veremos como instalar os pré-requisitos para criar o seu primeiro projeto na plataforma GlobalCad.
+
+---
+
 ## Primeiros Passos
 
 Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos abaixo:
@@ -21,7 +28,9 @@ Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, siga os passos 
 
 4. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e visual para conectar-se ao GitHub, clonar repositórios, dentre outras operações.
 
-### Funcionamento da Plataforma
+---
+
+## Funcionamento da Plataforma
 
 A plataforma GlobalCad funciona da seguinte maneira:
 
