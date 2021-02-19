@@ -6,9 +6,18 @@ has_children: false
 ---
 ## Primeiros Passos
 
-Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo em seu computador:
+1. Antes de iniciar o seu primeiro projeto na plataforma GlobalCad, instale os programas abaixo:
 
+- Visual Studio 2019 ou superior
+- [Azure Data Studio](https://docs.microsoft.com/pt-br/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15)
+- Microsoft Excel
+- [Postman](https://www.postman.com/)
 
+### Autenticação
+
+Siga os passos abaixo
+
+A seguir, baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx` localizado no Google Drive 
 
 ### Markdown
 
