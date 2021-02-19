@@ -23,7 +23,9 @@ Propriedades de banco de dados determinam como e em que circunstâncias um item 
 
 ## Propriedades de Banco de Dados
 
-A tabela abaixo lista todas as propriedades de banco de dados.
+As propriedades de banco de dados estão divididas em 3 seções: Propriedades Gerais, Propriedades de Dicionários e Propriedades de Membros de Dicionários.
+
+### Propriedades Gerais
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
@@ -32,8 +34,13 @@ A tabela abaixo lista todas as propriedades de banco de dados.
 | `saveifinvisible`     | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está invisível. Default = `false`.
 | `saveifdisabled`      | `bool`    | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o item está inativo (Disabled). Default = `false`.
 | `saveifitemisnullorempty`| `bool` | Indica se o valor do item deve ser salvo no banco de dados mesmo quando o valor do item é vazio. Default = `false`, <mark>o que significa que, por padrão, se o usuário atribuir um valor vazio a um item, o valor do item no banco de dados não será modificado.</mark>
-| `cansavetoDICT`       | `bool`    | <mark>Aplicável somente a itens do tipo:</mark> `autofilltextbox`. Determina se o valor inserido pelo usuário na `autofilltextbox` deve ser inserido na tabela de dicionários caso não exista na mesma. Default = `true`.
 | `savetodatabase`      | `bool`    | Indica se o item deve ter o seu valor persistido no banco de dados. Se `false`, então mesmo que o item aponte para um campo no banco de dados, seu valor não será persistido. Default = `true`.<br/><br/>No caso específico de itens do tipo `autofilltextbox`, essa propriedade também determina se o valor do item deve ser inserido na tabela de dicionários. Existem cenários no qual uma `autofilltextbox` é inserida na tela sem apontar para um campo na tabela de valores. Nesse caso, se a propriedade `savetodatabase` não for modificada para `false`, serão inseridos novos itens na tabela de dicionários ainda que a `autofilltextbox` não aponte para um campo da tabela de valores.
+
+### Propriedades de Dicionários
+
+| Propriedade           | Tipo      | Descrição                                                        |
+|:----------------------|:----------|:-----------------------------------------------------------------|
+| `cansavetoDICT`       | `bool`    | <mark>Aplicável somente a itens do tipo:</mark> `autofilltextbox`. Determina se o valor inserido pelo usuário na `autofilltextbox` deve ser inserido na tabela de dicionários caso não exista na mesma. Default = `true`.
 | `ownedDICTID`         | `int`     | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Indica o ID do dicionário do/no qual o item deve ler/gravar valores. Corresponde à coluna `DICTID` da tabela de dicionários.
 | `ownedDICTtablealias` | `string`  | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o alias da tabela da/na qual o item deve ler/gravar valores. Tipicamente, usa-se o alias `D` para representar a tabela de dicionários associada ao módulo.
 | `parentDICTownerID`   | `int`     | <mark>Aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Representa o ID do item que contém o dicionário pai do presente item. Por exemplo: Um item-dicionário que representa `Estado` possivelmente será filho de outro que representa `País`.<br/><br/>Naturalmente, o `parentDICTownerID` deve representar um item que aponta para um dicionário, do contrário não poderia ser pai de outro dicionário. A única exceção diz respeito a itens do tipo `checkboxlist`: Esses não podem ser referenciados como `parentDICTownerID` de outros itens. [Clique aqui](#parentdictownerid) para saber como a relação de pai-filho é materializada na tabela de dicionários.
