@@ -26,7 +26,7 @@ Para criar sistemas na plataforma GlobalCad, é necessário o conhecimento em n�
 - C#
 - SQL (ansi)
 
-Se você não conhece C#, recomendamos [este guia introdutório](https://www.codecademy.com/learn/learn-c-sharp).
+Se desejar aprender ou aprimorar os seus conhecimentos sobre C#, recomendamos [este guia introdutório](https://www.codecademy.com/learn/learn-c-sharp).
 
 ---
 
