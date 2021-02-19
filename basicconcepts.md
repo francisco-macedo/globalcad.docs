@@ -190,7 +190,7 @@ País: <select disabled>
 
 </div>
 
-Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários, caso ainda não exista: O item `Brasil`. Note que a coluna `PARENT_KEY` do item apontará para `null`, pois o item em questão não é filho de nenhum outro `item de dicionário`. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários. Portanto, pode-se dizer que o país `Brasil` é unicamente identificado pelo numeral `415`. 
+Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários (`DICTIONARIES`), caso ainda não exista: O item `Brasil`. Note que a coluna `PARENT_KEY` do item apontará para `null`, pois o item em questão não é filho de nenhum outro `item de dicionário`. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários. Portanto, pode-se dizer que o país `Brasil` é unicamente identificado pelo numeral `415`. 
 
 <table>
   <tr>
@@ -209,7 +209,7 @@ Ao salvar o registro, será criado um novo `item de dicionário` na tabela de di
   </tr>
 </table>
 
-Além de produzir um registro na tabela de dicionários, a operação de salvamento também criará um novo registro na tabela de valores:
+Além de produzir um registro na tabela de dicionários, a operação de salvamento também criará um novo registro na tabela de valores (`VALUES`):
 
 <table>
   <tr>
