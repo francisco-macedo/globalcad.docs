@@ -336,9 +336,9 @@ Note que a função recebe, como parâmetro, uma variável chamada `query`. Essa
 
 ### `memberDICTownerID`
 
-A propriedade `memberDICTownerID` contém o ID do item-dicionário do qual o presente item é membro. O `memberDICTownerID` deve necessariamente apontar para um item que aponta para um dicionário. Ou seja, o `memberDICTownerID` deve referenciar um item do tipo `dropdown`, `autofilltextbox` ou `radiobuttonlist`. Itens do tipo `checkboxlist`, embora apontem para um dicionário, não podem ser referenciados pelo `memberDICTownerID`.
+A propriedade `memberDICTownerID` contém o ID do item-dicionário do qual o presente item é membro. O `memberDICTownerID` deve necessariamente referenciar um item que aponta para um dicionário. Ou seja, o `memberDICTownerID` deve conter o ID de um item do tipo `dropdown`, `autofilltextbox` ou `radiobuttonlist`. Itens do tipo `checkboxlist`, embora apontem para um dicionário, não podem ser referenciados pelo `memberDICTownerID`.
 
-O que significa para um item ser membro de um item-dicionário? Em termos simples, significa que o seu valor será armazenado na tabela de dicionários no mesmo registro onde está armazenado o valor atualmente selecionado no item-dicionário, porém em um campo diferente. Considere, por exemplo, a tela abaixo:
+O que significa para um item ser membro de um item-dicionário? Em termos simples, significa que o seu valor será armazenado na tabela de dicionários, no mesmo registro onde está armazenado o valor atualmente selecionado no item-dicionário, porém em um campo diferente. Considere, por exemplo, a tela abaixo:
 
 <div class="code-example" markdown="1">
 
