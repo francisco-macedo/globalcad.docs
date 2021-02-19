@@ -152,26 +152,37 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 ---
 
-### Exemplo
+### Exemplo de Persistência
 
 Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que opera na web e visa coletar alguns dados de uma pessoa, como demonstrado abaixo.
-
-<div class="code-example" markdown="1">
-
-Nome: <input disabled value="" />
-Idade: <input disabled value="" />
-País: <select disabled>
-        <option value="Brasil">Brasil</option>
-        <option value="Brasil">Brasil</option>
-      </select>
-
-</div>
-```markdown
 
 Form Designer.xlsx
 {: .label .label-green }
 
-```
+<div class="code-example">
 
+Nome: <input disabled value="" />
+<br/>
+Idade: <input disabled value="" />
+<br/>
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+      </select>
+
+</div>
+
+Na sequência, um usuário do sistema cria um novo registro e o preenche com as seguintes informações:
+
+<div class="code-example">
+
+Nome: <input disabled value="Juliana Souza" />
+<br/>
+Idade: <input disabled value="32" />
+<br/>
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+      </select>
+
+</div>
 
 
