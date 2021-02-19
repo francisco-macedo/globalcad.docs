@@ -6,8 +6,16 @@ has_children: false
 ---
 
 # Primeiros Passos
+{: .no_toc }
 
-Nessa seção, veremos como instalar os pré-requisitos para criar o seu primeiro projeto na plataforma GlobalCad, e como construir um aplicativo Hello World.
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
 
 ---
 
