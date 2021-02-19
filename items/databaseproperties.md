@@ -184,7 +184,7 @@ Os campos `KEY1` e `KEY2` da tabela de valores apontam, respectivamente, para o 
 
 ### `getDICTquery_CSharpCommand`
 
-A propriedade `getDICTquery_CSharpCommand` é aplicável somente a itens que apontam para dicionários. São eles:</mark> `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Ela representa o código C# que fornece as opções de múltipla-escolha a serem apresentadas pelo item-dicionário. O seu valor padrão é `null`, o que indica à plataforma GlobalCad que ela deve responsabilizar-se por fornecer as opções a serem apresentadas pelo item-dicionário.
+A propriedade `getDICTquery_CSharpCommand` é aplicável somente a itens que apontam para dicionários. São eles: `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist`. Ela representa o código C# que fornece as opções de múltipla-escolha a serem apresentadas pelo item-dicionário. O seu valor padrão é `null`, o que indica à plataforma GlobalCad que ela deve responsabilizar-se por fornecer as opções a serem apresentadas pelo item-dicionário.
 
 Para associar um arquivo C# à propriedade `getDICTquery_CSharpCommand`, insira o valor `'@import SEU_ARQUIVO.cs` na célula `getDICTquery_CSharpCommand` do Form Designer, onde `SEU_ARQUIVO.cs` corresponde ao nome do arquivo C#. O arquivo deve estar na mesma pasta onde se encontra o Form Designer.
 
@@ -312,5 +312,4 @@ namespace CustomCode
 }
 ```
 
-Note que a função recebe, como parâmetro, uma variável chamada `query`. Essa variável vem preenchida com a consulta SQL montada pela plataforma GlobalCad para listar todos os itens do dicionário em questão. O que fizemos no código foi esvaziar essa variável através do comando `query.Clear()` e, na sequência, preencher novamente a variável com uma nova consulta SQL.
-
+Note que a função recebe, como parâmetro, uma variável chamada `query`. Essa variável vem preenchida com a consulta SQL montada pela plataforma GlobalCad para listar todos os itens do dicionário em questão. O que fizemos no código foi esvaziar essa variável através do comando `query.Clear()` e, na sequência, preenchê-la novamente com uma consulta SQL criada sob medida.
