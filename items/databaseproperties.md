@@ -56,7 +56,7 @@ As propriedades de banco de dados estão divididas em 3 seções:
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `memberDICTCol`       | `string`  | Campo da tabela de dicionários na qual o valor do item deve ser armazenado. Exemplo: D.STR1 indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `D`.
+| `memberDICTCol`       | `string`  | Campo da tabela de dicionários na qual o valor do item deve ser armazenado. Exemplo: D.STR1 indica que o item deve ser armazenado na coluna `STR1` da tabela cujo alias é `D`. <mark>Essa propriedade só deve ser preenchida caso a propriedade `memberDICTownerID` contenha um valor não-vazio</mark>.
 | `memberDICTownerID`   | `int`     | ID do item-dicionário do qual o presente item é membro. [Clique aqui](#memberdictownerid) para mais informações.
 
 ---
@@ -331,3 +331,81 @@ namespace CustomCode
 ```
 
 Note que a função recebe, como parâmetro, uma variável chamada `query`. Essa variável vem preenchida com a consulta SQL montada pela plataforma GlobalCad para listar todos os itens do dicionário em questão. O que fizemos no código foi esvaziar essa variável através do comando `query.Clear()` e, na sequência, preenchê-la novamente com uma consulta SQL criada sob medida.
+
+---
+
+### `memberDICTownerID`
+
+A propriedade `memberDICTownerID` contém o ID do item-dicionário do qual o presente item é membro. O `memberDICTownerID` deve necessariamente apontar para um item que aponta para um dicionário. Ou seja, o `memberDICTownerID` deve referenciar um item do tipo `dropdown`, `autofilltextbox` ou `radiobuttonlist`. Itens do tipo `checkboxlist`, embora apontem para um dicionário, não podem ser referenciados pelo `memberDICTownerID`.
+
+O que significa para um item ser membro de um item-dicionário? Em termos simples, significa que o seu valor será armazenado na tabela de dicionários no mesmo registro onde está armazenado o valor atualmente selecionado no item-dicionário, porém em um campo diferente. Considere, por exemplo, a tela abaixo:
+
+<div class="code-example" markdown="1">
+
+País: <select disabled>
+        <option value="Brasil">Brasil</option>
+      </select>
+<br/>
+IDH: <input disabled value="0,765" />
+
+</div>
+```markdown
+[
+  {
+    "id": 10,
+    "type": "dropdown",
+    "text": "País",
+    "VALUECol": "V.KEY1",
+    "ownedDICTID": 1,
+    "ownedDICTtablealias": "D",
+    "ownedDICTcontractalias": "SHARED"
+  },
+  {
+    "id": 20,
+    "type": "textbox",
+    "text": "IDH",
+    "memberDICTCol": "D.FLOAT1",
+    "memberDICTownerID": 10,
+    "mask": "{decimal:3}"
+  }
+]
+```
+
+Note o trecho abaixo. É nele que especificamos que o item `IDH` é um membro do item-dicionário `País`.
+
+```
+    "memberDICTCol": "D.FLOAT1",
+    "memberDICTownerID": 10,
+```
+
+O que esse trecho nos diz é que o valor do item `IDH` deve ser armazenado no campo `FLOAT1` da tabela dicionários, no mesmo registro onde se encontra o valor do `País` selecionado.
+
+Suponhamos que, antes de abrir a tela, tenhamos os seguintes dados na tabela de dicionários:
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DICTID</th>
+    <th style="text-align:left">KEY_VALUE</th>
+    <th style="text-align:left">KEY_TEXT</th>
+    <th style="text-align:left">PARENT_KEY</th>
+    <th style="text-align:left">FLOAT1</th>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1</td>
+    <td>36</td>
+    <td>Brasil</td>
+    <td>null</td>
+    <td>null</td>
+  </tr>
+  <tr>
+    <td>1000</td>
+    <td>1</td>
+    <td>37</td>
+    <td>Colômbia</td>
+    <td>null</td>
+    <td>null</td>
+  </tr>
+</table>
+
