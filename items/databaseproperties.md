@@ -85,7 +85,7 @@ Note o trecho abaixo. É nele que especificamos que o dicionário `Estado` é fi
     "parentDICTownerID": 10
 ```
 
-Antes da execução do módulo anterior, é necessário popular o banco de dados com alguns países. Estados não são obrigatório, uma vez que estão representados por um campo do tipo `autofilltextbox`, que permite que o próprio usuário insira novos estados na tabela. Vamos assumir que temos os seguintes valores em nossa tabela de dicionários:
+Antes de executar a tela apresentada, é necessário popular o banco de dados com alguns países. Estados não são obrigatório, uma vez que estão representados por um campo do tipo `autofilltextbox`, que permite que o próprio usuário insira novos estados na tabela. Vamos assumir que temos os seguintes valores em nossa tabela de dicionários:
 
 <table>
   <tr>
