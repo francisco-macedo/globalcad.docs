@@ -89,7 +89,7 @@ A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usu�
   </tr>
 </table>
 
-Cada linha da tabela representa um `container` de um `registro` produzido a partir do preenchimento de campos em uma tela (Um `registro` é composto por 1 ou mais `containers`). As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
+Cada linha da tabela `VALUES` representa um `container` de um `registro` produzido a partir do preenchimento dos campos de uma tela (Um `registro` é composto por 1 ou mais `containers`). As 6 primeiras colunas são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
