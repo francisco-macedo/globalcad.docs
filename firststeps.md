@@ -49,6 +49,6 @@ Antes de criar o seu primeiro projeto na plataforma GlobalCad, siga os passos ab
 
 ---
 
-## O Form Designer
+## Form Designer
 
 ...
