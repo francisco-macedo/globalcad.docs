@@ -31,6 +31,12 @@ A tabela abaixo lista todas as propriedades de interação.
 | `activationparentvalue`| `string` |Valor que o item cujo ID é `activationparentid` deve conter para que o presente item seja ativado. [Clique aqui](#activationparentvalue) para mais detalhes. 
 | `visibilityparentid`  | `int`     |ID do item cujo valor determina se o presente item deve tornar-se visível. 
 | `visibilityparentvalue`| `string` |Valor que o item cujo ID é `visibilityparentid` deve conter para que o presente item se torne visível. [Clique aqui](#visibilityparentvalue) para mais detalhes.
+| `activeforpermissions`| `string`  |Permissões para as quais o item deve ser ativado (Enabled). Separar as permissões por `|`. Exemplo: `1|5|7` indica que o item só deve ser ativado para usuários que possuam as permissões `1`,  `5` ou `7`. Para todos os demais, permanecerá inativo. 
+| `visibleforpermissions`| `string`  |Permissões para as quais o item deve tornar-se visível. Separar as permissões por `|`. Exemplo: `1|5|7` indica que o item só deve tornar-se visível para usuários que possuam as permissões `1`,  `5` ou `7`. Para todos os demais, permanecerá invisível. 
+| `existsforpermissions`| `string`  |Permissões para as quais o item deve existir. Separar as permissões por `|`. Exemplo: `1|5|7` indica que o item só deve existir para usuários que possuam as permissões `1`,  `5` ou `7`. Para todos os demais, o item não será incluído na tela. Note que não existir é diferente de não estar visível. A não existência implica na impossibilidade de localizar o item na tela.
+| `activationscope`     | `enum`    |Escopo no qual o item deve ser ativado (Enabled). Os valores possíveis são `any` (default), `web`, `mobile` e `none`. Exemplo: `web` indica que o item só deve ser ativado quando o módulo estiver sendo acessado pela web. Para todos os demais, permanecerá invisível.
+| `visibilityscope`     | `enum`    |Escopo no qual o item deve tornar-se visível. Os valores possíveis são `any` (default), `web`, `mobile` e `none`. Exemplo: `web` indica que o item só deve tornar-se visível quando o módulo estiver sendo acessado pela web.  Para todos os demais, permanecerá invisível.
+| `existencescope`     | `enum`    |Escopo no qual o item deve existir. Os valores possíveis são `any` (default), `web`, `mobile` e `none`. Exemplo: `web` indica que o item só deve existir quando o módulo estiver sendo acessado pela web. Para todos os demais, o item não será incluído na tela. Note que não existir é diferente de não estar visível. A não existência implica na impossibilidade de localizar o item na tela.
 
 ---
 
@@ -103,7 +109,7 @@ Se tivermos um formulário com uma `dropdown` e uma `textbox` e quisermos que a 
 
 <div class="code-example" markdown="1">
 
-País:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select disabled>
+País:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select disabled>
         <option value="Brasil">Brasil</option>
       </select>
 <br/>
