@@ -21,5 +21,8 @@ As telas que compõem os seus módulos são compostas por itens. Itens represent
 
 Todos os itens, sem exceção, possuem 2 propriedades elementares:
 
-- ID: Número que identifica unicamente o item. Em um mesmo módulo, não são permitidos 2 itens com o mesmo ID.
-- level: Nível de exibição do item. Inicia em 1.
+| Propriedade           | Descrição                                                        |
+|:----------------------|:-----------------------------------------------------------------|
+| `ID`                  | Número que identifica unicamente o item. Em um mesmo módulo, não são permitidos 2 itens com o mesmo ID.
+| `level`               | Nível de exibição do item. Inicia em 1.
+
