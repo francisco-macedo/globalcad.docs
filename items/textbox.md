@@ -27,7 +27,7 @@ A tabela abaixo lista todas as propriedades **específicas** a itens do tipo `te
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#section-1) para mais detalhes. 
+| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
 | `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
 | `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
 | `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
