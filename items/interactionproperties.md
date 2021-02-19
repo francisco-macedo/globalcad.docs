@@ -85,7 +85,7 @@ Observações: <input />
 ]
 ```
 
-Note o trecho abaixo. É nele que especificamos a regra de ativação da `textbox`.
+Note o trecho abaixo. É nele que especificamos a regra de ativação da `textbox`. A regra manterá a `textbox` de Observações inativa até que a `dropdown` Fruta contenha os valores `Abacaxi` ou `Laranja`.
 
 ```
     "activationparentid": 10,
@@ -136,7 +136,7 @@ Observações: <input />
 ]
 ```
 
-Note o trecho abaixo. É nele que especificamos a regra de visibilidade da `textbox`.
+Note o trecho abaixo. É nele que especificamos a regra de visibilidade da `textbox`. A regra manterá a `textbox` de Observações inativa até que a `dropdown` País contenha um valor não vazio - Ou seja: Até que o usuário selecione um País.
 
 ```
     "visibilityparentid": 10,
