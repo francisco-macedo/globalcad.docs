@@ -12,6 +12,12 @@ has_children: false
 Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
 {: .fs-6 .fw-300 }
 
+<div class="code-example" markdown="1">
+
+Título: <input value="Valor" />
+
+</div>
+
 ## Índice
 {: .no_toc .text-delta }
 
