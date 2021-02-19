@@ -166,13 +166,13 @@ Form Designer.xlsx
 
 <div class="code-example">
 
-Nome: <input disabled value="" /> `--> Configurado para salvar o valor na VALUES.STR1`
+Nome: <input disabled value="" /> <mark>Configurado para salvar o valor na VALUES.STR1</mark>
 <br/>
-Idade: <input disabled value="" /> `--> Configurado para salvar o valor na VALUES.INT1`
+Idade: <input disabled value="" /> <mark>Configurado para salvar o valor na VALUES.INT1</mark>
 <br/>
 País: <select disabled>
         <option value="Brasil">Brasil</option>
-      </select> `--> Configurado para salvar o valor na VALUES.KEY1`
+      </select> <mark>Configurado para salvar o valor na VALUES.KEY1</mark>
 
 </div>
 
