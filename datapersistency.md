@@ -166,7 +166,7 @@ País: <select disabled>
 
 </div>
 
-Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários (`DICTIONARIES`): O item `Brasil`. 
+Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários (`DICTIONARIES`) chamado `Brasil`:
 
 <table>
   <tr>
