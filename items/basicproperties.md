@@ -27,7 +27,7 @@ A tabela abaixo lista todas as propriedades básicas de itens.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `ID`                  | `int`     | Número que identifica unicamente o item. Em um mesmo módulo, não são permitidos 2 itens com o mesmo ID. 
+| `ID`                  | `int`     | Número que identifica unicamente o item. Não são permitidos 2 itens com IDs iguais em uma mesma tela. 
 | `level`               | `int`     | Nível de exibição do item. Inicia em 1.
 | `datatype`            | `enum`    | <mark>Aplicável somente à versão Mobile do seu módulo.</mark> Indica o tipo de teclado a exibir quando o item for selecionado. Valores possíveis: `number` (Teclado numérico) e `usedefault` (Teclado padrão).
 | `initialvalue`        | `string`  | Valor inicial que a plataforma GlobalCad deve atribuir ao item.
