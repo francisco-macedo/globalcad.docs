@@ -116,6 +116,7 @@ A tabela `DICTIONARIES` traduz números em suas representações textuais. Sua <
     <td>int</td>
     <td>long</td>
     <td>string</td>
+    <td>int</td>
     <td>long</td>
     <td>float</td>
     <td>DateTime</td>
