@@ -142,7 +142,7 @@ As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIE
 
 ## Exemplo de Persistência
 
-Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela cujo objetivo é coletar dados de entrevistados, como demonstrado abaixo.
+Suponhamos que você tenha usado o Form Designer.xlsx para criar um módulo contendo uma tela cujo objetivo é coletar dados de entrevistados, como demonstrado abaixo.
 
 Form Designer.xlsx
 {: .label .label-green }
