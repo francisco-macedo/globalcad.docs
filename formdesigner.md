@@ -38,7 +38,7 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 Para uma melhor compreensão deste artigo, leia antes sobre a [Persistência de Dados](datapersistency.md). No artigo sobre [Persistência de Dados](datapersistency.md), você aprenderá como os dados são persistidos no banco de dados e conhecerá a estrutura das tabelas sobre as quais o seu módulo irá operar. 
 
-Antes de prosseguir, é importante conhecer a função e a estrutura da tabela de valores (`VALUES`) e a estrutura da tabela de dicionários (`DICTIONARIES`).
+Antes de prosseguir, é importante conhecer a função e a estrutura da tabela de valores (`VALUES`) e da tabela de dicionários (`DICTIONARIES`).
 
 ---
 
@@ -198,7 +198,7 @@ contracts
   </tr>
 </table>
 
-O campo `alias` pode ser preenchido com valores de sua escolha. Eles representam a forma como você passará a se referir a cada um dos `Slots` configurados - É mais prático do que referir-se aos mesmos pelo número. <mark>Recomendamos, como boa prática, que você mantenha pelo menos um Slot chamado SHARED. Essa é a convenção adotada para indicar que o Slot em questão contém dicionários que são compartilhados com outros módulos.</mark>
+O campo `alias` pode ser preenchido com valores de sua escolha. `alias` representa a forma como você passará a se referir a cada `Slot` configurado - É mais prático do que referir-se aos `Slots` pelo número. <mark>Recomendamos, como boa prática, que você mantenha pelo menos um Slot chamado SHARED. Essa é a convenção adotada para indicar que o Slot em questão contém dicionários que são compartilhados com outros módulos.</mark>
 
 ---
 
@@ -284,7 +284,7 @@ Para inserir um novo item no projeto, acesse a aba `items*` de sua escolha, posi
 - `Ctrl + Shift + 8`: Insere um novo item e associa-o ao próximo campo `DATETIME*` disponível.
 - `Ctrl + Shift + 9`: Insere um novo item e não o associa a nenhum campo.
 
-Após inserir um item, o mesmo receberá, no mínimo, um valor para as propriedades `level` e `id`:
+Após inserir um item, o mesmo receberá um valor para as propriedades `level` e `id` (veja abaixo). Ocasionalmente, receberá valor para outras propriedades.
 
 Form Designer.xlsx
 {: .label .label-green }
@@ -309,7 +309,7 @@ items*
   </tr>
 </table>
 
-Você deve selecionar um valor para as propriedade `type` e `text`, conforme exemplificado abaixo:
+Logo após inserir o item, selecione um valor para as propriedade `type` e `text`, conforme exemplificado abaixo:
 
 Form Designer.xlsx
 {: .label .label-green }
@@ -334,7 +334,7 @@ items*
   </tr>
 </table>
 
-Opcionalmente, configure as demais propriedades do item inserido. Para saber quais tipos de itens estão disponíveis e quais são as suas propriedades, acesse a seção [Itens](items).
+A seguir, configure as demais propriedades do item inserido, se necessário. Para saber quais tipos de itens estão disponíveis e quais são as suas propriedades, acesse a seção [Itens](items).
 
 ---
 
