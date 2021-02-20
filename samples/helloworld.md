@@ -42,7 +42,7 @@ Para saber quais `Slots` estão disponíveis para o seu usuário, acesse a [vers
 
 A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a opção `Visualizar`. O sistema apresentará os `Slots` associados ao seu nome de usuário, como mostrado abaixo:
 
-| Módulo                |
+| Módulos               |
 |:----------------------|
 | <b>4240</b> - Usuários / 1
 | <b>4410</b> - Sandbox 4410 / 1
