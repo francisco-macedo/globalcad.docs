@@ -23,9 +23,9 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 
 ## Escolhendo Slots
 
-Para publicar um novo módulo na plataforma GlobalCad, é necessário definir os `Slots` que serão utilizados. São eles:
+Para publicar um novo módulo na plataforma GlobalCad, é necessário definir os parâmetros abaixo:
 
-| Parâmetro             | Descrição                                                       |
+| Parâmetros            | Descrição                                                       |
 |:----------------------|-----------------------------------------------------------------|
 | `Slot do Módulo`      | Número que identifica unicamente o seu módulo no contexto da infraestrutura da plataforma GlobalCad. <mark>Esse número nunca será salvo em nenhuma tabela do banco de dados. Serve puramente para referir-se ao módulo.</mark>
 | `Slot de Valores`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar <mark>apenas 1 (um)</mark> valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
