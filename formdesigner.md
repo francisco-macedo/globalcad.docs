@@ -265,12 +265,12 @@ As abas `items*` do Form Designer representam as telas do seu módulo. Elas tamb
 
 | Aba                   | Descrição                                                        |
 |:----------------------|:-----------------------------------------------------------------|
-| `items`               | Representa a tela acessível para os usuários pela web, através de um navegador de Internet, ou pelo aplicativo GlobalCad.
-| `items (setup)`       | Representa a tela de configurações do sistema. <mark>Essa tela é acessível somente pela web.</mark>
+| `items`               | Representa a tela apresentada aos usuários quando acessam o sistema através de um navegador de Internet ou via aplicativo GlobalCad.
+| `items (setup)`       | Representa a tela de configurações do sistema. <mark>Essa tela é apresentada aos usuários somente quando acessam o sistema via navegador de Internet.</mark>
 | `items (print)`       | Representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
-| `items (web)`         | Representa a tela acessível para usuários exclusivamente pela web. Se essa aba for deixada vazia, a tela web será representada pela aba `items`. Se a aba não for deixada vazia, essa será a tela de operação web adotada pelo sistema.
+| `items (web)`         | Representa a tela apresentada aos usuários exclusivamente quando acessam o sistema através de um navegador de Internet. Se essa aba for deixada vazia, a tela web será representada pela aba `items`.
 
-Note que, devido às próprias restrições impostas pela estrutura do Form Designer, o seu módulo pode conter apenas 1 (uma) tela Web e 1 (uma) tela Mobile.
+É importante frisar que o seu módulo pode conter apenas 1 (uma) tela Web e 1 (uma) tela Mobile.
 
 Para inserir um novo item no projeto, acesse a aba `items*` de sua escolha, posicione o cursor sobre a linha na qual deseja inserir o item e utilize uma das combinações de teclas listadas abaixo. Você também pode fazer a inserção do item manualmente, atribuindo valores aos campos da planilha.
 
