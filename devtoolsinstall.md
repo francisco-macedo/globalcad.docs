@@ -39,10 +39,10 @@ Antes de criar o seu primeiro projeto na plataforma GlobalCad, instale os progra
 - Microsoft Excel
 - [Postman](https://www.postman.com/)
 
-A seguir, siga os passos mostrados:
+A seguir, siga esses passos:
 
 1. Obtenha uma conta na plataforma GlobalCad. Para tal, [entre em contato](https://www.globalcad.com.br/contato) com a equipe GlobalCad.
 
-2. Acesse a pasta Google Drive compartilhada pela GlobalCad logo após a liberação da sua conta na plataforma GlobalCad, e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`
+2. Acesse a pasta Google Drive compartilhada pela GlobalCad e baixe o arquivo `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx`. O acesso ao arquivo só é liberado após a aprovação de sua conta na plataforma GlobalCad.
 
 3. Clone o repositório `https://github.com/francisco-macedo/GlobalCad-Contract-Provider.git`. Você pode usar a ferramenta de sua escolha para fazê-lo. Recomendamos o [Sourcetree](https://www.sourcetreeapp.com/) por se tratar de uma ferramenta grátis e com interface amigável para conectar-se ao GitHub, clonar repositórios e realizar outras operações.
