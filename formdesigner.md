@@ -113,8 +113,8 @@ A aba `contracts` do Form Designer lhe permite configurar 3 parâmetros:
 | Parâmetro             | Descrição                                                       |
 |:----------------------|-----------------------------------------------------------------|
 | `Slot do Módulo`      | Número que identifica unicamente o seu módulo no contexto da infraestrutura da plataforma GlobalCad. <mark>Esse número nunca será salvo em nenhuma tabela do banco de dados. Serve puramente para referir-se ao módulo.</mark>
-| `Slot de Gravação`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar apenas 1 (um) valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
-| `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar apenas vários valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
+| `Slot de Gravação`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar <mark>apenas 1 (um)</mark> valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
+| `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar <mark>vários</mark> valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
 
 Para configurar o 'Slot do Módulo', atribua `true` à propriedade `OFFICIAL` da aba `contracts` e, a seguir, insira o número que identifica unicamente o seu módulo no campo `CODCONTRATO`:
 
