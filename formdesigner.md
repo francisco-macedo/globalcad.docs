@@ -116,7 +116,7 @@ A aba `contracts` do Form Designer lhe permite configurar 3 parâmetros:
 | `Slot de Gravação`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar <mark>apenas 1 (um)</mark> valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
 | `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar <mark>vários</mark> valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
 
-Para configurar o 'Slot do Módulo', atribua `true` à propriedade `OFFICIAL` da aba `contracts` e, a seguir, insira o número que identifica unicamente o seu módulo no campo `CODCONTRATO`:
+Para configurar o `Slot do Módulo`, atribua `true` à propriedade `OFFICIAL` da aba `contracts` e, a seguir, insira o número que identifica unicamente o seu módulo no campo `CODCONTRATO`:
 
 Form Designer.xlsx
 {: .label .label-green }
