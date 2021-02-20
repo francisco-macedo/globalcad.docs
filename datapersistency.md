@@ -67,19 +67,19 @@ A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usu�
   </tr>
 </table>
 
-Cada linha da tabela `VALUES` representa um `container` de um `registro`. Um `registro` representa os dados preenchidos pelo usuário em uma tela do módulo. Por definição, um `registro` é composto por 1 ou mais `containers`, pois as telas do módulo podem possuir mais de um `container`. 
+Sempre que um usuário preenche os campos de uma tela do seu módulo e pressiona o botão de Salvar, é produzido (ou atualizado) um `cadastro`. Um `cadastro` é formado por um ou mais `containers`, uma vez que as telas do seu módulo podem possuir mais de um `container`. O conceito de `container` será introduzido mais tarde nesse manual, mas o importante, por ora, é saber que <mark>cada registro da tabela VALUES representa um container de um cadastro</mark>. 
 
 As 6 primeiras colunas da tabela `VALUES` são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | Identificador numérico do módulo ao qual a linha está associada. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
-| `CODCADASTRO`         | `int`     | Identificador numérico do `registro`. Um `registro` pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de um `container` para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` pode repetir-se mais de uma vez na tabela `VALUES`.
-| `PARENT_CONTAINER_ITEMID`| `int`  | ID do item de tela considerado o pai do `container` representado pela linha. Indica, basicamente, o nível do `container`. `-1` = Nível raíz. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
-| `ID`                  | `long`    | Identificador único do `container` representado pela linha no contexto do `registro` (`CODCADASTRO`). Um mesmo valor de `ID` nunca se repetirá para um mesmo `CODCADASTRO`. Lembre-se: Um `registro` é composto por 1 ou mais `containers`.
-| `PARENT_ID`           | `long`    | Identificador único do `container-pai` do `container` representado pela linha.
-| `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `registro` (`CODCADASTRO`) em questão.
-| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas serão armazenados os valores preenchidos pelos usuários nas telas do módulo. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
+| `CODCONTRATO`         | `int`     | 'Slot de gravação'. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `CODCADASTRO`         | `int`     | ID do `cadastro`. Um `cadastro` pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de um `container` para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` pode repetir-se mais de uma vez na tabela `VALUES`.
+| `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container raíz.
+| `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
+| `PARENT_ID`           | `long`    | ID único do `container-pai` do `container` representado pelo registro.
+| `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `cadastro` (`CODCADASTRO`).
+| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas são armazenados os valores preenchidos pelos usuários nas telas do módulo.<br/><br/>OBS.: As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
 
 A <mark>chave-primária</mark> da tabela `VALUES` é `CODCONTRATO`, `CODCADASTRO`, `ID`.
 
@@ -87,7 +87,7 @@ A <mark>chave-primária</mark> da tabela `VALUES` é `CODCONTRATO`, `CODCADASTRO
 
 ## Tabela `DICTIONARIES`
 
-A tabela `DICTIONARIES` armazena dicionários que traduzem números em sua representação textual. Sua chave primária é `KEY_VALUE`.
+A tabela `DICTIONARIES` traduz números em suas representações textuais. Sua <mark>chave primária</mark> é `KEY_VALUE`.
 
 <table>
   <tr>
@@ -125,19 +125,19 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | Identificador numérico do módulo ao qual a linha está associada. Em uma mesma infraestrutura Cloud, não são permitidos 2 módulos com o mesmo `CODCONTRATO`.
-| `DICTID`             | `int`     | Identificador numérico do dicionário dentro do contexto de um `CODCONTRATO`.
+| `CODCONTRATO`         | `int`     | 'Slot de dicionário'. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `DICTID`             | `int`     | ID do dicionário dentro do contexto de um `CODCONTRATO`.
 | `KEY_VALUE`          | `long`    | <mark>Chave-primária.</mark> ID único do registro.
-| `KEY_TEXT`           | `string`  | Representação textual do registro. Um mesmo `KEY_TEXT` não se repete para um mesmo `ID` e `PARENT_ID`.
-| `PARENT_KEY`         | `long`    | ID único do registro-pai do registro. Por exemplo: Suponhando a existência de 2 dicionários, um para o registro de países e outro para o registro de estados, podemos ter, na `DICTIONARIES`, um registro do estado `Minas Gerais` cujo pai é um registro do país `Brasil`.<br/><br/>`PARENT_KEY` é chave estrangeira para a coluna `KEY_VALUE` da própria tabela `DICTIONARIES`.
-| `DISPLAY_ORDER`      | `int`     | Ordem de exibição do `item de dicionário`. O primeiro registro a ser exibido é o que contém menor número, enquanto o último é o que contém maior número. Quando o campo contém `null`, os `itens de dicionário` são ordenados alfabeticamente.
-| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas serão armazenadas propriedades de cada `item de dicionário`. Por exemplo: Um item de dicionário que represente o país `Brasil` pode ter propriedades diversas como, por exemplo, IDH, População, Produto Interno Bruto, etc. As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
+| `KEY_TEXT`           | `string`  | Representação textual do registro. Um valor de `KEY_TEXT` não se repete para um mesmo `CODCONTRATO`, 'DICTID' e `PARENT_KEY`.
+| `PARENT_KEY`         | `long`    | ID único do registro-pai do registro. Por exemplo: Supondo a existência de 2 dicionários, um para o registro de países e outro para o registro de estados, podemos ter, na `DICTIONARIES`, um registro do estado `Minas Gerais` cujo pai é um registro do país `Brasil`.<br/><br/>`PARENT_KEY` é chave estrangeira para a coluna `KEY_VALUE` da própria tabela `DICTIONARIES`.
+| `DISPLAY_ORDER`      | `int`     | Ordem de exibição do `item de dicionário`. O primeiro registro a ser exibido é o que contém menor `DISPLAY_ORDER`, enquanto o último é o que contém maior `DISPLAY_ORDER`. Quando `DISPLAY_ORDER` contém `null`, os `itens de dicionário` são ordenados alfabeticamente.
+| `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas são armazenadas propriedades de cada `item de dicionário`. Por exemplo: Um item de dicionário que represente o país `Brasil` pode ter propriedades diversas como IDH, População, Produto Interno Bruto, etc.<br/><br/>OBS.: As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
 
 ---
 
 ## Exemplo de Persistência
 
-Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela que visa coletar dados de pessoas entrevistadas, como demonstrado abaixo.
+Suponhamos que você tenha usado o Form Designer.xlsx para criar uma tela cujo objetivo é coletar dados de entrevistados, como demonstrado abaixo.
 
 Form Designer.xlsx
 {: .label .label-green }
@@ -152,7 +152,7 @@ Form Designer.xlsx
 
 </div>
 
-Imaginemos que, após o lançamento do módulo, um usuário crie um novo registro e o preencha com as seguintes informações:
+Imaginemos que, após a publicação do módulo, um usuário crie um novo registro e o preencha com as seguintes informações:
 
 <div class="code-example">
 
@@ -210,4 +210,4 @@ Além de produzir um registro na tabela de dicionários, a operação de salvame
   </tr>
 </table>
 
-O campo `KEY1` da tabela de valores (`VALUES`) aponta para o país `Brasil` (`KEY_VALUE = 415` na tabela `DICTIONARIES`).
+Observe que o campo `KEY1` da tabela de valores (`VALUES`) aponta para o registro `Brasil` da tabela `DICTIONARIES` (`KEY_VALUE = 415`).
