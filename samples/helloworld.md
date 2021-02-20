@@ -179,7 +179,7 @@ setup
   </tr>
 </table>
 
-O `contractname` é o nome que o seu módulo terá no aplicativo GlobalCad para Android, enquanto `reportlinkgroupname` é o nome que ele terá na versão Web da plataforma.
+`contractname` é o nome que o seu módulo terá no aplicativo GlobalCad para Android, enquanto `reportlinkgroupname` é o nome que ele terá na versão Web da plataforma.
 
 ---
 
