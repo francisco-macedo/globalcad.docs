@@ -50,12 +50,14 @@ A planilha Form Designer.xlsx contém diversas abas. Nas próximas seções, ent
 
 As abas `items*` do Form Designer representam as telas do seu módulo. Elas também podem ser usadas para configurar os relatórios do módulo.
 
-- A aba `items` representa a tela de operação acessível para os usuários pela web, através de um navegador de Internet, ou pelo aplicativo GlobalCad.
-- A aba `items (setup)` representa a tela de configurações do sistema. Essa tela é acessível somente pela web.
-- A aba `items (print)` representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
-- A aba `items (web)` representa a tela de operação acessível pelos usuários exclusivamente pela web. Se essa aba for deixada vazia, a tela de operação web será representada pela aba `items`. Se a aba não for deixada vazia, essa será a tela de operação web adotada pelo sistema.
+| Aba                   | Descrição                                                        |
+|:----------------------|:-----------------------------------------------------------------|
+| `items`               | Representa a tela de operação acessível para os usuários pela web, através de um navegador de Internet, ou pelo aplicativo GlobalCad.
+| `items (setup)`       | Representa a tela de configurações do sistema. Essa tela é acessível somente pela web.
+| `items (print)`       | Representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
+| `items (web)`         | Representa a tela de operação acessível pelos usuários exclusivamente pela web. Se essa aba for deixada vazia, a tela de operação web será representada pela aba `items`. Se a aba não for deixada vazia, essa será a tela de operação web adotada pelo sistema.
 
-Note que, devido às restrições impostas pela estrutura do Form Designer, o seu módulo pode conter apenas 1 (uma) tela Web e 1 (uma) tela Mobile.
+Note que, devido às próprias restrições impostas pela estrutura do Form Designer, o seu módulo pode conter apenas 1 (uma) tela Web e 1 (uma) tela Mobile.
 
 Para inserir um novo item no projeto, acesse a aba `items*` de sua escolha, posicione o cursor sobre a linha na qual deseja inserir o item e utilize uma das combinações de teclas listadas abaixo. Você também pode fazer a inserção do item manualmente, atribuindo valores aos campos da planilha.
 
