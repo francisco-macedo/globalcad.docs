@@ -55,4 +55,4 @@ items*
 
 ## Referência
 
-Acesse o artigo [Form Designer](formdesigner.md) para saber mais sobre como inserir itens às telas do seu módulo e como configurá-los.
+Acesse o artigo [Form Designer](../formdesigner.html) para saber mais sobre como inserir itens às telas do seu módulo e como configurá-los.
