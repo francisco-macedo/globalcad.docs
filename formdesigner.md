@@ -345,4 +345,6 @@ permissions
   </tr>
 </table>
 
-As permissões sempre são referenciadas pelo seu `id`. Por exemplo: Se você desejar permitir que um certo campo da tela de operações só esteja visível para usuários com permissão `2`, você deverá atribuir o valor `2` à propriedade `visibleforpermissions` do item.
+A seguir, atribua os valores desejados às propriedades da permissão. Por exemplo: `cancreateformonmobile = false` impedirá usuários que possuem a permissão de criarem novos registros do seu módulo no aplicativo GlobalCad para Android. 
+
+É importante frisar que as permissões sempre são referenciadas pelo seu `id`. Por exemplo: Se você desejar permitir que um certo campo da tela de operações só esteja visível para usuários com permissão `2`, você deverá atribuir o valor `2` à propriedade `visibleforpermissions` do item (na aba `items*`).
