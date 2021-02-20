@@ -215,6 +215,8 @@ Em outros artigos contendo exemplos, o conteúdo da aba `items` será exibido ex
 ]
 ```
 
+Clique sobre o botão `Publish F` do Form Designer.xlsx para publicar o seu projeto no servidor onde a plataforma GlobalCad está instalada.
+
 ---
 
 ## Testando o Módulo
