@@ -9,7 +9,7 @@ has_children: true
 {: .no_toc }
 
 
-Essa seção explica como criar alguns módulos para exemplificar o funcionamento da plataforma GlobalCad. 
+Essa seção ensina a criar alguns módulos que exemplificam o funcionamento da plataforma GlobalCad. 
 {: .fs-6 .fw-300 }
 
 1. TOC
@@ -21,6 +21,6 @@ Essa seção explica como criar alguns módulos para exemplificar o funcionament
 
 Para compreender o conteúdo dessa seção:
 
-- Leia o artigo [Conceitos Básicos](basicconcepts.md) para absorver conceitos fundamentais da plataforma GlobalCad
-- Leia o artigo [Persistência de Dados](datapersistency.md) para aprender como os dados são persistidos no banco de dados
-- Leia o artigo [Form Designer](formdesigner.md) para saber como utilizar o Form Designer para criar e configurar módulos
+- Leia [Conceitos Básicos](basicconcepts.md) para absorver conceitos fundamentais da plataforma GlobalCad
+- Leia [Persistência de Dados](datapersistency.md) para aprender como os dados são persistidos no banco de dados
+- Leia [Form Designer](formdesigner.md) para saber como utilizar o Form Designer para criar e configurar módulos
