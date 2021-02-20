@@ -21,7 +21,7 @@ has_children: false
 
 ## Introdução ao Form Designer
 
-O Form Designer é uma planilha utilitária na qual você configura um módulo da sua solução. O Form Designer lhe permite:
+O Form Designer é uma planilha utilitária na qual você configura um módulo da sua solução. O Form Designer permite:
 
 - Criar e configurar o layout das telas que compõem o seu módulo
 - Associar arquivos de programação em linguagem C# e SQL ao seu módulo
@@ -36,15 +36,15 @@ O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form 
 
 ## Pré-requisitos Deste Artigo
 
-Para uma melhor compreensão deste artigo, leia antes sobre a [Persistência de Dados](datapersistency.md). No artigo sobre [Persistência de Dados](datapersistency.md), você aprenderá como os dados são persistidos no banco de dados e conhecerá a estrutura das tabelas sobre as quais o seu módulo irá operar. Antes de prosseguir, é importante conhecer a função e a estrutura da tabela de valores (`VALUES`) e a estrutura da tabela de dicionários (`DICTIONARIES`).
+Para uma melhor compreensão deste artigo, leia antes sobre a [Persistência de Dados](datapersistency.md). No artigo sobre [Persistência de Dados](datapersistency.md), você aprenderá como os dados são persistidos no banco de dados e conhecerá a estrutura das tabelas sobre as quais o seu módulo irá operar. 
+
+Antes de prosseguir, é importante conhecer a função e a estrutura da tabela de valores (`VALUES`) e a estrutura da tabela de dicionários (`DICTIONARIES`).
 
 ---
 
 ## Abas do Form Designer
 
 A planilha Form Designer.xlsx contém diversas abas. Nas próximas seções, entraremos em detalhes sobre as abas mais importantes.
-
----
 
 ### Abas de Itens
 
