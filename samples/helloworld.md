@@ -279,7 +279,7 @@ Seu Nome: <input disabled value="Juliana Souza" />
 
 </div>
 
-Ao salvar a tela, operação de salvamento criará um novo registro na tabela de valores (`CDHELLOWORLD_VALUES`, nesse caso):
+Ao salvar a tela, operação de salvamento criará um novo registro na tabela de valores (`CDHELLOWORLD_VALUES`):
 
 <table>
   <tr>
