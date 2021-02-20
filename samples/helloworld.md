@@ -9,8 +9,15 @@ has_children: false
 {: .no_toc }
 
 
-Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World na Web e no Mobile.
+Neste exemplo, aprenderemos a criar um módulo que mostra o texto Hello World na Web e no Mobile, e apresenta uma caixa de texto para colher o nome do usuário.
 {: .fs-6 .fw-300 }
+
+<div class="code-example" markdown="1">
+
+<p>Hello World!</p>
+Seu Nome: <input disabled />
+
+</div>
 
 ## Índice
 {: .no_toc .text-delta }
@@ -192,6 +199,7 @@ items*
     <th style="text-align:left">id</th>
     <th style="text-align:left">type</th>
     <th style="text-align:left">text</th>
+    <th style="text-align:left">VALUECol</th>
     <th style="text-align:left">...</th>
   </tr>
   <tr>
@@ -199,6 +207,15 @@ items*
     <td>10</td>
     <td>label</td>
     <td>Hello World!</td>
+    <td></td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>20</td>
+    <td>textbox</td>
+    <td>Seu Nome</td>
+    <td>V.STR1</td>
     <td>...</td>
   </tr>
 </table>
@@ -211,6 +228,12 @@ Em outros artigos contendo exemplos, o conteúdo da aba `items` será exibido ex
     "id": 10,
     "type": "label",
     "text": "Hello World!",
+  },
+  {
+    "id": 20,
+    "type": "textbox",
+    "text": "Seu Nome",
+    "VALUECol": "V.STR1",
   }
 ]
 ```
@@ -231,6 +254,7 @@ Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo p
 <div class="code-example" markdown="1">
 
 <p>Hello World!</p>
+Seu Nome: <input disabled />
 
 </div>
 
