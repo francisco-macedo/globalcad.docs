@@ -23,7 +23,7 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 
 ## Setup
 
-Abra uma instância em branco da planilha Form Designer.xlsx e configure as abas `contracts` e `tables` conforme instruído no artigo [Form Designer](formdesigner.md). 
+Abra uma instância em branco da planilha Form Designer.xlsx e configure as abas `contracts` e `tables` conforme instruído no artigo [Form Designer](../formdesigner.html). 
 
 A seguir, acesse a aba `setup` e configure-a assim:
 
