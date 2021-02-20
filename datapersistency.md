@@ -124,7 +124,9 @@ A tabela `DICTIONARIES` traduz números em suas representações textuais. Sua <
   </tr>
 </table>
 
-Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses itens são apresentados como alternativas em componentes do tipo `dropdown`, `autofilltextbox`, dentre outros, mas também são usados para outras finalidades. As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
+Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses itens são apresentados como opções de múltipla escolha em componentes do tipo `dropdown`, `autofilltextbox`, dentre outros, mas também são usados para outras finalidades.
+
+As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
