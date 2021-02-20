@@ -75,7 +75,7 @@ As 6 primeiras colunas da tabela `VALUES` são colunas de sistema, presentes na 
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | 'Slot de gravação'. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `CODCONTRATO`         | `int`     | `Slot de gravação`. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
 | `CODCADASTRO`         | `int`     | ID do `cadastro`. Um `cadastro` pode ocupar mais de uma linha na tabela `VALUES` caso precise de mais de um `container` para ser inteiramente representado. Por essa razão, um mesmo valor de `CODCADASTRO` pode repetir-se mais de uma vez na tabela `VALUES`.
 | `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container raíz.
 | `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
@@ -127,7 +127,7 @@ Cada linha da tabela representa um `item de dicionário`. Tipicamente, esses ite
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | 'Slot de dicionário'. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `CODCONTRATO`         | `int`     | `Slot de dicionário`. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
 | `DICTID`             | `int`     | ID do dicionário dentro do contexto de um `CODCONTRATO`.
 | `KEY_VALUE`          | `long`    | <mark>Chave-primária.</mark> ID único do registro.
 | `KEY_TEXT`           | `string`  | Representação textual do registro. Um valor de `KEY_TEXT` não se repete para um mesmo `CODCONTRATO`, 'DICTID' e `PARENT_KEY`.
