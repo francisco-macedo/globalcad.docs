@@ -265,7 +265,7 @@ As abas `items*` do Form Designer representam as telas do seu módulo. Elas tamb
 
 | Aba                   | Descrição                                                        |
 |:----------------------|:-----------------------------------------------------------------|
-| `items`               | Representa a tela apresentada aos usuários quando acessam o sistema através de um navegador de Internet ou via aplicativo GlobalCad.
+| `items`               | Representa a tela apresentada aos usuários quando acessam o sistema através de um navegador de Internet ou através do aplicativo GlobalCad para Android.
 | `items (setup)`       | Representa a tela de configurações do sistema. <mark>Essa tela é apresentada aos usuários somente quando acessam o sistema via navegador de Internet.</mark>
 | `items (print)`       | Representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
 | `items (web)`         | Representa a tela apresentada aos usuários exclusivamente quando acessam o sistema através de um navegador de Internet. Se essa aba for deixada vazia, a tela web será representada pela aba `items`.
