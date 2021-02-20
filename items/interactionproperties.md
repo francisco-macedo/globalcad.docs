@@ -40,6 +40,8 @@ A tabela abaixo lista todas as propriedades de interação.
 
 ---
 
+## Propriedades de Interação - Detalhamento
+
 ### `activationparentvalue`
 
 A propriedade `activationparentvalue` contém o valor que o item cujo ID é `activationparentid` deve conter para que o presente item seja ativado. Utilize os caracteres especiais abaixo ou insira texto literal para especificar um valor para `activationparentvalue`.
