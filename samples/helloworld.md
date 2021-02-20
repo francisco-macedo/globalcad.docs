@@ -43,9 +43,7 @@ A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a op
 | <b>4412</b> - Sandbox 4412 / 1
 | <b>4413</b> - Sandbox 4413 / 1
 
-Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usuários`. O numeral que aparece após o caractere `/` representa a sua permissão de acesso ao módulo (Saiba mais sobre permissões de acesso [aqui](../formdesigner.html#aba-permissions)).
-
-Escolha um `Slot` não ocupado e anote-o em um papel. Esse será o seu `Slot do Módulo`. Já o `Slot de Valores` e os `Slots de Dicionário` podem conter qualquer valor numérico.
+Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usuários`. Escolha um `Slot` não ocupado e anote-o em um papel. Esse será o seu `Slot do Módulo`. Já o `Slot de Valores` e os `Slots de Dicionário` podem conter qualquer valor numérico.
 
 É uma boa prática atribuir ao `Slot de Valores` e a pelo menos um dos `Slots de Dicionário` o mesmo valor atribuído ao `Slot do Módulo`, embora nem sempre isso faça sentido. Por exemplo: Se você estiver criando um módulo que utiliza o mesmo `Slot de Valores` de outro módulo, o seu `Slot do Módulo` necessariamente será diferente do `Slot de Valores`.
 
