@@ -32,7 +32,7 @@ As telas de um módulo obtém e armazenam dados de/em algumas tabelas do banco d
 
 ## Tabela `VALUES`
 
-A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usuários nas telas do módulo. Seu formato é:
+A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usuários nas telas dos módulos. Seu formato é:
 
 <table>
   <tr>
@@ -67,7 +67,9 @@ A tabela `VALUES` persiste, no banco de dados, os valores preenchidos pelos usu�
   </tr>
 </table>
 
-Sempre que um usuário preenche os campos de uma tela do seu módulo e pressiona o botão de Salvar, é produzido (ou atualizado) um `cadastro`. Um `cadastro` é formado por um ou mais `containers`, uma vez que as telas do seu módulo podem possuir mais de um `container`. O conceito de `container` será introduzido mais tarde nesse manual, mas o importante, por ora, é saber que <mark>cada registro da tabela VALUES representa um container de um cadastro</mark>. 
+Sempre que um usuário preenche os campos de uma tela e pressiona o botão de Salvar, é produzido (ou atualizado) um `cadastro`. 
+
+Um `cadastro` é formado por um ou mais `containers`, uma vez que as telas podem possuir um ou mais `containers`. O conceito de `container` será introduzido mais tarde nesse manual, mas o importante, por ora, é saber que <mark>cada registro da tabela VALUES representa um </mark>`container`<mark> de um </mark>`cadastro`. 
 
 As 6 primeiras colunas da tabela `VALUES` são colunas de sistema, presentes na tabela `VALUES` de qualquer projeto criado na plataforma GlobalCad. As demais colunas são colunas de projeto.
 
