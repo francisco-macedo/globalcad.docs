@@ -226,7 +226,7 @@ tables
   </tr>
 </table>
 
-Se você possuir um conjunto de tabelas prefixadas com o seu nome (Ex.: CDJULIANASOUZA_...), use-as para fins de treinamento.
+Se você possuir um conjunto de tabelas prefixadas com o seu nome (Ex.: `CDJULIANASOUZA_*`), use-as para fins de treinamento.
 
 ---
 
