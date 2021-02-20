@@ -75,7 +75,7 @@ A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. C
 - `{decimalNoSeparator:N}`: Número decimal sem separador de milhar com `N` casas decimais
 - `{decimalNoSeparator:N:P}`: Número decimal sem separador de milhar com `N` casas decimais e prefixo `P`
 
-Para construir uma máscara que formata o texto inserido como CPF, por exemplo, use a máscara:
+Para construir uma máscara que formata o texto inserido como CPF, por exemplo, use:
 
 ```
 ###.###.###-##
