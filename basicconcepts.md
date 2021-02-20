@@ -39,7 +39,7 @@ O Form Designer é uma planilha utilitária na qual você configura um módulo d
 
 Futuramente, o Form Designer será substituído por uma IDE gráfica que realiza a mesma função: Junta os 2 elementos mencionados anteriormente em um pacote e o publica no servidor GlobalCad. Enquanto a IDE não é desenvolvida, o Form Designer é o ponto central para o desenvolvimento de módulos.
 
-[Clique aqui](formdesigner.md) para saber mais sobre o Form Designer e ver instruções sobre como baixá-lo.
+[Clique aqui](formdesigner.md) para saber mais sobre o Form Designer e obter instruções sobre como baixá-lo.
 
 ---
 
