@@ -25,7 +25,7 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 
 Abra uma instância em branco da planilha Form Designer.xlsx e configure as abas `contracts` e `tables` conforme instruído no artigo [Form Designer](formdesigner.md). 
 
-A seguir, acesse a aba `setup` e configure-a como mostrado:
+A seguir, acesse a aba `setup` e configure-a assim:
 
 Form Designer.xlsx
 {: .label .label-green }
