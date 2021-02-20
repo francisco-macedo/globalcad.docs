@@ -302,7 +302,7 @@ Ao salvar a tela, operação de salvamento criará um novo registro na tabela de
 
 O registro representa o `cadastro` recém-criado. Note que o campo `CODCONTRATO` contém o número do `Slot de Valores` associado ao módulo, e o campo `STR1` contém o valor do campo `Seu Nome`, que, em nosso exemplo, foi preenchido como `Juliana Souza`.
 
-A tabela abaixo explica o significado de cada um dos campos da tabela de valores (`CDHELLOWORLD_VALUES`):
+A tabela abaixo explica o significado de cada uma das colunas da tabela de valores (`CDHELLOWORLD_VALUES`):
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
