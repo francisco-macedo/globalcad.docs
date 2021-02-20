@@ -51,4 +51,8 @@ items*
   </tr>
 </table>
 
-Acesse o artigo [Form Designer](formdesigner.md) para saber mais sobre como inserir itens às telas do seu módulo.
+---
+
+## Referência
+
+Acesse o artigo [Form Designer](formdesigner.md) para saber mais sobre como inserir itens às telas do seu módulo e como configurá-los.
