@@ -46,6 +46,34 @@ Antes de prosseguir, é importante conhecer a função e a estrutura da tabela d
 
 A planilha Form Designer.xlsx contém diversas abas. Nas próximas seções, entraremos em detalhes sobre as abas mais importantes.
 
+### Abas de Login
+
+As abas `login` e `publish` do Form Designer permitem que você configure em qual servidor o seu módulo será publicado.
+
+A aba `publish` contém o endereço do servidor e um campo onde deve ser inserido um ticket (token) de acesso para que seja possível comunicar-se com o servidor.
+
+Form Designer.xlsx
+{: .label .label-green }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">outputfilename</th>
+    <th style="text-align:left">formuploadurl</th>
+    <th style="text-align:left">ticket</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>json.txt</td>
+    <td><b>http://totalcad.cloudapp.net/...</b></td>
+    <td></td>
+  </tr>
+</table>
+
+Note que o campo `ticket` está em branco. Para preenchê-lo, basta acessar a aba `login` e inserir o seu nome de usuário na plataforma GlobalCad e a senha. A seguir, clique no botão `Login`. Se o login for bem-sucedido, o campo `ticket` da aba `publish` será preenchido com um token de acesso válido.
+
+---
+
 ### Abas de Itens
 
 As abas `items*` do Form Designer representam as telas do seu módulo. Elas também podem ser usadas para configurar os relatórios do módulo.
@@ -53,7 +81,7 @@ As abas `items*` do Form Designer representam as telas do seu módulo. Elas tamb
 | Aba                   | Descrição                                                        |
 |:----------------------|:-----------------------------------------------------------------|
 | `items`               | Representa a tela de operação acessível para os usuários pela web, através de um navegador de Internet, ou pelo aplicativo GlobalCad.
-| `items (setup)`       | Representa a tela de configurações do sistema. Essa tela é acessível somente pela web.
+| `items (setup)`       | Representa a tela de configurações do sistema. <mark>Essa tela é acessível somente pela web.</mark>
 | `items (print)`       | Representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
 | `items (web)`         | Representa a tela de operação acessível pelos usuários exclusivamente pela web. Se essa aba for deixada vazia, a tela de operação web será representada pela aba `items`. Se a aba não for deixada vazia, essa será a tela de operação web adotada pelo sistema.
 
