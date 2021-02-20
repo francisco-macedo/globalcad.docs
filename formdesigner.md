@@ -77,6 +77,35 @@ Note que o campo `ticket` está em branco. Para preenchê-lo, basta acessar a ab
 
 ---
 
+### Aba `setup`
+
+A aba `setup` do Form Designer é usada para configurar parâmetros gerais do seu módulo. Por exemplo, ao atribuir o valor `Pesquisa de Campo` à propriedade `contractname` da aba `setup`, a plataforma GlobalCad entenderá que, no aplicativo GlobalCad para Android, o seu módulo deve ser chamado de `Pesquisa de Campo`.
+
+Form Designer.xlsx
+{: .label .label-green }
+
+setup
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">contractname</th>
+    <th style="text-align:left">icon</th>
+    <th style="text-align:left">reportlinkgroupname</th>
+    <th style="text-align:left">...</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>Pesquisa de Campo</b></td>
+    <td>ic_assistant_photo_grey600_24dp</td>
+    <td>Pesquisas</td>
+    <td>...</td>
+  </tr>
+</table>
+
+---
+
 ### Aba `contracts`
 
 A aba `contracts` do Form Designer lhe permite configurar 3 parâmetros:
