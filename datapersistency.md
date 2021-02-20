@@ -79,7 +79,7 @@ As 6 primeiras colunas da tabela `VALUES` são colunas de sistema, presentes na 
 | `CODCADASTRO`         | `int`     | ID do `cadastro`. Um `cadastro` pode ocupar mais de uma linha na tabela `VALUES` caso seja representado por mais de um `container`. Portanto, um mesmo `CODCADASTRO` pode repetir-se mais de uma vez na tabela `VALUES`.
 | `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container tipo raíz.
 | `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
-| `PARENT_ID`           | `long`    | ID único do `container-pai` do `container` representado pelo registro.
+| `PARENT_ID`           | `long`    | ID único do `container-pai` do `container` representado pelo registro. `-1` = Nenhum.
 | `REGISTRY_ORDER`      | `int`     | Ordem do `container` no `cadastro` (`CODCADASTRO`).
 | `Demais Colunas`      | `vários`  | Colunas de projeto. Nessas colunas são armazenados os valores preenchidos pelos usuários nas telas do módulo.<br/><br/>OBS.: As colunas do tipo `KEY*` são chaves-estrangeiras para a coluna `KEY_VALUE` da tabela `DICTIONARIES`.
 
