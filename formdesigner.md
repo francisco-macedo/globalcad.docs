@@ -55,6 +55,9 @@ A aba `publish` contém o endereço do servidor e um campo onde deve ser inserid
 Form Designer.xlsx
 {: .label .label-green }
 
+publish
+{: .label .label-yellow }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
@@ -89,7 +92,7 @@ Para configurar o 'Slot do Módulo', atribua `true` à propriedade `OFFICIAL` da
 Form Designer.xlsx
 {: .label .label-green }
 
-`contracts`
+contracts
 {: .label .label-yellow }
 
 <table>
@@ -114,6 +117,9 @@ Para configurar o `Slot de Gravação`, atribua `true` à propriedade `DEFAULT` 
 Form Designer.xlsx
 {: .label .label-green }
 
+contracts
+{: .label .label-yellow }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
@@ -135,6 +141,9 @@ Por fim, para configurar `Slots de Dicionário`, deixe as propriedades `OFFICIAL
 
 Form Designer.xlsx
 {: .label .label-green }
+
+contracts
+{: .label .label-yellow }
 
 <table>
   <tr>
@@ -161,6 +170,63 @@ Form Designer.xlsx
 </table>
 
 O campo `alias` pode ser preenchido com valores de sua escolha. Eles representam a forma como você passará a se referir a cada um dos `Slots` configurados - É mais prático do que referir-se aos mesmos pelo número. <mark>Recomendamos, como boa prática, que você mantenha pelo menos um Slot chamado SHARED. Essa é a convenção adotada para indicar que o Slot em questão contém dicionários que são compartilhados com outros módulos.</mark>
+
+---
+
+### Aba `tables`
+
+A aba `tables` do Form Designer é onde você deve informar as 7 (sete) tabelas que serão utilizadas pelo seu módulo. Tipicamente, para cada novo cliente, cria-se 7 (sete) tabelas prefixadas com o nome da empresa contratante. Por exemplo:
+
+Form Designer.xlsx
+{: .label .label-green }
+
+tables
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">name</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>V</td>
+    <td><b>CDCEMIG_</b>VALUES</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>D</td>
+    <td><b>CDCEMIG_</b>DICTIONARIES</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>H</td>
+    <td><b>CDCEMIG_</b>HEADERS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>U</td>
+    <td><b>CDCEMIG_</b>USERS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>RV</td>
+    <td><b>CDCEMIG_</b>REPORTVIEWS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>TC</td>
+    <td><b>CDCEMIG_</b>TABLES_COMPACT_ID</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>F</td>
+    <td><b>CDCEMIG_</b>FORMNUMBERS</td>
+  </tr>
+</table>
+
+Se você possuir um conjunto de tabelas prefixadas com o seu nome (Ex.: CDJULIANASOUZA_...), use-as para fins de treinamento.
 
 ---
 
@@ -194,6 +260,9 @@ Após inserir um item, o mesmo receberá, no mínimo, um valor para as proprieda
 Form Designer.xlsx
 {: .label .label-green }
 
+items*
+{: .label .label-yellow }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
@@ -215,6 +284,9 @@ Você deve selecionar um valor para as propriedade `type` e `text`, conforme exe
 
 Form Designer.xlsx
 {: .label .label-green }
+
+items*
+{: .label .label-yellow }
 
 <table>
   <tr>
