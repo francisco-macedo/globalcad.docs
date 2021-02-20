@@ -286,14 +286,31 @@ Ao salvar a tela, operação de salvamento criará um novo registro na tabela de
     <th style="text-align:left">CODCONTRATO</th>
     <th style="text-align:left">CODCADASTRO</th>
     <th style="text-align:left">PARENT_CONTAINER_ITEMID</th>
+    <th style="text-align:left">ID</th>
+    <th style="text-align:left">PARENT_ID</th>
     <th style="text-align:left">STR1</th>
   </tr>
   <tr>
     <td>4410</td>
     <td>1</td>
     <td>-1</td>
+    <td>202102171819509710</td>
+    <td>-1</td>
     <td><b>Juliana Souza</b></td>
   </tr>
 </table>
 
 O registro representa o `cadastro` recém-criado. Note que o campo `CODCONTRATO` contém o número do `Slot de Valores` associado ao módulo, e o campo `STR1` contém o valor do campo `Seu Nome`, que, em nosso exemplo, foi preenchido como `Juliana Souza`.
+
+A tabela abaixo explica o significado de cada um dos campos da tabela de valores (`CDHELLOWORLD_VALUES`):
+
+| Coluna                | Tipo      | Descrição                                                        |
+|:----------------------|:----------|:-----------------------------------------------------------------|
+| `CODCONTRATO`         | `int`     | `Slot de Valores`.
+| `CODCADASTRO`         | `int`     | ID do `cadastro`.
+| `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container tipo raíz.
+| `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
+| `PARENT_ID`           | `long`    | ID único do `container-pai` do `container` representado pelo registro. `-1` = Nenhum.
+| `STR1`                | `string`  | Campo de projeto que escolhemos para armazenar o nome digitado na caixa de texto.
+
+Para mais informações sobre a forma como os dados são gravados no banco de dados, leia o artigo [Persistência de Dados](../datapersistency.html).
