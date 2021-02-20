@@ -21,7 +21,7 @@ has_children: false
 
 ## Módulos
 
-Um sistema criado na plataforma GlobalCad é composto por 1 ou mais módulos. Um módulo consiste, essencialmente, em um conjunto de telas e suas lógicas adjacentes. Por definição, um módulo pode conter apenas 1 (uma) tela Web, 1 (uma) tela Mobile, relatórios e algumas telas CRUD.
+Um sistema criado na plataforma GlobalCad é composto por 1 ou mais módulos. Um módulo consiste, essencialmente, em um conjunto de telas e suas lógicas adjacentes. Por definição, um módulo pode conter apenas 1 (uma) tela Web, 1 (uma) tela Mobile, 1 (uma) tela CRUD/Config e alguns relatórios.
 
 Se você precisar desenvolver um sistema com 2 ou mais telas Web e/ou no Mobile, você pode considerar as seguintes alternativas:
 
