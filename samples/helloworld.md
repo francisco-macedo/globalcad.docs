@@ -51,7 +51,7 @@ Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usu
 
 ## Configurando a Aba `contracts`
 
-Abra uma instância em branco da planilha Form Designer.xlsx e acesse a aba `contracts` para configurar os `Slots` do seu módulo. Para este exemplo, usaremos o mesmo numeral para representar o `Slot do Módulo`, `Slot de Valores` e `Slot de Dicionários`, conforme demonstrado abaixo:
+Abra uma instância em branco da planilha Form Designer.xlsx e acesse a aba `contracts` para informar os `Slots` escolhidos para o seu módulo. Para este exemplo, usaremos o mesmo numeral para representar o `Slot do Módulo`, `Slot de Valores` e `Slot de Dicionários`, conforme demonstrado abaixo:
 
 Form Designer.xlsx
 {: .label .label-green }
