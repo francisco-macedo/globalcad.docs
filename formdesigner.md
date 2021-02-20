@@ -54,6 +54,7 @@ A aba `publish` contém o endereço do servidor e um campo onde deve ser inserid
 
 Form Designer.xlsx
 {: .label .label-green }
+
 publish
 {: .label .label-yellow }
 
@@ -305,3 +306,43 @@ items*
 </table>
 
 Opcionalmente, configure as demais propriedades do item inserido. Para saber quais tipos de itens estão disponíveis e quais são as suas propriedades, acesse a seção [Itens](items).
+
+---
+
+### Aba `permissions`
+
+A aba `permissions` do Form Designer permite criar permissões para o seu módulo. Por exemplo: Você pode criar uma permissão chamada `Administrador` que oferece acesso irrestrito a todos os campos das telas, e outra permissão chamada `Operador` que limita o usuário a enxergar apenas alguns campos tanto nas telas como nos relatórios.
+
+Para inserir uma nova permissão ao módulo, basta criar uma linha na aba `permissions`, atribuir um número à permissão (Campo `id`) e nomeá-la (Campo `name`):
+
+Form Designer.xlsx
+{: .label .label-green }
+
+permissions
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">id</th>
+    <th style="text-align:left">name</th>
+    <th style="text-align:left">DEFAULT</th>
+    <th style="text-align:left">...</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>1</b></td>
+    <td><b>Administrador</b></td>
+    <td>true</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><b>2</b></td>
+    <td><b>Operador</b></td>
+    <td></td>
+    <td>...</td>
+  </tr>
+</table>
+
+As permissões sempre são referenciadas pelo seu `id`. Por exemplo: Se você desejar permitir que um certo campo da tela de operações só esteja visível para usuários com permissão `2`, você deverá atribuir o valor `2` à propriedade `visibleforpermissions` do item.
