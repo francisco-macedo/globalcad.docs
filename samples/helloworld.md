@@ -14,7 +14,7 @@ Neste exemplo, aprenderemos a criar um módulo que mostra o texto Hello World na
 
 <div class="code-example" markdown="1">
 
-<p>Hello World!</p>
+Hello World!<br/>
 Seu Nome: <input disabled />
 
 </div>
@@ -253,7 +253,7 @@ Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo p
 
 <div class="code-example" markdown="1">
 
-<p>Hello World!</p>
+Hello World!<br/>
 Seu Nome: <input disabled />
 
 </div>
