@@ -211,6 +211,9 @@ Para associar um arquivo C# à propriedade `getDICTquery_CSharpCommand`, insira 
 Form Designer.xlsx
 {: .label .label-green }
 
+items*
+{: .label .label-yellow }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
