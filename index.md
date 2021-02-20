@@ -25,7 +25,7 @@ Os sistemas desenvolvidos na plataforma GlobalCad podem ser acessados através d
 
 ### Desenvolvimento Ágil
 
-A plataforma GlobalCad acelera a implementação de sistemas por um fator 10x ou superior. Em termos simples, um sistema complexo que requeira 10 meses para ser implementado para a Web e Mobile por 2 (dois) programadores usando tecnologia convencional pode ser facilmente implementado por apenas 1 (um) programador em menos de 1 mês utilizando a plataforma GlobalCad.
+A plataforma GlobalCad acelera a implementação de sistemas por um fator 10x ou superior. Em termos simples, um sistema complexo que requeira 10 meses para ser implementado para a Web e Mobile por 2 (dois) programadores usando tecnologia convencional pode ser facilmente implementado por apenas 1 (um) programador em tempo inferior a 1 mês utilizando a plataforma GlobalCad.
 
 ---
 
