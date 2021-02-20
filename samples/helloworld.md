@@ -38,7 +38,7 @@ Para publicar um novo módulo na plataforma GlobalCad, é necessário definir os
 | `Slot de Valores`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar <mark>apenas 1 (um)</mark> valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
 | `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar <mark>vários</mark> valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
 
-Para saber quais `Slots` estão disponíveis para o seu usuário, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa `Usuários`, clique em `Usuários`.
+Para saber quais `Slots` estão disponíveis para o seu usuário, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa intitulada `Usuários`, clique em `Usuários`.
 
 A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a opção `Visualizar`. O sistema apresentará os `Slots` associados ao seu nome de usuário, como mostrado abaixo:
 
@@ -258,5 +258,38 @@ Seu Nome: <input disabled />
 
 </div>
 
-Preencha o seu nome e clique em Salvar (Ou Enviar, se estiver no aplicativo GlobalCad para Android).
+Preencha o seu nome e clique em Salvar (Ou Enviar, se estiver no aplicativo GlobalCad para Android). 
 
+Para visualizar o `cadastro` criado, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa intitulada `Hello World`, clique na opção `Analítico`. A seguir, clique na pílula `Geral` e marque a checkbox `Seu Nome` para incluir a coluna no relatório.
+
+---
+
+## Analisando o Banco de Dados
+
+Imaginemos que você inicie o preenchimento de um novo registro do módulo Hello World e preencha o nome `Juliana Souza` na caixa de texto.
+
+<div class="code-example" markdown="1">
+
+Hello World!<br/>
+Seu Nome: <input disabled value="Juliana Souza" />
+
+</div>
+
+Ao salvar a tela, operação de salvamento criará um novo registro na tabela de valores:
+
+<table>
+  <tr>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">CODCADASTRO</th>
+    <th style="text-align:left">PARENT_CONTAINER_ITEMID</th>
+    <th style="text-align:left">STR1</th>
+  </tr>
+  <tr>
+    <td>4410</td>
+    <td>1</td>
+    <td>-1</td>
+    <td><b>Juliana Souza</b></td>
+  </tr>
+</table>
+
+O registro representa o `cadastro` recém-criado. Note que o campo `CODCONTRATO` contém o número do `Slot de Valores` associado ao módulo, e o campo `STR1` contém o valor do campo `Seu Nome`, que, em nosso exemplo, foi preenchido como `Juliana Souza`.
