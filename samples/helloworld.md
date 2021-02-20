@@ -249,7 +249,7 @@ Acesse a plataforma GlobalCad através de:
 - Um navegador de Internet (Abrindo [este link](https://app.globalcad.com.br))
 - Celulares e tablets Android (Baixando o [app GlobalCad](https://play.google.com/store/apps/details?id=globalcad.services) na Google Play)
 
-Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo pela web, clique em `Novo Formulário`. Se estiver acessando pelo aplicativo Android, pressione em `Menu Superior -> Hello World`. O aplicativo mostrará a seguinte tela:
+Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo pela web, clique em `Novo Formulário`. Se estiver acessando pelo aplicativo Android, pressione em `Menu Superior -> Hello World`. O sistema mostrará a seguinte tela:
 
 <div class="code-example" markdown="1">
 
