@@ -75,7 +75,7 @@ As 6 primeiras colunas da tabela `VALUES` são colunas de sistema, presentes na 
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | `Slot de Valores`. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `CODCONTRATO`         | `int`     | `Slot de Valores`. Para mais informações, leia a seção <b>"Aba `contracts`"</b> do artigo [Form Designer](formdesigner.md).
 | `CODCADASTRO`         | `int`     | ID do `cadastro`. Um `cadastro` pode ocupar mais de uma linha na tabela `VALUES` caso seja representado por mais de um `container`. Portanto, um mesmo `CODCADASTRO` pode repetir-se mais de uma vez na tabela `VALUES`.
 | `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container tipo raíz.
 | `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
@@ -130,7 +130,7 @@ As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIE
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | `Slot de dicionário`. Para mais informações, leia a seção <b>Aba `contracts`</b> do artigo [Form Designer](formdesigner.md).
+| `CODCONTRATO`         | `int`     | `Slot de dicionário`. Para mais informações, leia a seção <b>"Aba `contracts`"</b> do artigo [Form Designer](formdesigner.md).
 | `DICTID`             | `int`     | ID do dicionário dentro do contexto de um `CODCONTRATO`.
 | `KEY_VALUE`          | `long`    | <mark>Chave-primária.</mark> ID único do registro.
 | `KEY_TEXT`           | `string`  | Representação textual do registro. Um valor de `KEY_TEXT` não se repete para um mesmo `CODCONTRATO`, `DICTID` e `PARENT_KEY`.
@@ -171,7 +171,7 @@ País: <select disabled>
 
 </div>
 
-Ao salvar o registro, será criado um novo `item de dicionário` na tabela de dicionários (`DICTIONARIES`) chamado `Brasil`:
+Ao salvar o registro, será criado um novo `item de dicionário` chamado `Brasil` na tabela de dicionários (`DICTIONARIES`), caso ainda não exista:
 
 <table>
   <tr>
@@ -215,4 +215,4 @@ Além de produzir um registro na tabela de dicionários, a operação de salvame
   </tr>
 </table>
 
-Observe que o campo `KEY1` da tabela de valores (`VALUES`) aponta para o registro `Brasil` da tabela `DICTIONARIES` (`KEY_VALUE = 415`).
+Observe que o campo `STR1` da tabela de valores (`VALUES`) contém o nome da pessoa entrevistada, `INT1` contém a idade e `KEY1` aponta para o registro `Brasil` da tabela `DICTIONARIES` (`KEY_VALUE = 415`).
