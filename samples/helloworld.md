@@ -61,7 +61,6 @@ contracts
 
 <table>
   <tr>
-    <th style="text-align:left">level</th>
     <th style="text-align:left">alias</th>
     <th style="text-align:left">CODCONTRATO</th>
     <th style="text-align:left">DEFAULT</th>
@@ -69,7 +68,6 @@ contracts
     <th style="text-align:left">Observação</th>
   </tr>
   <tr>
-    <td>1</td>
     <td>Official</td>
     <td><b>4410</b></td>
     <td></td>
@@ -77,7 +75,6 @@ contracts
     <td><mark>Slot do Módulo</mark></td>
   </tr>
   <tr>
-    <td>1</td>
     <td>Default</td>
     <td><b>4410</b></td>
     <td><b>true</b></td>
@@ -85,7 +82,6 @@ contracts
     <td><mark>Slot de Valores</mark></td>
   </tr>
   <tr>
-    <td>1</td>
     <td>SHARED</td>
     <td><b>4410</b></td>
     <td></td>
