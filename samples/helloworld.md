@@ -12,12 +12,6 @@ has_children: false
 Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World na Web e no Mobile.
 {: .fs-6 .fw-300 }
 
-<div class="code-example" markdown="1">
-
-<p>Hello World!</p>
-
-</div>
-
 ## Índice
 {: .no_toc .text-delta }
 
