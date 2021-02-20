@@ -130,7 +130,7 @@ As 6 primeiras colunas são colunas de sistema, presentes na tabela `DICTIONARIE
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | `Slot de dicionário`. Para mais informações, leia a seção <b>"Aba `contracts`"</b> do artigo [Form Designer](formdesigner.md).
+| `CODCONTRATO`         | `int`     | `Slot de Dicionário`. Para mais informações, leia a seção <b>"Aba `contracts`"</b> do artigo [Form Designer](formdesigner.md).
 | `DICTID`             | `int`     | ID do dicionário dentro do contexto de um `CODCONTRATO`.
 | `KEY_VALUE`          | `long`    | <mark>Chave-primária.</mark> ID único do registro.
 | `KEY_TEXT`           | `string`  | Representação textual do registro. Um valor de `KEY_TEXT` não se repete para um mesmo `CODCONTRATO`, `DICTID` e `PARENT_KEY`.
