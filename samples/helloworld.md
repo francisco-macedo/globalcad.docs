@@ -23,7 +23,7 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 
 ## Escolhendo Slots
 
-Para publicar um novo módulo na plataforma GlobalCad, é necessário definir:
+Para publicar um novo módulo na plataforma GlobalCad, é necessário definir 3 `Slots`:
 
 | Parâmetro             | Descrição                                                       |
 |:----------------------|-----------------------------------------------------------------|
