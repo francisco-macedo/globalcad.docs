@@ -19,7 +19,7 @@ has_children: false
 
 ---
 
-## Tabelas Associadas a Módulos
+## Tabelas Associadas a um Módulo
 
 Conforme mencionado anteriormente, um módulo é composto por 1 (uma) tela Web, 1 (uma) tela Mobile e outras telas e componentes.
 
