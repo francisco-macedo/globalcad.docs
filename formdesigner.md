@@ -54,7 +54,6 @@ A aba `publish` contém o endereço do servidor e um campo onde deve ser inserid
 
 Form Designer.xlsx
 {: .label .label-green }
-
 publish
 {: .label .label-yellow }
 
