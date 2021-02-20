@@ -21,6 +21,6 @@ Essa seção ensina a criar alguns módulos que exemplificam o funcionamento da 
 
 Para compreender o conteúdo dessa seção:
 
-- Leia [Conceitos Básicos](..\basicconcepts.md) para absorver conceitos fundamentais da plataforma GlobalCad
-- Leia [Persistência de Dados](..\datapersistency.md) para aprender como os dados são persistidos no banco de dados
-- Leia [Form Designer](..\formdesigner.md) para saber como utilizar o Form Designer para criar e configurar módulos
+- Leia [Conceitos Básicos](../basicconcepts.html) para absorver conceitos fundamentais da plataforma GlobalCad
+- Leia [Persistência de Dados](../datapersistency.html) para aprender como os dados são persistidos no banco de dados
+- Leia [Form Designer](../formdesigner.html) para saber como utilizar o Form Designer para criar e configurar módulos
