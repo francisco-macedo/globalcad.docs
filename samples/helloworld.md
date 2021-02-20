@@ -38,7 +38,7 @@ Para publicar um novo módulo na plataforma GlobalCad, é necessário definir os
 | `Slot de Valores`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar <mark>apenas 1 (um)</mark> valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
 | `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar <mark>vários</mark> valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
 
-Para saber quais `Slots` estão disponíveis para o seu usuário, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa intitulada `Usuários`, clique em `Usuários`.
+Para saber quais `Slots` estão disponíveis para o seu usuário, acesse a [versão Web](https://app.globalcad.com.br) da plataforma GlobalCad e, na caixa intitulada `Usuários`, clique em `Usuários`.
 
 A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a opção `Visualizar`. O sistema apresentará os `Slots` associados ao seu nome de usuário, como mostrado abaixo:
 
