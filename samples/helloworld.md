@@ -33,9 +33,18 @@ Para publicar um novo módulo na plataforma GlobalCad, é necessário definir:
 
 Para saber quais `Slots` estão vinculados ao seu login, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa `Usuários`, clique em `Usuários`.
 
-![Image](img/users.png)
+![Image](img/users.png =250x)
 
 A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a opção `Visualizar`. O sistema apresentará os `Slots` associados ao seu nome de usuário, como mostrado abaixo:
+
+| Módulo                |
+|:----------------------|
+| <b>4240</b> - Usuários / 1
+| <b>4410</b> - Sandbox 4410 / 1
+| <b>4411</b> - Sandbox 4411 / 1
+| <b>4412</b> - Sandbox 4412 / 1
+| <b>4413</b> - Sandbox 4413 / 1
+| ...
 
 ---
 
