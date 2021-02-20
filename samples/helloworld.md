@@ -14,7 +14,7 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 
 <div class="code-example" markdown="1">
 
-Exemplo: <input disabled value="Valor Exemplo" />
+<p>Hello World!</p>
 
 </div>
 
