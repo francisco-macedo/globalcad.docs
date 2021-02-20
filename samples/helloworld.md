@@ -258,3 +258,5 @@ Seu Nome: <input disabled />
 
 </div>
 
+Preencha o seu nome e clique em Salvar (Ou Enviar, se estiver no aplicativo GlobalCad para Android).
+
