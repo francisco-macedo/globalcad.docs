@@ -49,7 +49,7 @@ Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usu
 
 ---
 
-## Configurando a Aba `contracts`
+## Aba `contracts`
 
 Abra uma instância em branco da planilha Form Designer.xlsx e acesse a aba `contracts` para informar os `Slots` escolhidos para o seu módulo. Neste exemplo, usaremos o mesmo numeral para representar o `Slot do Módulo`, `Slot de Valores` e `Slot de Dicionários`, conforme demonstrado abaixo:
 
@@ -94,7 +94,7 @@ O campo `alias` pode ser preenchido com valores de sua escolha. `alias` represen
 
 ---
 
-## Configurando a Aba `tables`
+## Aba `tables`
 
 Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, deve-se configurar a aba `tables` da seguinte maneira:
 
@@ -149,7 +149,7 @@ tables
 
 ---
 
-## Configurando a Aba `setup`
+## Aba `setup`
 
 Acesse a aba `setup` do Form Designer.xlsx e configure-a assim:
 
@@ -176,7 +176,7 @@ O `contractname` é o nome que o seu módulo terá no aplicativo GlobalCad para 
 
 ---
 
-## Configurando as Telas Web e Mobile
+## Telas Web e Mobile
 
 Acesse a aba `items` do seu Form Designer.xlsx para configurar as telas Web e Mobile do seu módulo. Configure a aba `items` conforme mostrado abaixo:
 
