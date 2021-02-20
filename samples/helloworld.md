@@ -42,7 +42,6 @@ A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a op
 | <b>4411</b> - Sandbox 4411 / 1
 | <b>4412</b> - Sandbox 4412 / 1
 | <b>4413</b> - Sandbox 4413 / 1
-| ...
 
 Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usuários`. O numeral que aparece após o caractere `/` representa a sua permissão de acesso ao módulo (Saiba mais sobre permissões de acesso [aqui](../formdesigner.html#aba-permissions)).
 
@@ -52,7 +51,7 @@ Escolha um `Slot` não ocupado e anote-o em um papel. Esse será o seu `Slot do 
 
 ---
 
-## Configurando a Aba `contracts` do Form Designer
+## Configurando a Aba `contracts`
 
 Abra uma instância em branco da planilha Form Designer.xlsx e acesse a aba `contracts` para configurar os `Slots` do seu módulo. Para este exemplo, usaremos o mesmo numeral para representar o `Slot do Módulo`, `Slot de Valores` e `Slot de Dicionários`, conforme demonstrado abaixo:
 
@@ -101,9 +100,15 @@ O campo `alias` pode ser preenchido com valores de sua escolha. `alias` represen
 
 ---
 
-## Configurando a Aba `tables` do Form Designer
+## Configurando a Aba `tables`
 
-Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, eis a maneira como se deve configurar a aba `tables`:
+Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, deve-se configurar a aba `tables` da seguinte maneira:
+
+Form Designer.xlsx
+{: .label .label-green }
+
+tables
+{: .label .label-yellow }
 
 <table>
   <tr>
@@ -150,9 +155,9 @@ Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (se
 
 ---
 
-## Configurando a Aba `setup` do Form Designer
+## Configurando a Aba `setup`
 
-A seguir, acesse a aba `setup` e configure-a assim:
+Acesse a aba `setup` do Form Designer.xlsx e configure-a assim:
 
 Form Designer.xlsx
 {: .label .label-green }
@@ -173,11 +178,38 @@ setup
   </tr>
 </table>
 
+O `contractname` é o nome que o seu módulo terá no aplicativo GlobalCad para Android, enquanto `reportlinkgroupname` é o nome que ele terá na versão Web da plataforma.
+
 ---
 
 ## Configurando as Telas Web e Mobile
 
-Acesse a aba `items` do seu Form Designer.xlsx e configure-a conforme mostrado abaixo:
+Acesse a aba `items` do seu Form Designer.xlsx para configurar as telas Web e Mobile do seu módulo. Configure a aba `items` conforme mostrado abaixo:
+
+Form Designer.xlsx
+{: .label .label-green }
+
+items*
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">id</th>
+    <th style="text-align:left">type</th>
+    <th style="text-align:left">text</th>
+    <th style="text-align:left">...</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>10</td>
+    <td>label</td>
+    <td>Hello World!</td>
+    <td>...</td>
+  </tr>
+</table>
+
+Nos próximos exemplos, o conteúdo da aba `items` passará a ser exibido em formato Json ao invés de formato de tabela. O Json equivalente à tabela `items` apresentada é:
 
 <div class="code-example" markdown="1">
 
@@ -203,4 +235,11 @@ Acesse a plataforma GlobalCad através de:
 - Um navegador de Internet (Abrindo [este link](https://app.globalcad.com.br))
 - Celulares e tablets Android (Baixando o [app GlobalCad](https://play.google.com/store/apps/details?id=globalcad.services) na Google Play)
 
-Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo pela web, clique em `Novo Formulário`. Se estiver acessando pelo aplicativo Android, pressione em `Menu Superior -> Hello World`
+Faça login com seu usuário e senha. A seguir, se estiver acessando o módulo pela web, clique em `Novo Formulário`. Se estiver acessando pelo aplicativo Android, pressione em `Menu Superior -> Hello World`. O aplicativo mostrará a seguinte tela:
+
+<div class="code-example" markdown="1">
+
+<p>Hello World!</p>
+
+</div>
+
