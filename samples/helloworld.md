@@ -103,7 +103,7 @@ O campo `alias` pode ser preenchido com valores de sua escolha. `alias` represen
 
 ## Aba `tables`
 
-Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, deve-se configurar a aba `tables` da seguinte maneira:
+Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo seu módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, deve-se configurar a aba `tables` da seguinte maneira:
 
 Form Designer.xlsx
 {: .label .label-green }
