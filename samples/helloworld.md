@@ -21,7 +21,7 @@ Neste exemplo, aprenderemos a criar um módulo que apresenta o texto Hello World
 ---
 
 
-## Escolhendo um Slot
+## Escolhendo o Slot do Módulo
 
 Para publicar um novo módulo na plataforma GlobalCad, é necessário definir:
 
@@ -32,8 +32,6 @@ Para publicar um novo módulo na plataforma GlobalCad, é necessário definir:
 | `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar <mark>vários</mark> valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
 
 Para saber quais `Slots` estão vinculados ao seu login, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa `Usuários`, clique em `Usuários`.
-
-![Image](img/users.png | width=100)
 
 A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a opção `Visualizar`. O sistema apresentará os `Slots` associados ao seu nome de usuário, como mostrado abaixo:
 
@@ -46,17 +44,113 @@ A seguir, procure pelo seu nome de usuário, clique sobre o mesmo e escolha a op
 | <b>4413</b> - Sandbox 4413 / 1
 | ...
 
-Note que o slot `4240` está ocupado por um módulo chamado `Usuários`. O numeral que aparece após o caractere `/` representa a sua permissão de acesso ao módulo (Para saber mais sobre como criar e configurar permissões de acesso, [clique aqui](formdesigner.html#aba-permissions)).
+Note que, neste exemplo, o slot `4240` está ocupado por um módulo chamado `Usuários`. O numeral que aparece após o caractere `/` representa a sua permissão de acesso ao módulo (Saiba mais sobre permissões de acesso [aqui](../formdesigner.html#aba-permissions)).
 
-Escolha um `Slot` não ocupado e o memorize. Esse será o seu `Slot do Módulo`. Já o `Slot de Valores` e os `Slots de Dicionário` podem conter qualquer valor. 
+Escolha um `Slot` não ocupado e anote-o em um papel. Esse será o seu `Slot do Módulo`. Já o `Slot de Valores` e os `Slots de Dicionário` podem conter qualquer valor numérico.
 
-É uma boa prática atribuir ao `Slot de Valores` e a pelo menos um `Slot de Dicionário` o mesmo valor atribuído ao `Slot do Módulo`, embora nem sempre isso faça sentido. Por exemplo: Se você estiver criando um módulo que utiliza o mesmo `Slot de Valores` de outro módulo, o seu `Slot do Módulo` necessariamente será diferente do `Slot de Valores`.
+É uma boa prática atribuir ao `Slot de Valores` e a pelo menos um dos `Slots de Dicionário` o mesmo valor atribuído ao `Slot do Módulo`, embora nem sempre isso faça sentido. Por exemplo: Se você estiver criando um módulo que utiliza o mesmo `Slot de Valores` de outro módulo, o seu `Slot do Módulo` necessariamente será diferente do `Slot de Valores`.
 
 ---
 
-## Setup
+## Configurando a Aba `contracts` do Form Designer
 
-Abra uma instância em branco da planilha Form Designer.xlsx e configure as abas `contracts` e `tables` conforme instruído no artigo [Form Designer](../formdesigner.html). 
+Abra uma instância em branco da planilha Form Designer.xlsx e acesse a aba `contracts` para configurar os `Slots` do seu módulo. Para este exemplo, usaremos o mesmo numeral para representar o `Slot do Módulo`, `Slot de Valores` e `Slot de Dicionários`, conforme demonstrado abaixo:
+
+Form Designer.xlsx
+{: .label .label-green }
+
+contracts
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DEFAULT</th>
+    <th style="text-align:left">OFFICIAL</th>
+    <th style="text-align:left">Observação</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Official</td>
+    <td><b>4410</b></td>
+    <td></td>
+    <td><b>true</b></td>
+    <td><mark>Slot do Módulo</mark></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Default</td>
+    <td><b>4410</b></td>
+    <td><b>true</b></td>
+    <td></td>
+    <td><mark>Slot de Valores</mark></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SHARED</td>
+    <td><b>4410</b></td>
+    <td></td>
+    <td></td>
+    <td><mark>Slot de Dicionário</mark></td>
+  </tr>
+</table>
+
+O campo `alias` pode ser preenchido com valores de sua escolha. `alias` representa a forma como você passará a se referir a cada `Slot` configurado - É mais prático do que referir-se aos `Slots` pelo número. <mark>É recomendável, como boa prática, que você mantenha pelo menos um Slot chamado SHARED. Essa é a convenção adotada para indicar que o Slot em questão contém dicionários que são compartilhados com outros módulos.</mark>
+
+---
+
+## Configurando a Aba `tables` do Form Designer
+
+Acesse a `tables` do Form Designer.xlsx e configure-a para apontar para as 7 (sete) tabelas que serão utilizadas pelo módulo. Assumindo que possuímos um conjunto de tabelas prefixadas com `CDHELLOWORLD_*`, eis a maneira como se deve configurar a aba `tables`:
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">name</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>V</td>
+    <td><b>CDHELLOWORLD_</b>VALUES</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>D</td>
+    <td><b>CDHELLOWORLD_</b>DICTIONARIES</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>H</td>
+    <td><b>CDHELLOWORLD_</b>HEADERS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>U</td>
+    <td><b>CDHELLOWORLD_</b>USERS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>RV</td>
+    <td><b>CDHELLOWORLD_</b>REPORTVIEWS</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>TC</td>
+    <td><b>CDHELLOWORLD_</b>TABLES_COMPACT_ID</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>F</td>
+    <td><b>CDHELLOWORLD_</b>FORMNUMBERS</td>
+  </tr>
+</table>
+
+---
+
+## Configurando a Aba `setup` do Form Designer
 
 A seguir, acesse a aba `setup` e configure-a assim:
 
@@ -81,9 +175,9 @@ setup
 
 ---
 
-## Hello World
+## Configurando as Telas Web e Mobile
 
-Configure a aba `items` do seu Form Designer conforme mostrado abaixo:
+Acesse a aba `items` do seu Form Designer.xlsx e configure-a conforme mostrado abaixo:
 
 <div class="code-example" markdown="1">
 
