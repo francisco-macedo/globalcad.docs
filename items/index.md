@@ -31,6 +31,9 @@ Ao inserir um item no Form Designer, é necessário, no mínimo, informar o seu 
 Form Designer.xlsx
 {: .label .label-green }
 
+items*
+{: .label .label-yellow }
+
 <table>
   <tr>
     <th style="text-align:left">level</th>
@@ -48,15 +51,4 @@ Form Designer.xlsx
   </tr>
 </table>
 
----
-
-## O Que São As Abas items* Do FormDesigner.xlsx?
-
-As abas items* do Form Designer representam as telas do seu módulo.
-
-- A aba `items` representa a tela de operação acessível pelos usuários tanto pela web, através de um navegador de Internet, como pelo aplicativo GlobalCad.
-- A aba `items (setup)` representa a tela de configurações do sistema. Essa tela é acessível somente pela web.
-- A aba `items (print)` representa o template de impressão. Esse template é usado para formatar o arquivo PDF gerado quando o usuário decide exportar um registro do sistema.
-- A aba `items (web)` representa a tela de operação acessível pelos usuários exclusivamente pela web. Se essa aba for deixada vazia, a tela de operação web será representada pela aba `items`. Se a aba não for deixada vazia, essa será a tela de operação web adotada pelo sistema.
-
-Cada módulo é representado por 1 (uma) planilha Form Designer e, conforme esclarecido nos bullets, pode conter apenas 1 (uma) tela Web e 1 (uma) tela Mobile.
+Acesse o artigo [Form Designer](formdesigner.md) para saber mais sobre como inserir itens às telas do seu módulo.
