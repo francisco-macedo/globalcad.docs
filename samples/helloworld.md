@@ -262,6 +262,10 @@ Preencha o seu nome e clique em Salvar (Ou Enviar, se estiver no aplicativo Glob
 
 Para visualizar o `cadastro` criado, acesse a [versão Web](https://app.globalcad.com.br) da plataforma da GlobalCad e, na caixa intitulada `Hello World`, clique na opção `Analítico`. A seguir, clique na pílula `Geral` e marque a checkbox `Seu Nome` para incluir a coluna no relatório.
 
+| Seu Nome              |
+|:----------------------|
+| Juliana Souza
+
 ---
 
 ## Analisando o Banco de Dados
