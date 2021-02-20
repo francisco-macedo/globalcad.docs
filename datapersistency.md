@@ -21,7 +21,7 @@ has_children: false
 
 ## Tabelas Associadas a um Módulo
 
-Conforme mencionado anteriormente, um módulo é composto por 1 (uma) tela Web, 1 (uma) tela Mobile e outras telas e componentes.
+Conforme mencionado anteriormente, um módulo é composto por 1 (uma) tela Web, 1 (uma) tela Mobile e outros itens, como relatórios e telas CRUD.
 
 As telas de um módulo obtém e armazenam dados de/em algumas tabelas do banco de dados. Cada módulo utiliza sempre 7 (sete) tabelas, das quais 5 (cinco) são tabelas de sistema, ou seja, possuem o mesmo formato para qualquer módulo, e 2 (duas) são tabelas de projeto, podendo ser personalizadas para propósitos específicos. As 2 (duas) tabelas de projeto são:
 
