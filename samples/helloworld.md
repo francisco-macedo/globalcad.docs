@@ -203,14 +203,9 @@ items*
   </tr>
 </table>
 
-Nos próximos exemplos, o conteúdo da aba `items` passará a ser exibido em formato Json ao invés de formato de tabela. O Json equivalente à tabela `items` apresentada é:
+Em outros artigos contendo exemplos, o conteúdo da aba `items` será exibido exclusivamente em formato Json, ao invés de formato de tabela. O Json equivalente à tabela apresentada é:
 
-<div class="code-example" markdown="1">
-
-<p>Hello World!</p>
-
-</div>
-```markdown
+```
 [
   {
     "id": 10,
