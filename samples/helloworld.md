@@ -306,8 +306,8 @@ A tabela abaixo explica o significado de cada uma das colunas da tabela de valor
 
 | Coluna                | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `CODCONTRATO`         | `int`     | `Slot de Valores`.
-| `CODCADASTRO`         | `int`     | ID do `cadastro`.
+| `CODCONTRATO`         | `int`     | `Slot de Valores`
+| `CODCADASTRO`         | `int`     | ID do `cadastro`
 | `PARENT_CONTAINER_ITEMID`| `int`  | ID do tipo de `container` representado pelo registro. `-1` = Container tipo raíz.
 | `ID`                  | `long`    | ID único do `container` representado pelo registro. A unicidade é garantida no contexto do `cadastro` (`CODCADASTRO`), ou seja, um mesmo `ID` nunca se repetirá para um mesmo `CODCADASTRO`.
 | `PARENT_ID`           | `long`    | ID único do `container-pai` do `container` representado pelo registro. `-1` = Nenhum.
