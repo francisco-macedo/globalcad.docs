@@ -46,7 +46,7 @@ Antes de prosseguir, é importante conhecer a função e a estrutura da tabela d
 
 A planilha Form Designer.xlsx contém diversas abas. Nas próximas seções, entraremos em detalhes sobre as abas mais importantes.
 
-### Abas de Login
+### Abas `login` e `publish`
 
 As abas `login` e `publish` do Form Designer permitem que você configure em qual servidor o seu módulo será publicado.
 
@@ -70,11 +70,101 @@ Form Designer.xlsx
   </tr>
 </table>
 
-Note que o campo `ticket` está em branco. Para preenchê-lo, basta acessar a aba `login` e inserir o seu nome de usuário na plataforma GlobalCad e a senha. A seguir, clique no botão `Login`. Se o login for bem-sucedido, o campo `ticket` da aba `publish` será preenchido com um token de acesso válido.
+Note que o campo `ticket` está em branco. Para preenchê-lo, basta acessar a aba `login` e inserir o seu nome de usuário na plataforma GlobalCad e a sua senha. A seguir, clique no botão `Login`. Se o login for bem-sucedido, o campo `ticket` da aba `publish` será preenchido com um token de acesso válido.
 
 ---
 
-### Abas de Itens
+### Aba `contracts`
+
+A aba `contracts` do Form Designer lhe permite configurar 3 parâmetros:
+
+| Parâmetro             | Descrição                                                       |
+|:----------------------|-----------------------------------------------------------------|
+| `Slot do Módulo`      | Número que identifica unicamente o seu módulo no contexto da infraestrutura da plataforma GlobalCad. <mark>Esse número nunca será salvo em nenhuma tabela do banco de dados. Serve puramente para referir-se ao módulo.</mark>
+| `Slot de Gravação`    | Corresponde ao valor de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de valores (`VALUES`). O seu módulo pode usar apenas 1 (um) valor de `CODCONTRATO` para ler/gravar de/na tabela de valores.
+| `Slots de Dicionário` | Corresponde a 1 ou mais valores de `CODCONTRATO` que o seu módulo usará para ler e gravar informações da/na tabela de dicionários (`DICTIONARIES`). O seu módulo pode usar apenas vários valores de `CODCONTRATO` para ler/gravar de/na tabela de dicionários.
+
+Para configurar o 'Slot do Módulo', atribua `true` à propriedade `OFFICIAL` da aba `contracts` e, a seguir, insira o número que identifica unicamente o seu módulo no campo `CODCONTRATO`:
+
+Form Designer.xlsx
+{: .label .label-green }
+
+`contracts`
+{: .label .label-yellow }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DEFAULT</th>
+    <th style="text-align:left">OFFICIAL</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Official</td>
+    <td><b>1000</b></td>
+    <td></td>
+    <td><b>true</b></td>
+  </tr>
+</table>
+
+Para configurar o `Slot de Gravação`, atribua `true` à propriedade `DEFAULT` e informe um valor para o campo `CODCONTRATO`. 
+
+Form Designer.xlsx
+{: .label .label-green }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DEFAULT</th>
+    <th style="text-align:left">OFFICIAL</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Default</td>
+    <td><b>1000</b></td>
+    <td><b>true</b></td>
+    <td></td>
+  </tr>
+</table>
+
+Por fim, para configurar `Slots de Dicionário`, deixe as propriedades `OFFICIAL` e `DEFAULT` em branco e então informe um valor para o campo `CODCONTRATO`. Repita o processo para cada `Slot de Dicionário` que desejar configurar.
+
+Form Designer.xlsx
+{: .label .label-green }
+
+<table>
+  <tr>
+    <th style="text-align:left">level</th>
+    <th style="text-align:left">alias</th>
+    <th style="text-align:left">CODCONTRATO</th>
+    <th style="text-align:left">DEFAULT</th>
+    <th style="text-align:left">OFFICIAL</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SHARED</td>
+    <td><b>1000</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>SHARED_02</td>
+    <td><b>1040</b></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+O campo `alias` pode ser preenchido com valores de sua escolha. Eles representam a forma como você passará a se referir a cada um dos `Slots` configurados - É mais prático do que referir-se aos mesmos pelo número. <mark>Recomendamos, como boa prática, que você mantenha pelo menos um Slot chamado SHARED. Essa é a convenção adotada para indicar que o Slot em questão contém dicionários que são compartilhados com outros módulos.</mark>
+
+---
+
+### Abas `items*`
 
 As abas `items*` do Form Designer representam as telas do seu módulo. Elas também podem ser usadas para configurar os relatórios do módulo.
 
@@ -137,8 +227,8 @@ Form Designer.xlsx
   <tr>
     <td>1</td>
     <td>10</td>
-    <td>textbox</td>
-    <td>CPF</td>
+    <td><b>textbox</b></td>
+    <td><b>CPF</b></td>
     <td>...</td>
   </tr>
 </table>
