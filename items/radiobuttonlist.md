@@ -34,28 +34,28 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `radiob
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
 | `usetonameform`       | `bool`    |. [Clique aqui](#mask) para mais detalhes. 
-| `gotonext`            | `bool`    | Inform if the app should move to the next item on confirm. Default = 'true'
-| `usetomarkasrevisionpending` | `bool`    | Inform if the first letter of each word should be capitalized. Default = `false`
-| `hidelabel` | `bool`    | .
-| `hidebuttons` | `bool`  |.
+| `gotonext`            | `bool`    | Informar se o app deve mover para o próximo item ao confirmar. Default = `true`
+| `usetomarkasrevisionpending` | `bool`    | .
+| `hidelabel` | `bool`    | Informar se o rótulo (ou nome) do `radiobuttonlist` deve ser ocultado. Default = `false`
+| `hidebuttons` | `bool`  | Informar os botões devem ser ocultados. Default = `false`
 
 ---
 
 ## Propriedades Básicas
 
-Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+Itens do tipo `radiobuttonlist` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
 
 ---
 
 ## Propriedades de Banco de Dados
 
-Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+Pelo fato de persistirem informação em memória, itens do tipo `radiobuttonlist` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
 
 ---
 
 ## Propriedades de Interação
 
-Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
+Itens do tipo `radiobuttonlist` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
