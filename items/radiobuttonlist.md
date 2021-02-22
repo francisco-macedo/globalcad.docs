@@ -74,7 +74,7 @@ A tela abaixo revela um grupo de opções de meios de transporte entre os quais 
 
 ---
 
-## Radiobuttonlist - Exemplo 1
+## Radiobuttonlist - Exemplo 2
 
 A tela abaixo revela o mesmo `radiobuttonlist` do exemplo anterior, porém a propriedade `hidelabel` foi alterada para `true`.
 
@@ -95,7 +95,8 @@ A tela abaixo revela o mesmo `radiobuttonlist` do exemplo anterior, porém a pro
     "text": "Meio de Transporte",
     "VALUECol": "V.KEY5",
     "ownedDICTID": 10,
-    "ownedDICTtablealias": "D"
+    "ownedDICTtablealias": "D",
+    "hidelabel": true
   }
 ]
 ```
