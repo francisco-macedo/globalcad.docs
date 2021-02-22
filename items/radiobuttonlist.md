@@ -33,8 +33,6 @@ Itens do tipo `radiobuttonlist` aceitam as seguintes propriedades comuns de iten
 
 ---
 
----
-
 ## Propriedades Básicas
 
 Itens do tipo `radiobuttonlist` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
