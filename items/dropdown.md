@@ -13,7 +13,9 @@ Itens do tipo dropdown representam uma lista de itens que podem ser selecionados
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
-	<label for="transportes">Escolha um tipo de transporte</label>
+	Exemplo:
+	<br>
+	Transportes: 
 	<select name="transportes" id="transportes">
 	  <option value="aereo">Aéreo</option>
 	  <option value="terrestre">Terrestre</option>
