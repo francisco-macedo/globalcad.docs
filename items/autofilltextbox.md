@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
+Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto e após a primeira inserção é preenchido automaticamente com as informações salvas anteriormente.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
