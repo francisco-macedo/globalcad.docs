@@ -37,13 +37,13 @@ Itens do tipo `checkbox` aceitam propriedades comuns de itens. [Clique aqui](com
 
 Itens do tipo `checkbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
 
-Esses itens armazenam um valor `int` ao banco de dados (`V.INTX` ou, se for um membro, `D.INTX`).
-
 ---
 
 ## Propriedades de Banco de Dados
 
 Pelo fato de persistirem informação em memória, itens do tipo `checkbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+
+Esses itens armazenam um valor `int` ao banco de dados (`V.INTX` ou, se for um membro, `D.INTX`).
 
 ---
 
