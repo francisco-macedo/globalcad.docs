@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo `checkbox` representam uma caixa que o usuário pode ou não marcar.
+Itens do tipo checkbox representam uma caixa que o usuário pode ou não marcar.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
