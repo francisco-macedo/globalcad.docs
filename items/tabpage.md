@@ -81,16 +81,16 @@ A tela abaixo revela o resultado do exemplo 1 no arquivo `json.txt`.
 [
   {
     "id": 10,
-	"type": "tabpage",
-	"text": "Nova Aba",
-	"items":[
-		{
-			"id": 20,
-			"type": "textbox",
-			"text": "Textbox Filho",
-			"VALUECol": "V.STR1",
-		}
-	]
+    "type": "tabpage",
+    "text": "Nova Aba",
+    "items":[
+      {
+        "id": 20,
+        "type": "textbox",
+        "text": "Textbox Filho",
+        "VALUECol": "V.STR1"
+      }
+    ]
   }
 ]
 ```
