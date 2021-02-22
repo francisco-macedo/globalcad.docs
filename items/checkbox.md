@@ -59,7 +59,7 @@ A tela abaixo revela uma checkbox.
 
 <div class="code-example" markdown="1">
 
-<input type="checkbox"> Tornar meus dados públicos</input>
+<input type="checkbox"> Tornar meus dados públicos
 
 </div>
 ```markdown
