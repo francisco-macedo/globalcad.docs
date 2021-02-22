@@ -71,3 +71,31 @@ A tela abaixo revela um grupo de opções de meios de transporte entre os quais 
   }
 ]
 ```
+
+---
+
+## Radiobuttonlist - Exemplo 1
+
+A tela abaixo revela o mesmo `radiobuttonlist` do exemplo anterior, porém a propriedade `hidelabel` foi alterada para `true`.
+
+<div class="code-example" markdown="1">
+  <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
+  <label for="onibus">Ônibus</label><br>
+  <input type="radio" id="carro" name="meioDeTransporte" value="carro">
+  <label for="carro">Carro</label><br>
+  <input type="radio" id="outro" name="meioDeTransporte" value="outro">
+  <label for="outro">Outro</label>
+</div>
+
+```markdown
+[
+  {
+    "id": 10,
+    "type": "radiobuttonlist",
+    "text": "Meio de Transporte",
+    "VALUECol": "V.KEY5",
+    "ownedDICTID": 10,
+    "ownedDICTtablealias": "D"
+  }
+]
+```
