@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
+Itens do tipo radiobuttonlist representam uma lista de botões entre os quais os usuários podem selecionar um.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
@@ -29,14 +29,15 @@ Exemplo: <input disabled value="Valor Exemplo" />
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `radiobuttonlist`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
-| `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
-| `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
-| `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
+| `usetonameform`       | `bool`    |. [Clique aqui](#mask) para mais detalhes. 
+| `gotonext`            | `bool`    | Inform if the app should move to the next item on confirm. Default = 'true'
+| `usetomarkasrevisionpending` | `bool`    | Inform if the first letter of each word should be capitalized. Default = `false`
+| `hidelabel` | `bool`    | .
+| `hidebuttons` | `bool`  |.
 
 ---
 
