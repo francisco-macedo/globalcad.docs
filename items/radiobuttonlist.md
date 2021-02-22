@@ -52,7 +52,6 @@ A tela abaixo revela um grupo de opções de meios de transporte entre os quais 
 <div class="code-example" markdown="1">
 
 Meio de Transporte:
-
 <input type="radio" id="onibus" name="ônibus" value="onibus">
 <label for="onibus">Ônibus</label><br>
 <input type="radio" id="carro" name="carro" value="carro">
@@ -61,6 +60,7 @@ Meio de Transporte:
 <label for="outro">Outro</label>
 
 </div>
+
 ```markdown
 [
   {
