@@ -9,12 +9,12 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto e após a primeira inserção é preenchido automaticamente com as informações salvas anteriormente.
+Itens do tipo autofilltextbox representam uma caixa na qual os usuários podem inserir texto e após a primeira inserção é preenche seus membros automaticamente com as informações salvas anteriormente.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
 
-Exemplo: <input disabled value="Valor Exemplo" />
+Exemplo: <input disabled value="Valor Exemplo Autofilltextbox" />
 
 </div>
 
@@ -29,13 +29,14 @@ Exemplo: <input disabled value="Valor Exemplo" />
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `autofilltextbox`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
 | `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
 | `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
 | `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
+| `minautofillchars`	| `int`		|O número mínimo de caracteres que devem ser digitados para que seus membros sejam preenchidos.
 | `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
 
 ---
