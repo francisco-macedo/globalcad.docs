@@ -38,8 +38,8 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `autofi
 | `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
 | `minautofillchars`	| `int`		|O número mínimo de caracteres que devem ser digitados para que seus membros sejam preenchidos.
 | `acmode`				| `string` 	|Tipo de carregamento de dicionários. Default = `local`
-									 `local`: Os dicionários que possivelmente serão usados são carregados e salvos localmente quando o usuário entrar no aplicativo.
-									 `remote`: Os dicionários serão carregados à medida que for necessário.
+|						|		 	|`local`: Os dicionários que possivelmente serão usados são carregados e salvos localmente quando o usuário entrar no aplicativo.
+|						|			|`remote`: Os dicionários serão carregados à medida que for necessário.
 | `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
 
 ---
