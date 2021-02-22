@@ -27,7 +27,7 @@ Exemplo: <input type="checkbox" />
 ---
 
 
-## Propriedades Específicas
+## Propriedades Comuns
 
 Itens do tipo `checkbox` aceitam propriedades comuns de itens. [Clique aqui](commonproperties.md) para conhecê-las.
 
