@@ -29,17 +29,15 @@ Exemplo: <input type="checkbox" />
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `checkbox`.
-
-| Propriedade           | Tipo      | Descrição                                                        |
-|:----------------------|:----------|:-----------------------------------------------------------------|
-|                       |           |
+Itens do tipo `checkbox` aceitam propriedades comuns de itens. [Clique aqui](commonproperties.md) para conhecê-las.
 
 ---
 
 ## Propriedades Básicas
 
 Itens do tipo `checkbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+
+Esses itens armazenam um valor `int` ao banco de dados (`V.INTX` ou, se for um membro, `D.INTX`).
 
 ---
 
@@ -61,7 +59,7 @@ A tela abaixo revela uma checkbox.
 
 <div class="code-example" markdown="1">
 
-<input type="checkbox">Tornar meus dados públicos</input>
+<input type="checkbox"> Tornar meus dados públicos</input>
 
 </div>
 ```markdown
