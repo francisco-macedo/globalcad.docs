@@ -30,9 +30,9 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `tabpag
 
 ---
 
-## Propriedades Básicas
+## Propriedades de Interação
 
-Itens do tipo `tabpage` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
