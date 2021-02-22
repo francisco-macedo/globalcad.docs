@@ -9,8 +9,14 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo tabpage não representam um campo que recebe dados, mas divide o módulo em abas. O `level` de uma aba deve ser menor que o de seus filhos.
+Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
 {: .fs-6 .fw-300 }
+
+<div class="code-example" markdown="1">
+
+Exemplo: <input disabled value="Valor Exemplo" />
+
+</div>
 
 ## Índice
 {: .no_toc .text-delta }
@@ -20,13 +26,17 @@ Itens do tipo tabpage não representam um campo que recebe dados, mas divide o m
 
 ---
 
+
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `tabpage`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `expandonload`        | `bool`    |Informa se a aba deve ser a aba aberta ao se carregar o formulário. Padrão: `true` para a primeira aba e `false` para as demais.
+| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
+| `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
+| `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
+| `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
 
 ---
 
@@ -36,61 +46,69 @@ Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique 
 
 ---
 
+## Propriedades de Banco de Dados
+
+Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+
+---
+
 ## Propriedades de Interação
 
 Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
 
 ---
 
+## Propriedades Específicas - Detalhamento
 
-## Tabpage - Exemplo 1
-{: .no_toc }
+### `mask`
 
-Para inserir uma tabpage no Form Designer.xlsx, utilize a seguinte estrutura:
+A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
 
-<table>
-  <tr>
-    <th style="text-align:left">level</th>
-    <th style="text-align:left">id</th>
-    <th style="text-align:left">type</th>
-    <th style="text-align:left">text</th>
-    <th style="text-align:left">...</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>10</td>
-    <td>tabpage</td>
-    <td>Nova Aba</td>
-    <td>...</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>20</td>
-    <td>textbox</td>
-    <td>Textbox Filho</td>
-    <td>...</td>
-  </tr>
-</table>
+- `#`: Número
+- `_`: Qualquer caractere
+- `U`: Letra maiúscula (Uppercase)
+- `l`: Letra minúscula (Lowercase)
+- `u`: Letra maiúscula ou número
+- `L`: Letra minúscula ou número
+- `{decimal:N}`: Número decimal com `N` casas decimais
+- `{decimal:N:P}`: Número decimal com `N` casas decimais e prefixo `P`
+- `{decimalNoSeparator:N}`: Número decimal sem separador de milhar com `N` casas decimais
+- `{decimalNoSeparator:N:P}`: Número decimal sem separador de milhar com `N` casas decimais e prefixo `P`
 
-## Tabpage - Exemplo 2
-{: .no_toc }
+Para construir uma máscara que formata o texto inserido como CPF, por exemplo, use:
 
-A tela abaixo revela o resultado do exemplo 1 no arquivo `json.txt`.
+```
+###.###.###-##
+```
 
+Note que estamos misturando caracteres especiais (`#`) com outros caracteres (`.` e `-`) para formar a nossa máscara.
+
+Para construir uma máscara que formata o texto como um número com 2 casas decimais, use a máscara:
+
+```
+{decimal:2}
+```
+
+---
+
+## Textbox - Exemplo 1
+
+A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
+
+<div class="code-example" markdown="1">
+
+CPF: <input disabled placeholder="Insira aqui o CPF" />
+
+</div>
 ```markdown
 [
   {
     "id": 10,
-    "type": "tabpage",
-    "text": "Nova Aba",
-    "items":[
-      {
-        "id": 20,
-        "type": "textbox",
-        "text": "Textbox Filho",
-        "VALUECol": "V.STR1"
-      }
-    ]
+    "type": "textbox",
+    "text": "CPF",
+    "VALUECol": "V.STR1",
+    "mask": "###.###.###-##",
+    "hint": "Insira aqui o CPF"
   }
 ]
 ```
