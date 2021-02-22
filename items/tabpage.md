@@ -30,6 +30,13 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `tabpag
 
 ---
 
+## Propriedades Básicas
+
+Itens do tipo `tabpage` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+
+---
+
+
 ## Tabpage - Exemplo 1
 {: .no_toc }
 
