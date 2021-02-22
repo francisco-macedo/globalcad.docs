@@ -29,7 +29,7 @@ O Form Designer é uma planilha utilitária na qual você configura um módulo d
 - Criar relatórios de Business Intelligence para apresentar informações aos usuários-finais
 - Configurar parâmetros gerais do módulo
 
-Uma vez configurado o módulo, o Form Designer publica o seu projeto no servidor onde a plataforma GlobalCad está instalada, efetivamente tornando-o disponível para os usuários-finais.
+O Form Designer também se encarrega de publicar o seu módulo no servidor onde a plataforma GlobalCad está instalada, efetivamente tornando-o disponível para os usuários-finais.
 
 O Form Designer pode ser baixado na pasta `0- DEVELOPERS\FORM_DESIGNER\V** Form Designer.xlsx` do Google Drive. O acesso ao arquivo só é liberado após a aprovação de sua conta na plataforma GlobalCad.
 
