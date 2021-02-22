@@ -99,18 +99,21 @@ A tela abaixo revela uma caixa de texto configurada para formatar o texto inseri
 
 <div class="code-example" markdown="1">
 
-CPF: <input disabled placeholder="Insira aqui o CPF" />
+Nome: <input disabled placeholder="Insira aqui o seu nome" />
 
 </div>
 ```markdown
 [
-  {
-    "id": 10,
-    "type": "autofilltextbox",
-    "text": "CPF",
-    "VALUECol": "V.STR1",
-    "mask": "###.###.###-##",
-    "hint": "Insira aqui o CPF"
-  }
+	{
+		"id": 40,
+		"hint": "Insira aqui o seu nome",
+		"type": "autofilltextbox",
+		"text": "Nome",
+		"VALUECol": "V.KEY3",
+		"ownedDICTID": 4,
+		"ownedDICTtablealias": "D",
+		"activationparentid": 30,
+		"activationparentvalue": "@"
+	}
 ]
 ```
