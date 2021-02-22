@@ -21,7 +21,7 @@ Propriedades comuns são comuns a muitos itens, mas não abrange tantos itens qu
 ---
 
 
-## Propriedades Básicas
+## Propriedades Comuns
 
 A tabela abaixo lista todas as propriedades comuns de itens.
 

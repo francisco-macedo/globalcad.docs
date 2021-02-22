@@ -29,7 +29,7 @@ Exemplo: <input type="checkbox" />
 
 ## Propriedades Comuns
 
-Itens do tipo `checkbox` aceitam propriedades comuns de itens. [Clique aqui](commonproperties.md) para conhecê-las.
+Itens do tipo `checkbox` aceitam as seguintes propriedades comuns de itens: `usetonameform`, `gotonext` e `usetomarkasrevisionpending`. [Clique aqui](commonproperties.md) para conhecê-las.
 
 ---
 
