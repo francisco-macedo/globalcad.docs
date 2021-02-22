@@ -27,17 +27,11 @@ Exemplo: <input disabled value="Valor Exemplo" />
 ---
 
 
-## Propriedades Específicas
+## Propriedades Comuns
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `radiobuttonlist`.
+Itens do tipo `radiobuttonlist` aceitam as seguintes propriedades comuns de itens: `usetonameform`, `gotonext`, `usetomarkasrevisionpending` e `hidelabel`. [Clique aqui](commonproperties.md) para conhecê-las.
 
-| Propriedade           | Tipo      | Descrição                                                        |
-|:----------------------|:----------|:-----------------------------------------------------------------|
-| `usetonameform`       | `bool`    |. 
-| `gotonext`            | `bool`    | Informar se o app deve mover para o próximo item ao confirmar. Default = `true`
-| `usetomarkasrevisionpending` | `bool`    |.
-| `hidelabel` | `bool`    | Informar se o rótulo (ou nome) do `radiobuttonlist` deve ser ocultado. Default = `false`
-| `hidebuttons` | `bool`  | Informar os botões devem ser ocultados. Default = `false`
+---
 
 ---
 
