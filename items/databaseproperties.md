@@ -146,7 +146,7 @@ Estado: <input disabled value="Minas Gerais" />
 
 </div>
 
-Ao salvar o registro, será criado um novo item na tabela de dicionários: O item `Minas Gerais`. Note que a coluna `PARENT_KEY` do item apontará para `Brasil`, pois configuramos essa relação de parentesco em nosso módulo. Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
+Ao salvar o registro, será criado um novo item na tabela de dicionários: O item `Minas Gerais`. Note que a coluna `PARENT_KEY` do item apontará para `Brasil`, pois configuramos essa relação de parentesco em nosso módulo.
 
 <table>
   <tr>
@@ -423,7 +423,7 @@ IDH: <input disabled value="0,765" />
 
 </div>
 
-Ao salvar a tela, o registro do país `Brasil` na tabela de dicionários terá o seu `IDH` atualizado (Ou seja: Terá o seu campo `FLOAT1` atualizado). Importante relembrar que a coluna `KEY_VALUE` é chave-primária da tabela de dicionários.
+Ao salvar a tela, o registro do país `Brasil` na tabela de dicionários terá o seu `IDH` atualizado (Ou seja: Terá o seu campo `FLOAT1` atualizado).
 
 <table>
   <tr>
