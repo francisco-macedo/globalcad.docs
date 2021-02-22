@@ -50,15 +50,13 @@ Pelo fato de persistirem informação em memória, itens do tipo `radiobuttonlis
 A tela abaixo revela um grupo de opções de meios de transporte entre os quais o usuário pode selecionar um.
 
 <div class="code-example" markdown="1">
-
-<div> Meio de Transporte: </div>
-<input type="radio" id="onibus" name="ônibus" value="onibus">
-<label for="onibus">Ônibus</label><br>
-<input type="radio" id="carro" name="carro" value="carro">
-<label for="carro">Carro</label><br>
-<input type="radio" id="outro" name="outro" value="outro">
-<label for="outro">Outro</label>
-
+  <div> Meio de Transporte: </div>
+  <input type="radio" id="onibus" name="ônibus" value="onibus">
+  <label for="onibus">Ônibus</label><br>
+  <input type="radio" id="carro" name="carro" value="carro">
+  <label for="carro">Carro</label><br>
+  <input type="radio" id="outro" name="outro" value="outro">
+  <label for="outro">Outro</label>
 </div>
 
 ```markdown
