@@ -50,14 +50,17 @@ Pelo fato de persistirem informação em memória, itens do tipo `radiobuttonlis
 A tela abaixo revela um grupo de opções de meios de transporte entre os quais o usuário pode selecionar um.
 
 <div class="code-example" markdown="1">
-  <div> Meio de Transporte: </div>
-  <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
-  <label for="onibus">Ônibus</label><br>
-  <input type="radio" id="carro" name="meioDeTransporte" value="carro">
-  <label for="carro">Carro</label><br>
-  <input type="radio" id="outro" name="meioDeTransporte" value="outro">
-  <label for="outro">Outro</label>
+  <form>
+    <div> Meio de Transporte: </div>
+    <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
+    <label for="onibus">Ônibus</label><br>
+    <input type="radio" id="carro" name="meioDeTransporte" value="carro">
+    <label for="carro">Carro</label><br>
+    <input type="radio" id="outro" name="meioDeTransporte" value="outro">
+    <label for="outro">Outro</label>
+  </form>
 </div>
+
 
 ```markdown
 [
@@ -79,12 +82,14 @@ A tela abaixo revela um grupo de opções de meios de transporte entre os quais 
 A tela abaixo revela o mesmo `radiobuttonlist` do exemplo anterior, porém a propriedade `hidelabel` foi alterada para `true`.
 
 <div class="code-example" markdown="1">
-  <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
-  <label for="onibus">Ônibus</label><br>
-  <input type="radio" id="carro" name="meioDeTransporte" value="carro">
-  <label for="carro">Carro</label><br>
-  <input type="radio" id="outro" name="meioDeTransporte" value="outro">
-  <label for="outro">Outro</label>
+  <form>
+    <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
+    <label for="onibus">Ônibus</label><br>
+    <input type="radio" id="carro" name="meioDeTransporte" value="carro">
+    <label for="carro">Carro</label><br>
+    <input type="radio" id="outro" name="meioDeTransporte" value="outro">
+    <label for="outro">Outro</label>
+  </form>
 </div>
 
 ```markdown
