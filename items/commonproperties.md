@@ -28,7 +28,7 @@ A tabela abaixo lista todas as propriedades comuns de itens.
 | Propriedade                 | Tipo      | Descrição                                                        |
 |:----------------------------|-----------|:-----------------------------------------------------------------|
 | `usetonameform`             | `bool`    | @TODO
-| `gotonext`                  | `bool`    | Informa se o aplicativo deve mover para o próximo item quando o usuário confirmar.
+| `gotonext`                  | `bool`    | Informa se o aplicativo deve mover para o próximo item quando o usuário confirmar. Default = `true`
 | `usetomarkasrevisionpending`| `bool`    | @TODO
-| `hidelabel`                 | `bool`    | Informa se o texto (propriedade básica `text`) deve ser escondido.
-| `hidebuttons`               | `bool`    | @TODO
+| `hidelabel`                 | `bool`    | Informa se o texto (propriedade básica `text`) deve ser escondido. Default = `false`
+| `hidebuttons`               | `bool`    | Informa se os botões devem ser escondidos. Default = `false`
