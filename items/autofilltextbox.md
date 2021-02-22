@@ -95,7 +95,7 @@ Para construir uma máscara que formata o texto como um número com 2 casas deci
 
 ## autofilltextbox - Exemplo 1
 
-A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
+A tela abaixo revela uma caixa de texto configurada para preencher automaticamente seus membros e para mostrar um `hint` dizendo <mark>Insira aqui o seu nome</mark>.
 
 <div class="code-example" markdown="1">
 
@@ -112,8 +112,6 @@ Nome: <input disabled placeholder="Insira aqui o seu nome" />
 		"VALUECol": "V.KEY3",
 		"ownedDICTID": 4,
 		"ownedDICTtablealias": "D",
-		"activationparentid": 30,
-		"activationparentvalue": "@"
 	}
 ]
 ```
