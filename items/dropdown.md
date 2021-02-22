@@ -14,12 +14,13 @@ Itens do tipo dropdown representam uma lista de itens que podem ser selecionados
 
 <div class="code-example" markdown="1">
 
-Exemplo: <select name="cars" id="cars">
-		  <option value="volvo">Volvo</option>
-		  <option value="saab">Saab</option>
-		  <option value="mercedes">Mercedes</option>
-		  <option value="audi">Audi</option>
-		 </select>
+	Exemplo:<br>
+	<label for="transportes">Escolha um tipo de transporte</label>
+	<select name="transportes" id="transportes">
+	  <option value="aereo">Aéreo</option>
+	  <option value="terrestre">Terrestre</option>
+	  <option value="aquatico">Aquático</option>
+	 </select>
 
 </div>
 
