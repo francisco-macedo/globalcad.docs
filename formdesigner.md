@@ -24,6 +24,7 @@ has_children: false
 O Form Designer é uma planilha utilitária na qual você configura um módulo da sua solução. O Form Designer permite:
 
 - Criar e configurar o layout das telas que compõem o seu módulo
+- Criar e configurar o layout da tela CRUD/Config do seu módulo
 - Associar arquivos de programação em linguagem C# e SQL ao seu módulo
 - Criar relatórios de Business Intelligence para apresentar informações aos usuários-finais
 - Configurar parâmetros gerais do módulo
