@@ -5,7 +5,7 @@ parent: Itens
 nav_order: 80
 has_children: false
 ---
-# Photo
+# Photo (ainda em edição)
 {: .no_toc }
 
 
@@ -33,15 +33,15 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mode`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes.
-| `lensfacing`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
-| `savetofile`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
-| `fire_ongetpicture`         | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
-| `ongetpicture_width`        | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
-| `ongetpicture_height`       | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
-| `ongetpicture_allowapproximatedsize`       | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
-| `streamsizepercent`         | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
-| `layout`                    | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes.
+| `mode`                | `string`  |.
+| `lensfacing`                | `string`  |Informa qual das câmeras será utilizada para tirar a foto, a frontal ou a traseira. As opções disponíveis são `front` e `back`. Default = `back`
+| `savetofile`                | `bool`  |Inform if the picture should be saved in the file system. Default = `true`
+| `fire_ongetpicture`         | `bool`  |Inform if the onGetPicture event should be fired. Default = `false` 
+| `ongetpicture_width`        | ` `  |Width of the image returned by the onGetPicture event. Default = 0 (proportional to ongetpicture_height, or full size if ongetpicture_height = 0)
+| `ongetpicture_height`       | ` `  |Height of the image returned by the onGetPicture event. Default = 0 (proportional to ongetpicture_width, or full size if ongetpicture_width = 0)
+| `ongetpicture_allowapproximatedsize`       | `bool`    |If true, the image returned by the onGetPicture event will have a size approximately equal to ongetpicture_width/height, which makes the process run faster. Default = `false`
+| `streamsizepercent`         | ` `    |. Default = `70% da tela`
+| `layout`                    | `string`  |.
 
 ---
 
@@ -109,11 +109,9 @@ CPF: <input disabled placeholder="Insira aqui o CPF" />
 [
   {
     "id": 10,
-    "type": "textbox",
-    "text": "CPF",
+    "type": "photo",
+    "text": "Imagem",
     "VALUECol": "V.STR1",
-    "mask": "###.###.###-##",
-    "hint": "Insira aqui o CPF"
   }
 ]
 ```
