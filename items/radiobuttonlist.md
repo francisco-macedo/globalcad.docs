@@ -14,7 +14,13 @@ Itens do tipo radiobuttonlist representam uma lista de botões entre os quais os
 
 <div class="code-example" markdown="1">
 
-Exemplo: <input disabled value="Valor Exemplo" />
+Exemplo:
+     <form>
+           <input type="radio" id="sim" name="Exemplo" value="sim">
+           <label for="sim">Sim</label>
+           <input type="radio" id="nao" name="Exemplo" value="nao">
+           <label for="nao">Não</label>
+     </form>
 
 </div>
 
@@ -51,15 +57,18 @@ A tela abaixo revela um grupo de opções de meios de transporte entre os quais 
 
 <div class="code-example" markdown="1">
 
-Meio de Transporte:
-<input type="radio" id="onibus" name="ônibus" value="onibus">
-<label for="onibus">Ônibus</label><br>
-<input type="radio" id="carro" name="carro" value="carro">
-<label for="carro">Carro</label><br>
-<input type="radio" id="outro" name="outro" value="outro">
-<label for="outro">Outro</label>
-
+  <form>
+    <div> Meio de Transporte </div>
+    <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
+    <label for="onibus">Ônibus</label><br>
+    <input type="radio" id="carro" name="meioDeTransporte" value="carro">
+    <label for="carro">Carro</label><br>
+    <input type="radio" id="outro" name="meioDeTransporte" value="outro">
+    <label for="outro">Outro</label>
+  </form>
+  
 </div>
+
 
 ```markdown
 [
@@ -70,6 +79,39 @@ Meio de Transporte:
     "VALUECol": "V.KEY5",
     "ownedDICTID": 10,
     "ownedDICTtablealias": "D"
+  }
+]
+```
+
+---
+
+## Radiobuttonlist - Exemplo 2
+
+A tela abaixo revela o mesmo `radiobuttonlist` do exemplo anterior, porém a propriedade `hidelabel` foi alterada para `true`.
+
+<div class="code-example" markdown="1">
+
+  <form>
+    <input type="radio" id="onibus" name="meioDeTransporte" value="onibus">
+    <label for="onibus">Ônibus</label><br>
+    <input type="radio" id="carro" name="meioDeTransporte" value="carro">
+    <label for="carro">Carro</label><br>
+    <input type="radio" id="outro" name="meioDeTransporte" value="outro">
+    <label for="outro">Outro</label>
+  </form>
+  
+</div>
+
+```markdown
+[
+  {
+    "id": 10,
+    "type": "radiobuttonlist",
+    "text": "Meio de Transporte",
+    "VALUECol": "V.KEY5",
+    "ownedDICTID": 10,
+    "ownedDICTtablealias": "D",
+    "hidelabel": true
   }
 ]
 ```
