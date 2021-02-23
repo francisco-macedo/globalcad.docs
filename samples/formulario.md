@@ -14,10 +14,10 @@ Neste exemplo, você aprenderá a criar um módulo que mostra um formulário ond
 
 <div class="code-example" markdown="1">
 
-Nome: <input/><br/>
+Nome: 	  <input/><br/>
 Telefone: <input/><br/>
-Email: <input/><br/>
-Sexo: <input/><br/>
+Email:    <input/><br/>
+Sexo:     <input/><br/>
 
 </div>
 
