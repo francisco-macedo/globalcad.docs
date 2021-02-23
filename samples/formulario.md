@@ -5,7 +5,7 @@ parent: Projetos Exemplo
 nav_order: 30
 has_children: false
 ---
-# Formulário Simples hvjivi
+# Formulário Simples
 {: .no_toc }
 
 
@@ -14,10 +14,10 @@ Neste exemplo, você aprenderá a criar um módulo que mostra um formulário ond
 
 <div class="code-example" markdown="1">
 
-Nome: 	  <input/><br/>
+Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input/><br/>
 Telefone: <input/><br/>
-Email:    <input/><br/>
-Sexo:     <input/><br/>
+Email:&nbsp;&nbsp;&nbsp;&nbsp;<input/><br/>
+Sexo:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input/><br/>
 
 </div>
 
