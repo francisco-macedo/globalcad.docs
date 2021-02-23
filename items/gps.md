@@ -16,9 +16,8 @@ Itens do tipo `gps` representam uma localização composta por diversas informa�
 
 Exemplo: <br>
 <input type="text" style="text-transform:;">
-<span id="ctl479" class="input-group-btn" style="display:;">
-<button><img src="../img/ic_action_file_download.png" width=12></span> Atualizar</button>
-<button><img src="../img/ic_public_black_24dp.png" width=12></span> Mapa...</button>
+<button><img src="../img/ic_action_file_download.png" width=15> Atualizar</button>
+<button><img src="../img/ic_public_black_24dp.png" width=15> Mapa...</button>
 
 </div>
 
