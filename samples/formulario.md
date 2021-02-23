@@ -15,7 +15,7 @@ Neste exemplo, você aprenderá a criar um módulo que mostra um formulário ond
 <div class="code-example" markdown="1">
 
 Nome:<br/><input/><br/>
-Telefone:<br/><input/><br/>
+Telefone:<br/><input type="text" name="telefone" data-mask="(00) 00000-0000" data-mask-selectonfocus="true" /><br/>
 Email:<br/><input/><br/>
 Sexo:<br/><input/><br/>
 
