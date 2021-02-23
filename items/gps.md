@@ -37,4 +37,6 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 |:-------------------------|:----------|:-----------------------------------------------------------------|
 | `mode`                   | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`: @TODO
 | `layout`                 | `enum`    | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
-| `acceptgooglemaplocation`| `bool`    | Informa se deveaceitar localização via google maps
+| `acceptgooglemaplocation`| `bool`    | Informa se deve aceitar localização via google maps
+| `acceptmocklocation`     | `bool`    | @TODO
+| `getdatetimefromdevice`  | `bool`    | Informa se deve obter data e hora do dispositivo
