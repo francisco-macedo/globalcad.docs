@@ -28,3 +28,12 @@ Exemplo: <br>
 {:toc}
 
 ---
+
+## Propriedades Específicas
+
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
+
+| Propriedade           | Tipo      | Descrição                                                        |
+|:----------------------|:----------|:-----------------------------------------------------------------|
+| `mode`                | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`:
+| `layout`              | `int`     | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
