@@ -36,7 +36,7 @@ Por exemplo, suponha que um item do tipo `dropdown` tenha sido configurado com t
     <td>1</td>
     <td>10328</td>
     <td>Não</td>
-    <td>null</td>
+    <td>NULL</td>
     <td>30</td>
   </tr>
   <tr>
@@ -120,12 +120,14 @@ Neste caso, temos dois dicionários distintos, ambos com `DICTID` igual a 1, sen
 
 ##  Escrevendo em Dicionários
 
-Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` são tipicamente itens que apontam para dicionário, como já mencionado anteriormente, em virtude de sua natureza de múltiplos valores associados. Porém, itens que não são de múltipla escolha, também podem, em alguns casos, apontar para dicionários. Em geral, isto é feito configurando-se o campo `VALUECol` com uma valor o tipo `KEY`, e especificando-se em qual dicionário escrever nos campos `ownedDICTID` e `ownedDICTtablealias`, do mesmo modo que é feito com os itens de dicionário "nativos".
+Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` são tipicamente itens que apontam para dicionário, como já mencionado anteriormente, em virtude de sua natureza de múltiplos valores associados. Porém, itens que não são de múltipla escolha, também podem, em alguns casos, apontar para dicionários. Em geral, isto é feito configurando-se o campo `VALUECol` com um valor do tipo `KEY`, e especificando-se em qual dicionário escrever nos campos `ownedDICTID` e `ownedDICTtablealias`, do mesmo modo que é feito com os itens de dicionário "nativos".
+
+---
+
+## Relação de Parentesco Entre Dicionários
 
 
-## Membros de Dicionário
 
 
 
 
-## Relação de Parentesco entre Dicionários
