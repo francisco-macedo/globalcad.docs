@@ -33,7 +33,8 @@ Exemplo: <br>
 
 A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 
-| Propriedade           | Tipo      | Descrição                                                        |
-|:----------------------|:----------|:-----------------------------------------------------------------|
-| `mode`                | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`:
-| `layout`              | `int`     | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
+| Propriedade              | Tipo      | Descrição                                                        |
+|:-------------------------|:----------|:-----------------------------------------------------------------|
+| `mode`                   | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`: @TODO
+| `layout`                 | `enum`    | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
+| `acceptgooglemaplocation`| `bool`    | Informa se deveaceitar localização via google maps
