@@ -9,13 +9,15 @@ has_children: false
 {: .no_toc }
 
 
-Neste exemplo, você aprenderá a criar um módulo que mostra o texto Hello World na Web e no Mobile, e apresenta uma caixa de texto para colher o nome do usuário.
+Neste exemplo, você aprenderá a criar um módulo que mostra um formulário onde o usuário possa inserir dados.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
 
-Hello World!<br/>
-Seu Nome: <input disabled />
+Nome: <input/><br/>
+Telefone: <input/><br/>
+Email: <input/><br/>
+Sexo: <input/><br/>
 
 </div>
 
