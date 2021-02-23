@@ -15,7 +15,7 @@ Itens do tipo checkbox representam uma caixa que o usuário pode ou não marcar.
 <div class="code-example" markdown="1">
 
 Exemplo: <br>
-<input type="checkbox" /> Concordo com os Termos de Uso
+<input type="checkbox" /> Concordo com os Termos de Uso <br>
 <input type="checkbox" /> Permito o uso dos meus dados
 
 </div>
