@@ -7,10 +7,6 @@ has_children: false
 # Dicionários e Itens
 {: .no_toc }
 
-
-Propriedades de banco de dados determinam como e em que circunstâncias um item deve ser gravado no banco de dados. Propriedades de banco de dados são aceitas por diversos itens. Consulte a documentação individual de cada item para saber quais as aceitam.
-{: .fs-6 .fw-300 }
-
 ## Índice
 {: .no_toc .text-delta }
 
