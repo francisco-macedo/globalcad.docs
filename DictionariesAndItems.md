@@ -124,7 +124,7 @@ Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` 
 
 ---
 
-## Criando Relações Entre Itens Através de Dicionários
+## Relações Entre Itens Através de Dicionários
 
 Uma relação de 1 para N pode ser estabelecida entre dois itens através do uso de dicionários. Mais precisamente, a um dado valor de um dicionário, ou `item de dicionário`, podem ser associados um ou mais itens de dicionário. Tal associação pode ser feita através da criação de uma relação de pai-filho entre os dois dicionários. O campo `parentDICTownerID` é o responsável por configurar tal relação. Para saber mais sobre propriedades de dicionários, veja a seção [Propriedades de Banco de Dados](items/databaseproperties.md).
 
