@@ -142,7 +142,7 @@ O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `d
 <div class="code-example">
 <span style="white-space: nowrap">Estado: <select disabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
 <br/>
-<span style="white-space: nowrap">Cidade: <select enabled><option value="Belo Horizonte">-<option value="Ouro Preto">-</option></select>&nbsp;&nbsp;</span> 
+<span style="white-space: nowrap">Cidade: <select enabled><option value="Belo Horizonte">Belo Horizonte</option>-<option value="Ouro Preto"Ouro Preto</option></select>&nbsp;&nbsp;</span> 
 </div>
 
 
