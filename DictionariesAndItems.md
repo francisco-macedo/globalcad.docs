@@ -128,8 +128,9 @@ Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` 
 
 Uma relação de 1 para N pode ser estabelecida entre dois itens através do uso de dicionários. Mais precisamente, a um dado valor de um dicionário, ou `item de dicionário`, podem ser associados um ou mais itens de dicionário. Tal associação pode ser feita através da criação de uma relação de pai-filho entre os dois dicionários. O campo `parentDICTownerID` é o responsável por configurar tal relação. Para saber mais sobre propriedades de dicionários, veja a seção [Propriedades de Banco de Dados](items/databaseproperties.md).
 
-Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estados, e outro `dropdown` cujos elementos são cidades. 
+Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estados, e outro `dropdown` cujos elementos são cidade, ambos inicialmente sem valor selecionado:
 
 <div class="code-example">
-<span style="white-space: nowrap">Estado: <select enabled><option value="Minas Gerais">Minas Gerais</option></select>&nbsp;&nbsp;</span> 
+<span style="white-space: nowrap">Estado: <select enabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
+<span style="white-space: nowrap">Cidade: <select enabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
 </div>
