@@ -128,7 +128,7 @@ Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` 
 
 Uma relação de 1 para N pode ser estabelecida entre dois itens através do uso de dicionários. Mais precisamente, a um dado valor de um dicionário, ou `item de dicionário`, podem ser associados um ou mais itens de dicionário. Tal associação pode ser feita através da criação de uma relação de pai-filho entre os dois dicionários. O campo `parentDICTownerID` é o responsável por configurar tal relação. Para saber mais sobre propriedades de dicionários, veja a seção [Propriedades de Banco de Dados](items/databaseproperties.md).
 
-Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estados, e outro `dropdown` cujos elementos são cidade, ambos inicialmente sem valor selecionado:
+Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estados, e outro `dropdown` cujos elementos são cidades, ambos inicialmente sem valor selecionado:
 
 <div class="code-example">
 <span style="white-space: nowrap">Estado: <select disabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
@@ -136,4 +136,13 @@ Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estad
 <span style="white-space: nowrap">Cidade: <select disabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
 </div>
 
-O `dropdown` `Cidade` está configurado de modo que ele é filho de `Estado`. 
+
+O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `dropdown` Cidade possui quatro registros: Belo Horizonte e Ouro Preto, ambos filhos do registro `Minas Gerais`, e Campinas e Guarulho, filhos do registro `São Paulo`. Se o Estado `Minas Gerais` for selecionado, então, apenas as cidades `Belo Horizonte` e `Ouro Preto` serão as opções disponíveis para selecionar no segundo `dropdown`:
+
+<div class="code-example">
+<span style="white-space: nowrap">Estado: <select disabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
+<br/>
+<span style="white-space: nowrap">Cidade: <select enabled><option value="1"><option value="2">-</option></select>&nbsp;&nbsp;</span> 
+</div>
+
+
