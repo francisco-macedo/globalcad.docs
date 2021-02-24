@@ -131,6 +131,8 @@ Uma relação de 1 para N pode ser estabelecida entre dois itens através do uso
 Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são países, e outro `dropdown` cujos elementos são estados. 
 
 <div class="code-example">
-<span style="white-space: nowrap">País: <select enabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp;</span>
-<span style="white-space: nowrap">País: <select enabled><option value="Minas Gerais">Brasil</option></select>&nbsp;&nbsp;</span>
+<span style="white-space: nowrap">País: <select enabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp;</span> 
+</div>
+
+<span style="white-space: nowrap">Estado: <select enabled><option value="Minas Gerais">Minas Gerais</option></select>&nbsp;&nbsp;</span> 
 </div>
