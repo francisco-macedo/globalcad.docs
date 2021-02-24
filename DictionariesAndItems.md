@@ -124,9 +124,14 @@ Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` 
 
 ---
 
-## Relação de Parentesco Entre Dicionários
+## Criando Relações Entre Itens Através de Dicionários
 
+Uma relação de 1 para N pode ser criada entre dois itens através do uso de dicionários. 
 
+<div class="code-example">
+="white-space: nowrap">Idade: <input disabled value="" />&nbsp;&nbsp;>> Configurado para salvar o valor na VALUES.INT1</span>
+<span style="white-space: nowrap">País: <select disabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp; </span>
+</table>
 
 
 
