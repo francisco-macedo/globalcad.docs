@@ -129,5 +129,5 @@ Itens do tipo `dropdown`, `autofilltextbox`, `radiobuttonlist` e `checkboxlist` 
 Uma relação de 1 para N pode ser criada entre dois itens através do uso de dicionários. 
 
 <div class="code-example">
-<span style="white-space: nowrap">País: <select enabled><option value="Brasil">Brasil</option></select>&nbsp;&nbsp;</span>
+<span style="white-space: nowrap">País: <select enabled><option value="Brasil, Japão">Brasil</option></select>&nbsp;&nbsp;</span>
 </div>
