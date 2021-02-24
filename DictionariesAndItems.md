@@ -145,4 +145,14 @@ O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `d
 <span style="white-space: nowrap">Cidade: <select disabled><option value="Belo Horizonte">Belo Horizonte</option></select>&nbsp;&nbsp;</span> 
 </div>
 
+Do mesmo modo, se o Estado `São Paulo` for selecionado, então, apenas as cidades `Campinas` e `Guarulhos` ficarão as visíveis no segundo `dropdown`:
+
+<div class="code-example">
+<span style="white-space: nowrap">Estado: <select disabled><option value="Sâo Paulo">Minas Gerais</option></select>&nbsp;&nbsp;</span> 
+<br/>
+<span style="white-space: nowrap">Cidade: <select disabled><option value="Campinas">Belo Horizonte</option></select>&nbsp;&nbsp;</span> 
+</div>
+
+Repare que, dependendo do valor selecionado no primeiro dicionário, apenas alguns valores do segundo dicionário ficaram visíveis, e foram justamente os filhos do valor(registro) selecionado. Este é  comportamento padrão para tal relação: o sistema exibe apenas os valores que são filhos do valor selecionado, caso haja um relação de pai-filho entre dois dicionários.
+
 
