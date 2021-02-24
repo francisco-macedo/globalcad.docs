@@ -140,9 +140,9 @@ Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estad
 O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `dropdown` Cidade possui quatro registros: Belo Horizonte e Ouro Preto, ambos filhos do registro `Minas Gerais`, e Campinas e Guarulho, filhos do registro `São Paulo`. Se o Estado `Minas Gerais` for selecionado, então, apenas as cidades `Belo Horizonte` e `Ouro Preto` serão as opções disponíveis para selecionar no segundo `dropdown`:
 
 <div class="code-example">
-<span style="white-space: nowrap">Estado: <select disabled><option value="-">-</option></select>&nbsp;&nbsp;</span> 
+<span style="white-space: nowrap">Estado: <select disabled><option value="Minas Gerais">Minas Gerais</option></select>&nbsp;&nbsp;</span> 
 <br/>
-<span style="white-space: nowrap">Cidade: <select enabled><option value="Belo Horizonte">Belo Horizonte</option><option value="Ouro Preto"Ouro Preto</option></select>&nbsp;&nbsp;</span> 
+<span style="white-space: nowrap">Cidade: <select disabled><option value="Belo Horizonte">Belo Horizonte</option></select>&nbsp;&nbsp;</span> 
 </div>
 
 
