@@ -18,7 +18,7 @@ has_children: false
 
 Como já mencionado anteriormente (veja [Persistência de Dados](datapersistency.md) e [Propriedades de Banco de Dados](items/databaseproperties.md)), um `item de dicionário` associa um valor à sua representação textual. Deste modo, registros no Banco de Dados podem referenciar um dado `item de dicionário` através de uma chave estrangeira (valor numérico), em vez de armazenarem valores textuais.
 
-Contudo, esta não é a única função dos dicionários. Além de fazer uma associação entre um valor numérico e sua representação textual, um `dicionário` também pode ser visto como um agrupador de valores, em que cada item de dicionário(registro) é um valor específico. O campo `DICTID` na tabela de dicionários(`DICTIONARIES`) identifica a qual dicionário um `item de dicionário` pertence, considerando um mesmo slot.
+Contudo, esta não é a única função dos dicionários. Além de fazer uma associação entre um valor numérico e sua representação textual, um `dicionário` também pode ser visto como um agrupador de valores, em que cada item de dicionário(registro) é um valor específico. O campo `DICTID` na tabela de dicionários(`DICTIONARIES`) identifica a qual `dicionário` um `item de dicionário` pertence, considerando um mesmo slot.
 
 Por exemplo, suponha que um item do tipo `dropdown` tenha sido configurado com três alternativas: `sim`, `talvez` e `não`. Na tabela de dicionários, teríamos a seguinte configuração:
 
@@ -58,7 +58,7 @@ Por exemplo, suponha que um item do tipo `dropdown` tenha sido configurado com t
 </table>
 
 
-Observe que o campo `DICTID` de todos os três registros é 1, indicando que estes três itens de dicionário pertencem ao mesmo dicionário, considerando o slot(`CODCONTRATO`) 1000. Note que dois dicionários distintos podem ter o mesmo `DICTID`, desde que estejam em slots diferentes. Por exemplo, suponha que tenhamos um módulo que utilize o slot 1001. Se adicionássemos a este módulo um outro `dropdown` com as opções `amarelo` e `verde`, teríamos a seguinte configuração:
+Observe que o campo `DICTID` de todos os três registros é 1, indicando que estes três `itens de dicionário` pertencem ao mesmo `dicionário`, considerando o slot(`CODCONTRATO`) 1000. Note que dois dicionários distintos podem ter o mesmo `DICTID`, desde que estejam em slots diferentes. Por exemplo, suponha que tenhamos um módulo que utilize o slot 1001. Se adicionássemos a este módulo um outro `dropdown` com as opções `amarelo` e `verde`, teríamos a seguinte configuração:
 
 
 <table>
@@ -137,7 +137,7 @@ Para exemplificar, suponha que tenhamos um `dropdown` cujos elementos são Estad
 </div>
 
 
-O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `dropdown` Cidade possui quatro registros: Belo Horizonte e Ouro Preto, ambos filhos do registro `Minas Gerais`, e Campinas e Guarulho, filhos do registro `São Paulo`. Se o Estado `Minas Gerais` for selecionado, então, apenas as cidades `Belo Horizonte` e `Ouro Preto` serão as opções disponíveis para selecionar no segundo `dropdown`:
+O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `dropdown` `Cidade` possui quatro registros: `Belo Horizonte` e `Ouro Preto`, ambos filhos do registro que possui `Minas Gerais` como valor textual, e `Campinas` e `Guarulhos`, filhos do registro `São Paulo`. Se o Estado `Minas Gerais` for selecionado, então, apenas as cidades `Belo Horizonte` e `Ouro Preto` serão as opções disponíveis para selecionar no segundo `dropdown`:
 
 <div class="code-example">
 <span style="white-space: nowrap">Estado: <select disabled><option value="Minas Gerais">Minas Gerais</option></select>&nbsp;&nbsp;</span> 
@@ -155,5 +155,5 @@ Do mesmo modo, se o Estado `São Paulo` for selecionado, então, apenas as cidad
 
 Repare que, dependendo do valor selecionado no primeiro dicionário, apenas alguns valores do segundo dicionário ficam visíveis, e são justamente os filhos do valor(registro) selecionado. Este é o comportamento padrão para tal relação: o sistema exibe apenas os valores que são filhos do valor selecionado, caso haja uma relação de pai-filho entre dois dicionários.
 
-Este tipo de relção não é válida apenas para o `dropdown`. Ela também é válida para outros itens de múltipla escola, como o `radiobuttonlist`, por exemplo.
+Este tipo de relação não é válida apenas para o `dropdown`. Ela também é válida para outros itens de múltipla escola, como o `radiobuttonlist`, por exemplo.
 
