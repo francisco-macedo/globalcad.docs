@@ -145,7 +145,7 @@ O `dropdown` `Estado` possui dois registros: `Minas Gerais` e `São Paulo`. O `d
 <span style="white-space: nowrap">Cidade: <select disabled><option value="Belo Horizonte">Belo Horizonte</option></select>&nbsp;&nbsp;</span> 
 </div>
 
-Do mesmo modo, se o Estado `São Paulo` for selecionado, então, apenas as cidades `Campinas` e `Guarulhos` ficarão as visíveis no segundo `dropdown`:
+Do mesmo modo, se o Estado `São Paulo` for selecionado, então, apenas as cidades `Campinas` e `Guarulhos` ficarão visíveis no segundo `dropdown`:
 
 <div class="code-example">
 <span style="white-space: nowrap">Estado: <select disabled><option value="Sâo Paulo">São Paulo</option></select>&nbsp;&nbsp;</span> 
