@@ -35,11 +35,11 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 |:----------------------|:----------|:-----------------------------------------------------------------|
 | `mode`                | `string`  |.
 | `lensfacing`                | `string`  |Informa qual das câmeras será utilizada para tirar a foto, a frontal ou a traseira. As opções disponíveis são `front` e `back`. Default = `back`
-| `savetofile`                | `bool`  |Inform if the picture should be saved in the file system. Default = `true`
-| `fire_ongetpicture`         | `bool`  |Inform if the onGetPicture event should be fired. Default = `false` 
-| `ongetpicture_width`        | ` `  |Width of the image returned by the onGetPicture event. Default = 0 (proportional to ongetpicture_height, or full size if ongetpicture_height = 0)
-| `ongetpicture_height`       | ` `  |Height of the image returned by the onGetPicture event. Default = 0 (proportional to ongetpicture_width, or full size if ongetpicture_width = 0)
-| `ongetpicture_allowapproximatedsize`       | `bool`    |If true, the image returned by the onGetPicture event will have a size approximately equal to ongetpicture_width/height, which makes the process run faster. Default = `false`
+| `savetofile`                | `bool`  |Informa se a foto deveria ser salva no arquivo do sistema. Default = `true`
+| `fire_ongetpicture`         | `bool`  |Informa se o evento `onGetPicture` deve ser acionado. Default = `false` 
+| `ongetpicture_width`        | ` `  |Largura da imagem retornada pelo evento `onGetPicture`. Default = 0 (proporcional ao `ongetpicture_height` ou tamanho inteiro se `ongetpicture_height` = 0)
+| `ongetpicture_height`       | ` `  |Altura da imagem retornada pelo evento `onGetPicture`. Default = 0 (proporcional ao `ongetpicture_width` ou tamanho inteiro se `ongetpicture_width` = 0)
+| `ongetpicture_allowapproximatedsize`       | `bool`    |Quando for `true`, a imagem retornada pelo evento `onGetPicture` vai ter um tamanho aproximadamente igual ao `ongetpicture_width/height`, o que faz o processo rodar mais rapidamente. Default = `false`
 | `streamsizepercent`         | ` `    |. Default = `70% da tela`
 | `layout`                    | `string`  |.
 
