@@ -33,10 +33,10 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes. 
+| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes.
 | `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
-| `capitalize`          | `bool`    |Inform if the first letter of each word should be capitalized. Default = `false`
-| `postbackonlostfocus` | `bool`    |Inform if a postback must happen when the item loses focus. Postbacks force calculatedfields to run. <mark>This property is only considered on the Web version of your module</mark>, since the mobile version always forces calculatedfields to run when they lose focus.
+| `capitalize`          | `bool`    |Informa se a primeira letra de cada palavra deve ser maiúscula. Padrão = `false`
+| `postbackonlostfocus` | `bool`    |Informa se um postback deve acontecer quando o item perder o foco. Postbacks forçam calculatedfields a executar. <mark>Essa propriedade só é considerada na versão Web do seu mósulo</mark>, já que a versão mobile sempre força os calculatedfields a serem executados quando o item perde o foco.
 
 ---
 
