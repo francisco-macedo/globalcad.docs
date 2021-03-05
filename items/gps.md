@@ -33,10 +33,21 @@ Exemplo: <br>
 
 A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 
-| Propriedade              | Tipo      | Descrição                                                        |
-|:-------------------------|:----------|:-----------------------------------------------------------------|
-| `mode`                   | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`: @TODO
-| `layout`                 | `enum`    | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
-| `acceptgooglemaplocation`| `bool`    | Informa se deve aceitar localização via google maps
-| `acceptmocklocation`     | `bool`    | @TODO
-| `getdatetimefromdevice`  | `bool`    | Informa se deve obter data e hora do dispositivo
+| Propriedade                | Tipo      | Descrição                                                        |
+|:---------------------------|:----------|:-----------------------------------------------------------------|
+| `mode`                     | `enum`    | `GetLocation`: @TODO<br>`PickPlaceFromMap`: @TODO<br>`GetLocationOrPickPlaceFromMap`: @TODO
+| `layout`                   | `enum`    | `ShowDateTimeLatLon`: Exibe todos os dados da localização<br>`ShowDateTime`: Omite a latitude e longitude
+| `acceptgooglemaplocation`  | `bool`    | Informa se deve aceitar localização via google maps
+| `acceptmocklocation`       | `bool`    | @TODO
+| `getdatetimefromdevice`    | `bool`    | Informa se deve obter data e hora do dispositivo
+| `newdistinctlocationstoget`| `int`     | @TODO
+| `fillprecision`            | `int`     | @TODO
+| `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país da localização (e. g. `BR`)
+| `fillcountryname`          | `int`     | ID de um item que receberá o país da localização
+| `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa da localização
+| `filllocality`             | `int`     | ID de um item que receberá a cidade
+| `fillsublocality`          | `int`     | ID de um item que receberá o bairro
+| `fillthoroughfare`         | `int`     | ID de um item que receberá o logradouro
+| `fillsubthoroughfare`      | `int`     | ID de um item que receberá o número
+| `fillpostalcode`           | `int`     | ID de um item que receberá o CEP
+| `fillfulladdress`          | `int`     | ID de um item que receberá o endereço completo
