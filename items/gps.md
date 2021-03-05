@@ -41,7 +41,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 | `acceptmocklocation`       | `bool`    | @TODO
 | `getdatetimefromdevice`    | `bool`    | Informa se deve obter data e hora do dispositivo
 | `newdistinctlocationstoget`| `int`     | @TODO
-| `fillprecision`            | `int`     | @TODO ([Detalhes](#fill*))
+| `fillprecision`            | `int`     | ID de um item que receberá a precisão da localização ([Detalhes](#fill*))
 | `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país da localização (e. g. `BR`) ([Detalhes](#fill*))
 | `fillcountryname`          | `int`     | ID de um item que receberá o país da localização ([Detalhes](#fill*))
 | `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa da localização ([Detalhes](#fill*))
@@ -64,7 +64,8 @@ Itens do tipo `gps` também aceitam propriedades básicas de itens. [Clique aqui
 
 Pelo fato de persistirem informação em memória, itens do tipo `gps` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
 
-O item ´gps´ pode armazenar mais de um dado no banco de dados. Por isso, é recomendado se utilizar a coluna `VALUECols` no lugar de `VALUECol`.
+O item `gps` pode armazenar mais de um dado no banco de dados.
+Por isso, é recomendado se utilizar a coluna `VALUECols` no lugar de `VALUECol`.
 Por padrão, a propriedade `VALUECols` de um `gps` vale `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1`, caso essas colunas estejam disponíveis.
 
 ---
