@@ -41,13 +41,42 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 | `acceptmocklocation`       | `bool`    | @TODO
 | `getdatetimefromdevice`    | `bool`    | Informa se deve obter data e hora do dispositivo
 | `newdistinctlocationstoget`| `int`     | @TODO
-| `fillprecision`            | `int`     | @TODO
-| `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país da localização (e. g. `BR`)
-| `fillcountryname`          | `int`     | ID de um item que receberá o país da localização
-| `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa da localização
-| `filllocality`             | `int`     | ID de um item que receberá a cidade
-| `fillsublocality`          | `int`     | ID de um item que receberá o bairro
-| `fillthoroughfare`         | `int`     | ID de um item que receberá o logradouro
-| `fillsubthoroughfare`      | `int`     | ID de um item que receberá o número
-| `fillpostalcode`           | `int`     | ID de um item que receberá o CEP
-| `fillfulladdress`          | `int`     | ID de um item que receberá o endereço completo
+| `fillprecision`            | `int`     | @TODO ([Detalhes](#fill*))
+| `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país da localização (e. g. `BR`) ([Detalhes](#fill*))
+| `fillcountryname`          | `int`     | ID de um item que receberá o país da localização ([Detalhes](#fill*))
+| `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa da localização ([Detalhes](#fill*))
+| `filllocality`             | `int`     | ID de um item que receberá a cidade ([Detalhes](#fill*))
+| `fillsublocality`          | `int`     | ID de um item que receberá o bairro ([Detalhes](#fill*))
+| `fillthoroughfare`         | `int`     | ID de um item que receberá o logradouro ([Detalhes](#fill*))
+| `fillsubthoroughfare`      | `int`     | ID de um item que receberá o número ([Detalhes](#fill*))
+| `fillpostalcode`           | `int`     | ID de um item que receberá o CEP ([Detalhes](#fill*))
+| `fillfulladdress`          | `int`     | ID de um item que receberá o endereço completo ([Detalhes](#fill*))
+
+---
+
+## Propriedades Básicas
+
+Itens do tipo `gps` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
+
+---
+
+## Propriedades de Banco de Dados
+
+Pelo fato de persistirem informação em memória, itens do tipo `gps` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
+
+O item ´gps´ pode armazenar mais de um dado no banco de dados. Por isso, é recomendado se utilizar a coluna `VALUECols` no lugar de `VALUECol`.
+Por padrão, a propriedade `VALUECols` de um `gps` vale `V.LATLON1,LATLON2,DATETIME1,UTM1,UTM2,INT1`, caso essas colunas estejam disponíveis.
+
+---
+
+## Propriedades de Interação
+
+Itens do tipo `gps` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
+
+---
+
+## Propriedades Específicas - Detalhamento
+
+### `fill*`
+
+@TODO
