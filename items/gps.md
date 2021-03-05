@@ -41,10 +41,10 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `gps`.
 | `acceptmocklocation`       | `bool`    | @TODO
 | `getdatetimefromdevice`    | `bool`    | Informa se deve obter data e hora do dispositivo
 | `newdistinctlocationstoget`| `int`     | @TODO
-| `fillprecision`            | `int`     | ID de um item que receberá a precisão da localização ([Detalhes](#fill*))
-| `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país da localização (e. g. `BR`) ([Detalhes](#fill*))
-| `fillcountryname`          | `int`     | ID de um item que receberá o país da localização ([Detalhes](#fill*))
-| `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa da localização ([Detalhes](#fill*))
+| `fillprecision`            | `int`     | ID de um item que receberá a precisão ([Detalhes](#fill*))
+| `fillcountrycode`          | `int`     | ID de um item que receberá os caracteres que representam o país (e. g. `BR`) ([Detalhes](#fill*))
+| `fillcountryname`          | `int`     | ID de um item que receberá o país ([Detalhes](#fill*))
+| `filladminarea`            | `int`     | ID de um item que receberá a unidade federativa ([Detalhes](#fill*))
 | `filllocality`             | `int`     | ID de um item que receberá a cidade ([Detalhes](#fill*))
 | `fillsublocality`          | `int`     | ID de um item que receberá o bairro ([Detalhes](#fill*))
 | `fillthoroughfare`         | `int`     | ID de um item que receberá o logradouro ([Detalhes](#fill*))
@@ -80,4 +80,4 @@ Itens do tipo `gps` também aceitam propriedades de interação. [Clique aqui](i
 
 ### `fill*`
 
-@TODO
+As propriedades de `gps` que começam com `fill` preenchem um item com uma determinada informação automaticamente assim que o usuário preenche uma localização utilizando google maps.
