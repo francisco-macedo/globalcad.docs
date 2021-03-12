@@ -33,7 +33,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mode`                | `string`  |Define o modo através do qual a foto vai ser enviada pelo usuário. Default= ` `. [Clique aqui](#mode) para mais detalhes.
+| `mode`                | `string`  |Define o modo através do qual a foto vai ser enviada pelo usuário. Default= [Clique aqui](#mode) para mais detalhes.
 | `lensfacing`                | `string`  |Informa qual das câmeras será utilizada para tirar a foto, a frontal ou a traseira. As opções disponíveis são `front` e `back`. Default = `back`
 | `savetofile`                | `bool`  |Informa se a foto deveria ser salva no arquivo do sistema. Default = `true`
 | `fire_ongetpicture`         | `bool`  |Informa se o evento `onGetPicture` deve ser acionado. Default = `false` 
@@ -41,7 +41,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 | `ongetpicture_height`       | `int`  |Altura da imagem retornada pelo evento `onGetPicture`. Default = 0 (proporcional ao `ongetpicture_width` ou tamanho inteiro se `ongetpicture_width` = 0)
 | `ongetpicture_allowapproximatedsize`       | `bool`    |Quando for `true`, a imagem retornada pelo evento `onGetPicture` vai ter um tamanho aproximadamente igual ao `ongetpicture_width/height`, o que faz o processo rodar mais rapidamente. Default = `false`
 | `streamsizepercent`         | `int`    |Define a porcentagem da resolução da tela que a resolução da foto deverá ser adaptada para ter. Default = `70`
-| `layout`                    | `string`  |Define o layout a ser utilizado para mostrar a imagem. Os possíveis valores são `ShowPhoto` e `ShowPhotoAndFilename` Default = ` `
+| `layout`                    | `string`  |Define o layout a ser utilizado para mostrar a imagem. Os possíveis valores são `ShowPhoto` e `ShowPhotoAndFilename` Default =
 
 ---
 
