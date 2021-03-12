@@ -14,7 +14,7 @@ Itens do tipo `photo` representam uma `string` que guarda o nome de um arquivo d
 
 <div class="code-example" markdown="1">
 
-Exemplo: <input disabled value="Valor Exemplo" />
+Exemplo: <button> Escolher arquivo </button> imagem.png
 
 </div>
 
