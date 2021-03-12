@@ -63,9 +63,9 @@ Itens do tipo `photo` também aceitam propriedades de interação. [Clique aqui]
 
 ---
 
-## Photo - Exemplo 1
+## Photo - Exemplo
 
-A tela abaixo é um exemplo de como a tela de envio de uma foto aparece para o usuário.
+A tela abaixo é um exemplo de como a tela de envio de foto aparece para o usuário.
 
 <div class="code-example" markdown="1">
   <button> Escolher arquivo </button> Nenhum arquivo selecionado
