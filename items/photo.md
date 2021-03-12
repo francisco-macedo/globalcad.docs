@@ -63,47 +63,15 @@ Itens do tipo `photo` também aceitam propriedades de interação. [Clique aqui]
 
 ---
 
-## Propriedades Específicas - Detalhamento
-
-### `mask`
-
-A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
-
-- `#`: Número
-- `_`: Qualquer caractere
-- `U`: Letra maiúscula (Uppercase)
-- `l`: Letra minúscula (Lowercase)
-- `u`: Letra maiúscula ou número
-- `L`: Letra minúscula ou número
-- `{decimal:N}`: Número decimal com `N` casas decimais
-- `{decimal:N:P}`: Número decimal com `N` casas decimais e prefixo `P`
-- `{decimalNoSeparator:N}`: Número decimal sem separador de milhar com `N` casas decimais
-- `{decimalNoSeparator:N:P}`: Número decimal sem separador de milhar com `N` casas decimais e prefixo `P`
-
-Para construir uma máscara que formata o texto inserido como CPF, por exemplo, use:
-
-```
-###.###.###-##
-```
-
-Note que estamos misturando caracteres especiais (`#`) com outros caracteres (`.` e `-`) para formar a nossa máscara.
-
-Para construir uma máscara que formata o texto como um número com 2 casas decimais, use a máscara:
-
-```
-{decimal:2}
-```
-
----
-
 ## Photo - Exemplo 1
 
 A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
+A tela abaixo é um exemplo de como a tela de envio de uma foto aparece para o usuário.
 
 <div class="code-example" markdown="1">
-
-CPF: <input disabled placeholder="Insira aqui o CPF" />
-
+  <button> Escolher arquivo </button> Nenhum arquivo selecionado
+  <br>
+  <button> Enviar </button> <button> Remover </button>
 </div>
 ```markdown
 [
