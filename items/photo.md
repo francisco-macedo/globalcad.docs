@@ -70,7 +70,7 @@ A tela abaixo é um exemplo de como a tela de envio de foto aparece para o usuá
 <div class="code-example" markdown="1">
   <button> Escolher arquivo </button> Nenhum arquivo selecionado
   <br>
-  <button> Enviar </button> <button> Remover </button>
+  <button> Enviar </button><button> Remover </button>
 </div>
 ```markdown
 [
