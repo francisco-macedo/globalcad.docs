@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo `photo` representam uma `string` que guarda o nome de um arquivo de foto, já que guardar imagens no banco de dados não é uma boa prática.
+Itens do tipo photo representam uma `string` que guarda o nome de um arquivo de foto, já que guardar imagens no banco de dados não é uma boa prática.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
