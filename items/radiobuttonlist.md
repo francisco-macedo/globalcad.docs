@@ -16,9 +16,9 @@ Itens do tipo radiobuttonlist representam uma lista de botões entre os quais os
 
 Exemplo:
      <form>
-           <input type="radio" id="sim" name="Exemplo" value="sim">
+           <input type="radio" id="sim" name="Exemplo" value="sim"/>
            <label for="sim">Sim</label>
-           <input type="radio" id="nao" name="Exemplo" value="nao">
+           <input type="radio" id="nao" name="Exemplo" value="nao"/>
            <label for="nao">Não</label>
      </form>
 
