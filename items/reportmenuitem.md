@@ -14,7 +14,7 @@ Itens do tipo reportmenuitem representam uma opção que é mostrada para o usu�
 
 <div class="code-example" markdown="1">
 
-Exemplo: <img src="../img/reportmenuitem_exemplo.PNG" height="50%">
+Exemplo: <img src="../img/reportmenuitem_exemplo.PNG" height="25%">
 
 </div>
 
