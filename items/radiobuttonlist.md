@@ -51,7 +51,7 @@ Pelo fato de persistirem informação em memória, itens do tipo `radiobuttonlis
 
 ## Radiobuttonlist - Exemplo 1
 
-A tela abaixo revela um grupo de opções de meios de transporte entre os quais o usuário pode selecionar um.
+A tela abaixo revela um grupo de opções de meios de transporte dentre os quais o usuário pode selecionar um.
 
 <div class="code-example" markdown="1">
 
