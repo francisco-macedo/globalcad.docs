@@ -5,7 +5,7 @@ parent: Itens
 nav_order: 100
 has_children: false
 ---
-# Reportmenuitem
+# Reportmenuitem (ainda em edição)
 {: .no_toc }
 
 
@@ -14,7 +14,7 @@ Itens do tipo reportmenuitem representam uma opção que é mostrada para o usu�
 
 <div class="code-example" markdown="1">
 
-Exemplo: <img src="../img/reportmenuitem_exemplo.PNG">
+Exemplo: <img src="../img/reportmenuitem_exemplo.PNG" height="20" width="74">
 
 </div>
 
@@ -33,61 +33,41 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mask`                | `string`  |Máscara a ser aplicada ao texto inserido. [Clique aqui](#mask) para mais detalhes.
-| `hint`                | `string`  |Dica a ser exibida na caixa de texto. Normalmente, a dica se apresenta como um texto acinzentado presente enquanto nenhum caractere for inserido na caixa de texto.
-| `capitalize`          | `bool`    |Informa se a primeira letra de cada palavra deve ser maiúscula. Padrão = `false`
-| `postbackonlostfocus` | `bool`    |Informa se um postback deve acontecer quando o item perder o foco. Postbacks forçam calculatedfields a executar. <mark>Essa propriedade só é considerada na versão Web do seu módulo</mark>, já que a versão mobile sempre força os calculatedfields a serem executados quando o item perde o foco.
+| `rmi_tipe`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default =  [Clique aqui](#rmi_tipe) para mais detalhes.
+| `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. Default = [Clique aqui](#rmi_icon) para mais detalhes.
+| `rmi_targetreport`          | `string`    |. Default = `analytical`
+| `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`. [Clique aqui](#rmi_executionmode) para mais detalhes.
+| `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado.
 
 ---
 
 ## Propriedades Básicas
 
-Itens do tipo `textbox` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
-
----
-
-## Propriedades de Banco de Dados
-
-Pelo fato de persistirem informação em memória, itens do tipo `textbox` também aceitam propriedades de banco de dados. [Clique aqui](databaseproperties.md) para conhecê-las.
-
----
-
-## Propriedades de Interação
-
-Itens do tipo `textbox` também aceitam propriedades de interação. [Clique aqui](interactionproperties.md) para conhecê-las.
+Itens do tipo `reportmenuitem` também aceitam propriedades básicas de itens. [Clique aqui](basicproperties.md) para conhecê-las.
 
 ---
 
 ## Propriedades Específicas - Detalhamento
 
-### `mask`
+### `rmi_tipe`
 
-A propriedade `mask` representa uma máscara a ser aplicada ao texto inserido. Combine os caracteres especiais listados abaixo com outros caracteres para criar uma máscara:
+A propriedade `rmi_tipe` representa o tipo de item a ser utilizado. As possibilidades estão listadas abaixo, tal como suas definições:
 
-- `#`: Número
-- `_`: Qualquer caractere
-- `U`: Letra maiúscula (Uppercase)
-- `l`: Letra minúscula (Lowercase)
-- `u`: Letra maiúscula ou número
-- `L`: Letra minúscula ou número
-- `{decimal:N}`: Número decimal com `N` casas decimais
-- `{decimal:N:P}`: Número decimal com `N` casas decimais e prefixo `P`
-- `{decimalNoSeparator:N}`: Número decimal sem separador de milhar com `N` casas decimais
-- `{decimalNoSeparator:N:P}`: Número decimal sem separador de milhar com `N` casas decimais e prefixo `P`
+- `divider`: É utilizado para criar um traço entre as diferentes sessões de `reportmenuitem`.
+- `header`: É utilizado como um cabeçalho para as diferentes sessões de `reportmenuitem`.
+- `default`: É utilizado para criar uma opção que, ao ser clicada, executa o código C# correspondente às ações que ela deve realizar.
 
-Para construir uma máscara que formata o texto inserido como CPF, por exemplo, use:
+Para ..., por exemplo, use:
 
 ```
-###.###.###-##
+...
 ```
 
-Note que estamos misturando caracteres especiais (`#`) com outros caracteres (`.` e `-`) para formar a nossa máscara.
+### `rmi_icon`
 
-Para construir uma máscara que formata o texto como um número com 2 casas decimais, use a máscara:
 
-```
-{decimal:2}
-```
+### `rmi_executionmode`
+
 
 ---
 
