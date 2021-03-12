@@ -65,7 +65,6 @@ Itens do tipo `photo` também aceitam propriedades de interação. [Clique aqui]
 
 ## Photo - Exemplo 1
 
-A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
 A tela abaixo é um exemplo de como a tela de envio de uma foto aparece para o usuário.
 
 <div class="code-example" markdown="1">
