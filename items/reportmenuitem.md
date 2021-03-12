@@ -9,12 +9,12 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo textbox representam uma caixa na qual os usuários podem inserir texto.
+Itens do tipo reportmenuitem representam uma opção que é mostrada para o usuário quando ele clica em algum registro da parte analítica do módulo.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
 
-Exemplo: <input disabled value="Valor Exemplo" />
+Exemplo: <img src="../img/reportmenuitem_exemplo.PNG">
 
 </div>
 
