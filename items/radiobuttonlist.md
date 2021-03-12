@@ -9,18 +9,16 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo radiobuttonlist representam uma lista de botões entre os quais os usuários podem selecionar um.
+Itens do tipo radiobuttonlist representam uma lista de botões dentre os quais o usuário pode selecionar apenas um.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
 
 Exemplo:
-     <form>
-           <input type="radio" id="sim" name="Exemplo" value="sim"/>
+           <input type="radio" id="01" name="Exemplo" value="sim"/>
            <label for="sim">Sim</label>
-           <input type="radio" id="nao" name="Exemplo" value="nao"/>
+           <input type="radio" id="01" name="Exemplo" value="nao"/>
            <label for="nao">Não</label>
-     </form>
 
 </div>
 
