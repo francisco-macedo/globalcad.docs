@@ -65,7 +65,11 @@ Para ..., por exemplo, use:
 
 ### `rmi_icon`
 
+Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, há a documentação completa de todos os ícones disponíveis para a versão Mobile e para a versão Web do módulo. Há dois arquivos `.PDF` e uma pasta com os ícones do Mobile em forma de imagem `.PNG` (para que o nome possa ser buscado com mais facilidade) na seguinte localização:
 
+```
+0-DEVELOPERS\FORM_DESIGNER\ICONS CATALOG
+```
 
 ### `rmi_reportmenuitem_CSharpCode`
 
