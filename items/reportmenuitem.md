@@ -29,14 +29,14 @@ Exemplo: <img src="../img/reportmenuitem_exemplo.PNG">
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `reportmenuitem`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
 | `rmi_tipe`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default =  [Clique aqui](#rmi_tipe) para mais detalhes.
 | `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. Default = [Clique aqui](#rmi_icon) para mais detalhes.
 | `rmi_targetreport`          | `string`    |. Default = `analytical`
-| `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`. [Clique aqui](#rmi_executionmode) para mais detalhes.
+| `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`.
 | `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado.
 
 ---
@@ -65,8 +65,6 @@ Para ..., por exemplo, use:
 
 ### `rmi_icon`
 
-
-### `rmi_executionmode`
 
 
 ---
