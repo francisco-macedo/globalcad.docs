@@ -41,7 +41,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbo
 | `ongetpicture_height`       | `int`  |Altura da imagem retornada pelo evento `onGetPicture`. Default = 0 (proporcional ao `ongetpicture_width` ou tamanho inteiro se `ongetpicture_width` = 0)
 | `ongetpicture_allowapproximatedsize`       | `bool`    |Quando for `true`, a imagem retornada pelo evento `onGetPicture` vai ter um tamanho aproximadamente igual ao `ongetpicture_width/height`, o que faz o processo rodar mais rapidamente. Default = `false`
 | `streamsizepercent`         | `int`    |Define a porcentagem da resolução da tela que a resolução da foto deverá ser adaptada para ter. Default = `70`
-| `layout`                    | `string`  |Define o layout a ser utilizado para mostrar a imagem. Os possíveis valores são `ShowPhoto` e `ShowPhotoAndFilename` Default =
+| `layout`                    | `string`  |Define o layout a ser utilizado para mostrar a imagem. Os possíveis valores são `ShowPhoto`, que apenas mostra a imagem carregada na tela, e `ShowPhotoAndFilename`, que, além da imagem, também mostra o nome do arquivo da imagem. Default = `ShowPhoto`
 
 ---
 
