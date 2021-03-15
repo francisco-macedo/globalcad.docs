@@ -33,7 +33,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `photo`
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `mode`                | `string`  |Define o modo através do qual a foto vai ser enviada pelo usuário. Realiza alterações apenas no mobile. Default= [Clique aqui](#mode) para mais detalhes.
+| `mode`                | `string`  |Define o modo através do qual a foto vai ser enviada pelo usuário. Realiza alterações apenas no mobile. [Clique aqui](#mode) para mais detalhes.
 | `lensfacing`                | `string`  |Informa qual das câmeras será utilizada para tirar a foto, a frontal ou a traseira. As opções disponíveis são `front` e `back`. Default = `back`
 | `savetofile`                | `bool`  |Informa se a foto deveria ser salva no arquivo do sistema. Default = `true`
 | `fire_ongetpicture`         | `bool`  |Informa se o evento `onGetPicture` deve ser acionado. Default = `false` 
