@@ -68,11 +68,11 @@ Itens do tipo `photo` também aceitam propriedades de interação. [Clique aqui]
 ### `mode`
 
 A propriedade `mode` representa o modo através do qual a foto será enviada pelo usuário. As `strings` listadas abaixo correspondem às opções de valor possíveis para essa propriedade:
-- `GetPhotoFromCamera`: 
+- `GetPhotoFromCamera`: As fotos enviadas para o formulário são tiradas através da câmera do dispositivo.
 - `GetPhotoFromCamera_InAppStream`: 
-- `GetPhotoFromCameraAndSearchPhoto`: 
+- `GetPhotoFromCameraAndSearchPhoto`: As fotos enviadas para o formulário podem ser tiradas através da câmera do dispositivo ou podem ser buscadas dentre as fotos armazenadas na memória.
 - `GetPhotoFromCameraAndSearchPhoto_InAppStream`: 
-- `GetSignature`: 
+- `GetSignature`: Deve ser utilizado quando a foto em questão será uma assinatura.
 
 Para ..., por exemplo, use:
 
