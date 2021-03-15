@@ -29,7 +29,7 @@ Exemplo: <button> Escolher arquivo </button> imagem.png
 
 ## Propriedades Específicas
 
-A tabela abaixo lista todas as propriedades específicas a itens do tipo `textbox`.
+A tabela abaixo lista todas as propriedades específicas a itens do tipo `photo`.
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
