@@ -9,7 +9,7 @@ has_children: false
 {: .no_toc }
 
 
-Itens do tipo reportmenuitem representam uma opção que é mostrada para o usuário quando ele clica em algum registro da parte analítica do módulo.
+Itens do tipo reportmenuitem representam uma opção que é mostrada para o usuário quando ele clica em algum registro nas partes `analítico` ou `estatísticas` do módulo.
 {: .fs-6 .fw-300 }
 
 <div class="code-example" markdown="1">
@@ -33,11 +33,11 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `report
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `rmi_tipe`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default =  [Clique aqui](#rmi_tipe) para mais detalhes.
-| `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. Default = [Clique aqui](#rmi_icon) para mais detalhes.
-| `rmi_targetreport`          | `string`    |Informa em qual dos relatórios o item deve aparecer, analítico, estatísticas ou ambos. Os valores possíveis para o campo são `analytical`, `synthetic` e `both`. Default = `analytical`
+| `rmi_tipe`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default = `default`.  [Clique aqui](#rmi_tipe) para mais detalhes.
+| `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. [Clique aqui](#rmi_icon) para mais detalhes.
+| `rmi_targetreport`          | `string`    |Informa em qual dos relatórios o item deve aparecer: analítico, estatísticas ou ambos. Os valores possíveis para o campo são `analytical`, `synthetic` e `both`. Default = `analytical`
 | `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`.
-| `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado.
+| `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado. Default = [Clique aqui](#rmi_reportmenuitem_CSharpCode) para mais detalhes.
 
 ---
 
@@ -64,6 +64,10 @@ Para ..., por exemplo, use:
 ```
 
 ### `rmi_icon`
+
+
+
+### `rmi_reportmenuitem_CSharpCode`
 
 
 
