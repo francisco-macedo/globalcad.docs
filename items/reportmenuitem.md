@@ -5,7 +5,7 @@ parent: Itens
 nav_order: 100
 has_children: false
 ---
-# Reportmenuitem (ainda em edição)
+# Reportmenuitem
 {: .no_toc }
 
 
