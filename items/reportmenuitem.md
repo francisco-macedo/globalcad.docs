@@ -74,7 +74,70 @@ Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, 
 
 ### `rmi_reportmenuitem_CSharpCode`
 
+Além de importar o código, o programador também possui a opção de escrever diretamente na barra superior da própria planilha, no mesmo local onde há um código de exemplo. Abaixo, se encontra o código C# base que deve ser utilizado para o desenvolvimento. O comentário com as reticências representam o local onde será inserido o código personalizado:
 
+```
+using System;
+using System.IO;
+using System.Text;
+using System.Data;
+using System.Linq;
+using System.Globalization;
+using System.Collections.Generic;
+using System.Runtime.Serialization.Formatters.Binary;
+using Newtonsoft.Json.Linq;
+using Project.WebHost.Db;
+using Project.WebHost.Cad;
+using Project.WebHost.Web;
+using Project.WebHost.ZIP;
+using Project.WebHost.Common;
+using Project.WebHost.Report;
+using Project.WebHost.KmlEngine;
+using Project.WebHost.Utils.Storage;
+using Project.WebHost.LocalTaskManager;
+using Project.WebHost_Providers.Common;
+using Project.WebHost_Providers.GenericProvider.Model;
+using Project.WebHost_Providers.GenericProvider.Model.Items;
+using Project.WebHost_Providers.GenericProvider.Utils;
+using Project.WebHost_Providers.GenericProvider.Model.Database;
+using SelectPdf;
+using GemBox.Presentation;
+namespace CustomCode
+{
+    public class CustomCode_reportmenuitem
+    {
+        static public void Main(object[] parms)
+        {
+            CallerData callerData = (CallerData)parms[0];
+            Form form = (Form)parms[1];
+            decimal defaultContract = (decimal)parms[2];
+            decimal formNumber = (decimal)parms[3];
+            string VALUESTableName = (string)parms[4];
+            string DICTTableName = (string)parms[5];
+            string USERSTableName = (string)parms[6];
+            string HEADERSTableName = (string)parms[7];
+            ReportDefinition reportDefinition = (ReportDefinition)parms[8];
+            ProviderProject.ReportIDs reportType = (ProviderProject.ReportIDs)parms[9];
+            ReportFilter[] filtersToApply = (ReportFilter[])parms[10];
+            IsvCadProvider svCadProvider = (IsvCadProvider)parms[11];
+            GetSetCadInputData getSetCadInputData = (GetSetCadInputData)parms[12];
+            ProviderProject providerProject = (ProviderProject)parms[13];
+            DataRow selectedRow = (DataRow)parms[14];
+            Dictionary<int, long> dbIDs = (Dictionary<int, long>)parms[15];  // Database IDs associated to each item ID ([item ID] -> [database ID]).
+            List<int> sortedDbIDsKeys = (List<int>)parms[16];
+            int PARENT_CONTAINER_ITEMID = (int)parms[17];  // PARENT_CONTAINER_ITEMID represented by the clicked row.
+            dynamic actions = (dynamic)parms[18];  // Populate this with actions to perform after this method finishes. Use the ServerActionUtils class to append actions to this object.
+            ReportMenuItem rmItem = (ReportMenuItem)parms[19];
+            ProviderProject.ReportIDs reportID = (ProviderProject.ReportIDs)parms[20];
+            int[] visibleFields = (int[])parms[21];
+            
+            //...
+            
+        }
+    }
+}
+
+```
 
 ---
 
