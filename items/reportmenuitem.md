@@ -33,7 +33,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `report
 
 | Propriedade           | Tipo      | Descrição                                                        |
 |:----------------------|:----------|:-----------------------------------------------------------------|
-| `rmi_tipe`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default = `default`.  [Clique aqui](#rmi_tipe) para mais detalhes.
+| `rmi_type`                | `string`  |Informa o tipo de `reportmenuitem` a ser utilizado. Default = `default`.  [Clique aqui](#rmi_type) para mais detalhes.
 | `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. [Clique aqui](#rmi_icon) para mais detalhes.
 | `rmi_targetreport`          | `string`    |Informa em qual dos relatórios o item deve aparecer: analítico, estatísticas ou ambos. Os valores possíveis para o campo são `analytical`, `synthetic` e `both`. Default = `analytical`
 | `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`.
@@ -49,38 +49,18 @@ Itens do tipo `reportmenuitem` também aceitam propriedades básicas de itens. [
 
 ## Propriedades Específicas - Detalhamento
 
-### `rmi_tipe`
+### `rmi_type`
 
-A propriedade `rmi_tipe` representa o tipo de item a ser utilizado. As possibilidades estão listadas abaixo, tal como suas definições:
+A propriedade `rmi_type` representa o tipo de item a ser utilizado. As possibilidades estão listadas abaixo, tal como suas definições:
 
 - `divider`: É utilizado para criar um traço entre as diferentes sessões de `reportmenuitem`.
 - `header`: É utilizado como um cabeçalho para as diferentes sessões de `reportmenuitem`.
 - `default`: É utilizado para criar uma opção que, ao ser clicada, executa o código C# correspondente às ações que ela deve realizar.
 
-Para criar uma sessão separada das outras com título e uma opção clicável, por exemplo, adicione os três itens ao seu `FORM DESIGNER`:
+Na imagem abaixo, o texto em vermelho indica o respectivo `rmi_type` dos elementos:
 
 ```
-[
-  {
-    "id": 10,
-    "type": "reportmenuitem",
-    "text": "Divisor",
-    "rmi_tipe": "divider"
-  },
-  {
-    "id": 20,
-    "type": "reportmenuitem",
-    "text": "Título",
-    "rmi_tipe": "header"
-  },
-  {
-    "id": 30,
-    "type": "reportmenuitem",
-    "text": "Clique aqui para executar uma ação",
-    "rmi_tipe": "default",
-    "reportmenuitem_CSharpCode": "reportmenuitem.cs"
-  }
-]
+<img src="../img/reportmenuitem_detalhamento.PNG">
 ```
 
 ### `rmi_icon`
