@@ -99,22 +99,42 @@ Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, 
 
 ## Textbox - Exemplo 1
 
-A tela abaixo revela uma caixa de texto configurada para formatar o texto inserido como CPF e para mostrar um `hint` dizendo <mark>Insira aqui o CPF</mark>.
+A tela abaixo revela uma sessão que contém dois botões de `reportmenuitem` chamados de <mark>Aprovar Despesa</mark> e <mark>Reprovar Despesa</mark>.
 
 <div class="code-example" markdown="1">
 
-CPF: <input disabled placeholder="Insira aqui o CPF" />
+*imagem*
 
 </div>
 ```markdown
 [
   {
     "id": 10,
-    "type": "textbox",
-    "text": "CPF",
-    "VALUECol": "V.STR1",
-    "mask": "###.###.###-##",
-    "hint": "Insira aqui o CPF"
+    "type": "reportmenuitem",
+    "text": "Divisor",
+    "rmi_tipe": "divider"
+  },
+  {
+    "id": 20,
+    "type": "reportmenuitem",
+    "text": "Aprovação",
+    "rmi_tipe": "header"
+  },
+  {
+    "id": 30,
+    "type": "reportmenuitem",
+    "text": "Aprovar Despesa",
+    "rmi_tipe": "default",
+    "rmi_icon": "glyphicon_ok_sign",
+    "reportmenuitem_CSharpCode": "reportmenuitemAprovacao.cs"
+  },
+  {
+    "id": 40,
+    "type": "reportmenuitem",
+    "text": "Reprovar Despesa",
+    "rmi_tipe": "default",
+    "rmi_icon": "glyphicon_remove_sign",
+    "reportmenuitem_CSharpCode": "reportmenuitemAprovacao.cs"
   }
 ]
 ```
