@@ -74,7 +74,7 @@ Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, 
 
 ### `reportmenuitem_CSharpCode`
 
-Além de importar o código, o programador também possui a opção de escrever diretamente na barra superior da própria planilha, no mesmo local onde há um código de exemplo. Abaixo, se encontra o código C# base que deve ser utilizado para o desenvolvimento. O comentário com as reticências representam o local onde será inserido o código personalizado:
+Além de importar o código, o programador também possui a opção de escrever diretamente na barra superior da própria planilha, no mesmo local onde há um código de exemplo. Abaixo, se encontra o código C# base que deve ser utilizado para o desenvolvimento. O comentário com as reticências representa o local onde será inserido o código personalizado:
 
 ```
 using System;
