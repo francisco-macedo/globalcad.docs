@@ -37,7 +37,7 @@ A tabela abaixo lista todas as propriedades específicas a itens do tipo `report
 | `rmi_icon`                | `string`  |Informa a imagem de ícone que deverá ser utilizada juntamente ao tipo `default`. [Clique aqui](#rmi_icon) para mais detalhes.
 | `rmi_targetreport`          | `string`    |Informa em qual dos relatórios o item deve aparecer: analítico, estatísticas ou ambos. Os valores possíveis para o campo são `analytical`, `synthetic` e `both`. Default = `analytical`
 | `rmi_executionmode` | `string`    |Informa se o modo de execução do item deve ser síncrono ou assíncrono, tendo como valores possívels `synchronous` e `asynchronous`. Default = `synchronous`.
-| `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado. Default = [Clique aqui](#rmi_reportmenuitem_CSharpCode) para mais detalhes.
+| `rmi_reportmenuitem_CSharpCode` | `string`    |Importa o código C# correspondente às ações do `reportmenuitem` de tipo `default`. O texto deve possuir o formato `'@ import reportmenuitem.cs`, podendo alterar o nome do arquivo, que deve estar na mesma pasta que o `Form Designer.xlsm` utilizado. Default = [Clique aqui](#reportmenuitem_CSharpCode) para mais detalhes.
 
 ---
 
@@ -72,7 +72,7 @@ Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, 
 0-DEVELOPERS\FORM_DESIGNER\ICONS CATALOG
 ```
 
-### `rmi_reportmenuitem_CSharpCode`
+### `reportmenuitem_CSharpCode`
 
 Além de importar o código, o programador também possui a opção de escrever diretamente na barra superior da própria planilha, no mesmo local onde há um código de exemplo. Abaixo, se encontra o código C# base que deve ser utilizado para o desenvolvimento. O comentário com as reticências representam o local onde será inserido o código personalizado:
 
