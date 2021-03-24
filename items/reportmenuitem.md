@@ -57,10 +57,31 @@ A propriedade `rmi_tipe` representa o tipo de item a ser utilizado. As possibili
 - `header`: É utilizado como um cabeçalho para as diferentes sessões de `reportmenuitem`.
 - `default`: É utilizado para criar uma opção que, ao ser clicada, executa o código C# correspondente às ações que ela deve realizar.
 
-Para ..., por exemplo, use:
+Para criar uma sessão separada das outras com título e uma opção clicável, por exemplo, adicione os três itens ao seu `FORM DESIGNER`:
 
 ```
-...
+[
+  {
+    "id": 10,
+    "type": "reportmenuitem",
+    "text": "Dividor",
+    "rmi_tipe": "divider",
+  }
+  {
+    "id": 20,
+    "type": "reportmenuitem",
+    "text": "Título",
+    "rmi_tipe": "header",
+    "hint": "Insira aqui o CPF"
+  }
+  {
+    "id": 30,
+    "type": "reportmenuitem",
+    "text": "Clique aqui para executar uma ação",
+    "rmi_tipe": "default",
+    "reportmenuitem_CSharpCode": "reportmenuitem.cs"
+  }
+]
 ```
 
 ### `rmi_icon`
