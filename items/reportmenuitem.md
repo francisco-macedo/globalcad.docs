@@ -65,14 +65,13 @@ Para criar uma sessão separada das outras com título e uma opção clicável, 
     "id": 10,
     "type": "reportmenuitem",
     "text": "Dividor",
-    "rmi_tipe": "divider",
+    "rmi_tipe": "divider"
   }
   {
     "id": 20,
     "type": "reportmenuitem",
     "text": "Título",
-    "rmi_tipe": "header",
-    "hint": "Insira aqui o CPF"
+    "rmi_tipe": "header"
   }
   {
     "id": 30,
