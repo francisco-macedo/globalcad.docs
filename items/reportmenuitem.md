@@ -103,7 +103,7 @@ A tela abaixo revela uma sessão que contém dois botões de `reportmenuitem` ch
 
 <div class="code-example" markdown="1">
 
-*imagem*
+imagem
 
 </div>
 ```markdown
