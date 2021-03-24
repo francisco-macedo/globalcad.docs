@@ -97,7 +97,7 @@ Dentro da pasta do Google Drive compartilhada pela GlobalCad com os developers, 
 
 ---
 
-## Textbox - Exemplo 1
+## Reportmenuitem - Exemplo 1
 
 A tela abaixo revela uma sessão que contém dois botões de `reportmenuitem` chamados de <mark>Aprovar Despesa</mark> e <mark>Reprovar Despesa</mark>.
 
