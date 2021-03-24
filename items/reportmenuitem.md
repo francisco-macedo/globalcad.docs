@@ -123,10 +123,10 @@ namespace CustomCode
             GetSetCadInputData getSetCadInputData = (GetSetCadInputData)parms[12];
             ProviderProject providerProject = (ProviderProject)parms[13];
             DataRow selectedRow = (DataRow)parms[14];
-            Dictionary<int, long> dbIDs = (Dictionary<int, long>)parms[15];  // Database IDs associated to each item ID ([item ID] -> [database ID]).
+            Dictionary<int, long> dbIDs = (Dictionary<int, long>)parms[15];  // IDs do banco de dados associados a cada ID do item ([item ID] -> [database ID]).
             List<int> sortedDbIDsKeys = (List<int>)parms[16];
-            int PARENT_CONTAINER_ITEMID = (int)parms[17];  // PARENT_CONTAINER_ITEMID represented by the clicked row.
-            dynamic actions = (dynamic)parms[18];  // Populate this with actions to perform after this method finishes. Use the ServerActionUtils class to append actions to this object.
+            int PARENT_CONTAINER_ITEMID = (int)parms[17];  // PARENT_CONTAINER_ITEMID representado pela linha clicada.
+            dynamic actions = (dynamic)parms[18];  // Populado com as ações a serem performadas depois que a execução deste método é encerrada. Use a classe ServerActionUtils para inserir ações neste objeto.
             ReportMenuItem rmItem = (ReportMenuItem)parms[19];
             ProviderProject.ReportIDs reportID = (ProviderProject.ReportIDs)parms[20];
             int[] visibleFields = (int[])parms[21];
