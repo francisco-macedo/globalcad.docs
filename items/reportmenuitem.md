@@ -60,7 +60,9 @@ A propriedade `rmi_type` representa o tipo de item a ser utilizado. As possibili
 Na imagem abaixo, o texto em vermelho indica o respectivo `rmi_type` dos elementos:
 
 ```
-<img src="../img/reportmenuitem_detalhamento.PNG">
+<div class="code-example" markdown="1">
+  <img src="../img/reportmenuitem_detalhamento.PNG">
+</div>
 ```
 
 ### `rmi_icon`
